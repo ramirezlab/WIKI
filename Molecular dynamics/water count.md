@@ -3,7 +3,7 @@
 Here we use a _tcl_ script to count the water molecules in an ion channel pore (or any pore) along a trajectory from AMBER, Desmond or NAMD. The pore of the ion channel must be aligned along the z-axis. The selection must be a cylinder.
  
 
-Usage in VMD tk console: 
+Usage in VMD´s Tk console: 
 >play  WatersCount.tcl
 
 
