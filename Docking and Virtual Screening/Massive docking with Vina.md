@@ -5,8 +5,8 @@ Here we use AutoDock Vina to perform massive docking of one ligand: 100 runs -> 
 You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer. Also the _input.conf_ file with the configuration, and the script _loop_vina.sh_. 
 
 
-#### Example of input.conf
-```python
+#### Example of _input.conf_
+```json
 receptor = /path/to/receptor/receptor.pdbqt
 
 center_x = -14.33
