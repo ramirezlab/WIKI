@@ -2,7 +2,7 @@
 
 Here we use AutoDock Vina to perform massive docking of one ligand: 100 runs -> top-10 poses per run -> 1000 poses
 
-You need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](url) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer
+You need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer
 
 
 Example of input.conf
