@@ -10,7 +10,7 @@ Usage in VMD´s Tk console:
 #### WatersCount.tcl
 ```markdown
 #################################################################################
-############# Created by Daniel Bustos & David Ramírez- Ramirez Lab #############
+############# Created by Daniel Bustos & David Ramírez - Ramirez Lab #############
 #################################################################################
 
 # The selection must be a cylinder: e.g. set selection1 "(water and z < Hmax and z > Hmin and (x - xinitial)**2 + (y - yinitial)**2 < r^2) and name 0"
