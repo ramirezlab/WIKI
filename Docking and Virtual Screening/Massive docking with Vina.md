@@ -1,11 +1,11 @@
-## Welcome to the Ramirez Lab Wiki - Docking and Virtual Screening
+# Welcome to the Ramirez Lab Wiki - Docking and Virtual Screening
 
 Here we use AutoDock Vina to perform massive docking of one ligand: 100 runs -> top-10 poses per run -> 1000 poses
 
-You need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer
+You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer. Also the _input.conf_ file with the configuration, and the script _loop_vina.sh_. 
 
 
-Example of input.conf
+#### Example of input.conf
 ```markdown
 receptor = /path/to/receptor/receptor.pdbqt
 
@@ -23,11 +23,12 @@ num_modes = 1
 ```
 
 
-loop_vina.sh
+
+#### loop_vina.sh
 ```markdown
-###################################################################
-#############Created by Jessika Martinez - Ramirez Lab#############
-###################################################################
+#####################################################################
+############# Created by Jessika Martinez - Ramirez Lab #############
+#####################################################################
 
 ##Carry out the first Docking and convert the outputs from .pdbqt to .pdb
 for i in {1..1}
@@ -36,7 +37,7 @@ do
 	mkdir pdbqt
 	mkdir ./pdbqt/splitpdbqt1/
 	mkdir ./pdbqt/merge/
-	/path/to/vina --config input.conf --out ./pdbqt/merge/ligand$i.pdbqt >> ./output/soutput$i.log
+	/path/to/vina --config input.conf --out ./pdbqt/merge/ligand$i.pdbqt >> ./output/output$i.log
 	/path/to/vina_split --input ./pdbqt/merge/ligand1.pdbqt --ligand ./pdbqt/splitpdbqt1/ligand 
 	for e in {1..9}
 	do	
