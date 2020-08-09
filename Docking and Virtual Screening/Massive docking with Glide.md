@@ -65,7 +65,9 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
     done
   ```
 
-- Now is time to dock!!! Using the **Docking Panel** in **Maestro** generate the template _dock.in_ and _dock.sh_ reference files with the desired docking configurations
+
+2. Now is time to dock!!! 
+- Using the **Docking Panel** in **Maestro** generate the template _dock.in_ and _dock.sh_ reference files with the desired docking configurations
   * Example of _dock.in_:
   ```bash
     GRIDFILE   grid_1.zip
@@ -123,6 +125,4 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
     done
   ```
 
-
-
-Thanks!!!
+Enjoy!!!
