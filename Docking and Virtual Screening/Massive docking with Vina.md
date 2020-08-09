@@ -1,6 +1,6 @@
 # Welcome to the Ramirez Lab Wiki - Docking and Virtual Screening
 
-Here we use AutoDock Vina to perform massive docking of one ligand: 100 runs -> top-10 poses per run -> 1000 poses
+Here we use AutoDock Vina to perform massive docking of one ligand: 100 runs -> top-10 poses per run -> 1000 poses. The idea is to use a single ligand and do multiple dockings on the same receptor to extend the conformational sampling of that ligand. Then you can use a tool to cluster the conformers and know which are the most visited poses during the molecular docking.
 
 You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer. Also the _input.conf_ file with the configuration, and the script _loop_vina.sh_. 
 
