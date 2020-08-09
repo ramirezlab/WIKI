@@ -11,7 +11,7 @@ You can use this script to study pores along trajectories or in a static represe
 1. Load the _ion-channel.pdb_ into VMD
 2. Open the VMD´s Tk console. Be sure you have the HOLE programs and files necesary to run the calculatons
 3. Run the _hole_over_time.tcl_ script
-> To run the script type in VMD´s Tk console: > play _hole_over_time.tcl_
+> To run the script type in VMD´s Tk console: play _hole_over_time.tcl_
 
 > Tip: the _cpoint_ is the starting point (vector origin). The _cvect_ is the direction of the vector. If you centered and aligned to Z-axis your protein, you may use **cpoint (0 0 0)** and **cvect (0 0 1)**
 4. Several files will be automatically created into your folder, take a look at all of them. In the _hole_0.log_ you will find the radius values measured every 0.5Å. The _surf_0.vmd_ is the pore-surface created.
@@ -182,6 +182,10 @@ puts "\a He finalizado los resultados estan en $dir"
 
 ```
 
-To see some examples please vivist the [Ramirez Lab - publications section](https://ramirezlab.github.io/3_publications) 
+To see some examples please vivist the [Ramirez Lab - publications section](https://ramirezlab.github.io/3_publications)
+
+Examples extracted from [Ramirez, D., et al. (2017) Mol Pharmaceutics, 14(7):2197–2208](https://pubs.acs.org/doi/abs/10.1021/acs.molpharmaceut.7b00005)
+![Image of A1899-1](WIKI/Miscellaneous/HOLE/Files/Figs/Fig1-A1899-paper.png)
+![Image of A1899-2](WIKI/Miscellaneous/HOLE/Files/Figs/Fig5.png)
 
 Thanks!!!
