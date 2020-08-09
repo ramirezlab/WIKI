@@ -1,26 +1,5 @@
-## Welcome to the Ramirez Lab Wiki
+## Welcome to the Ramirez Lab Wiki - Molecular Dynamics section
 
-You can use this file as example to write your own tutorial
+You will find here tutorials, scripts and other open tools for pharmacoinformatics and drug design. The contributions have been done by the Ramirez Lab team.
 
-### Tutorial
-Use diirefernt github tools such as markdown to make your tutoral, markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Molecular Dynamics
-
-# AMBER
-## GROMACS
-### DESMOND
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-Thanks!!!
+Have fun!!!
