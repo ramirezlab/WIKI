@@ -2,7 +2,7 @@
 
 Here we will use HOLE suite of programs to study pores in potassium channels. For more information go to [Yale](http://www.csb.yale.edu/userguides/graphics/hole/doc/hole_d00.html#contents) and [Here](http://www.holeprogram.org/doc/) 
 
-Several HOLE programs have been used in the _hole_over_time.tcl_ script to produce surface representations of pore cavities. You need to have the HOLe programes in your computer prior to run this script. The script are in the _File_ folder.
+Several HOLE programs have been used in the _hole_over_time.tcl_ script to produce surface representations of pore cavities. You should have the HOLE programs in your computer prior to run this script (See the _File_ folder).
 
 You can use this script to study pores along trajectories or in a static representation.  
 
