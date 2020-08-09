@@ -6,11 +6,11 @@ You can use this file as example to write your own tutorial
 Use diirefernt github tools such as markdown to make your tutoral, markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Computational Polypharmacology
 
-# Header 1
-## Header 2
-### Header 3
+# Computational Polypharmacology
+## Computational Polypharmacology
+### Computational Polypharmacology
 
 - Bulleted
 - List
