@@ -1,6 +1,6 @@
 # Welcome to the Ramirez Lab Wiki - Miscellaneous section -> HOLE
 
-HOLE is a program that allows the analysis and visualisation of the pore dimensions of the holes through molecular structures of different proteins such as ion channels. Here we will use HOLE suite of programs to study pores in ion channels. For more information go to [Yale](http://www.csb.yale.edu/userguides/graphics/hole/doc/hole_d00.html#contents) and [HOLE program website](http://www.holeprogram.org/doc/) 
+HOLE is a program that allows the analysis and visualisation of the pore dimensions of the holes through molecular structures of different proteins such as ion channels. Here we will use HOLE suite of programs to study pores in ion channels. For more information go to [Yale](http://www.csb.yale.edu/userguides/graphics/hole/doc/hole_d00.html#contents), [HOLE program website](http://www.holeprogram.org/doc/), and [osmart/hole2] (https://github.com/osmart/hole2)
 
 Several HOLE programs have been used in the _hole_over_time.tcl_ script to produce surface representations of pore cavities. You should have the HOLE programs in your computer prior to run this script (See the _Files_ folder).
 
