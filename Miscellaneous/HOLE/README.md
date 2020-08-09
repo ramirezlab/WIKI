@@ -185,7 +185,8 @@ puts "\a He finalizado los resultados estan en $dir"
 To see some examples please vivist the [Ramirez Lab - publications section](https://ramirezlab.github.io/3_publications)
 
 Examples extracted from [Ramirez, D., et al. (2017) Mol Pharmaceutics, 14(7):2197–2208](https://pubs.acs.org/doi/abs/10.1021/acs.molpharmaceut.7b00005)
-![Image of A1899-1](WIKI/Miscellaneous/HOLE/Files/Figs/Fig1-A1899-paper.png)
-![Image of A1899-2](WIKI/Miscellaneous/HOLE/Files/Figs/Fig5.png)
+
+[Image of A1899-1](WIKI/Miscellaneous/HOLE/Files/Figs/Fig1-A1899-paper.png)
+[Image of A1899-2](WIKI/Miscellaneous/HOLE/Files/Figs/Fig5.png)
 
 Thanks!!!
