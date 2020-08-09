@@ -2,7 +2,9 @@
 
 Here we will use HOLE suite of programs to study pores in potassium channels. For more information go to [Yale](http://www.csb.yale.edu/userguides/graphics/hole/doc/hole_d00.html#contents) and [Here](http://www.holeprogram.org/doc/) 
 
-Several HOLE programs have been used in the _hole_over_time.tcl_ script to produce surface representations of pore cavities. You can use this script to study pores along trajectories or in a static representation.  
+Several HOLE programs have been used in the _hole_over_time.tcl_ script to produce surface representations of pore cavities. You need to have the HOLe programes in your computer prior to run this script. The script are in the _File_ folder.
+
+You can use this script to study pores along trajectories or in a static representation.  
 
 >Tip: First align the cavity of your protein (ion channel, pore, etc) to the Z-axis (x,y,z = 0,0,1), and center it (x,y,z = 0,0,0)
 
@@ -176,6 +178,6 @@ puts "\a He finalizado los resultados estan en $dir"
 
 ```
 
-To see some examples please vivist the [Ramirez Lab - publication sections](https://ramirezlab.github.io/3_publications) 
+To see some examples please vivist the [Ramirez Lab - publications section](https://ramirezlab.github.io/3_publications) 
 
 Thanks!!!
