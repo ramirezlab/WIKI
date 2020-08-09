@@ -70,12 +70,12 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 - Using the **Docking Panel** in **Maestro** generate the template _dock.in_ and _dock.sh_ reference files with the desired docking configurations
   * Example of _dock.in_:
   ```bash
-    GRIDFILE   grid_1.zip
-    LIGANDFILE   Ligand-to-dock.maegz
-    NREPORT   10
-    POSES_PER_LIG   10
-    POSTDOCK_NPOSE   10
-    PRECISION   SP
+    GRIDFILE          grid_1.zip
+    LIGANDFILE        Ligand-to-dock.maegz
+    NREPORT           10
+    POSES_PER_LIG     10
+    POSTDOCK_NPOSE    10
+    PRECISION         SP
   ```
   
   * Example of _dock.sh_:
@@ -124,5 +124,7 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
       ./dock_$i.sh
     done
   ```
+
+This tutorial was created by Carlos Peña and David Ramírez – Ramirez Lab
 
 Enjoy!!!
