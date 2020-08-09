@@ -1,6 +1,6 @@
 # Welcome to the Ramirez Lab Wiki - Miscellaneous section -> HOLE
 
-Here we will use HOLE suite of programs to study pores in potassium channels. For more information go to [Yale](http://www.csb.yale.edu/userguides/graphics/hole/doc/hole_d00.html#contents) and [Here](http://www.holeprogram.org/doc/) 
+HOLE is a program that allows the analysis and visualisation of the pore dimensions of the holes through molecular structures of different proteins such as ion channels. Here we will use HOLE suite of programs to study pores in ion channels. For more information go to [Yale](http://www.csb.yale.edu/userguides/graphics/hole/doc/hole_d00.html#contents) and [Here](http://www.holeprogram.org/doc/) 
 
 Several HOLE programs have been used in the _hole_over_time.tcl_ script to produce surface representations of pore cavities. You should have the HOLE programs in your computer prior to run this script (See the _Files_ folder).
 
@@ -8,9 +8,13 @@ You can use this script to study pores along trajectories or in a static represe
 
 >Tip: First align the cavity of your protein (ion channel, pore, etc) to the Z-axis (x,y,z = 0,0,1), and center it (x,y,z = 0,0,0)
 
-
-Usage: Load your target protein into VMD and use the VMD´s Tk console: 
->play hole_over_time.tcl 
+1. Load the _ion-channel.pdb_ into VMD
+2. Open the VMD´s Tk console. Be sure you have the HOLE programs and files necesary to run the calculatons
+3. Run the _hole_over_time.tcl_ script
+> Usage: play _hole_over_time.tcl_
+> Tip: the _cpoint_ is the starting point (vector origin). The _cvect_ is the direction of the vector. If you centered and aligned to Z-axis your protein, you may use **cpoint (0 0 0)** and **cvect (0 0 1)**
+4. Several files will be automatically created into your folder, take a look at all of them. In the _hole_0.log_ you will find the radius values measured every 0.5Å. The _surf_0.vmd_ is the pore-surface created.
+> To visualize the surface type in VMD´s Tk console: source _surf_0.vmd_
 
 
 #### hole_over_time.tcl 
