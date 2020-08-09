@@ -6,7 +6,7 @@ You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https
 
 
 #### Example of input.conf
-```markdown
+```python
 receptor = /path/to/receptor/receptor.pdbqt
 
 center_x = -14.33
