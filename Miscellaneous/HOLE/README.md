@@ -12,14 +12,14 @@ You can use this script to study pores along trajectories or in a static represe
 2. Open the VMD´s Tk console. Be sure you have the HOLE programs and files necesary to run the calculatons
 3. Run the _hole_over_time.tcl_ script
 > To run the script type in VMD´s Tk console: play _hole_over_time.tcl_
-
-> Tip: the _cpoint_ is the starting point (vector origin). The _cvect_ is the direction of the vector. If you centered and aligned to Z-axis your protein, you may use **cpoint (0 0 0)** and **cvect (0 0 1)**
+>
+>> Tip: the _cpoint_ is the starting point (vector origin). The _cvect_ is the direction of the vector. If you centered and aligned to Z-axis your protein, you may use **cpoint (0 0 0)** and **cvect (0 0 1)**
 4. Several files will be automatically created into your folder, take a look at all of them. In the _hole_0.log_ you will find the radius values measured every 0.5Å. The _surf_0.vmd_ is the pore-surface created.
 > To visualize the surface type in VMD´s Tk console: source _surf_0.vmd_
 
 
 #### hole_over_time.tcl 
-```markdown
+```tcl
 # Modified by David Ramírez (2014) - Ramirez Lab.
 
 proc hole_over_time { A B C D} {
