@@ -24,8 +24,8 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 - Now, use the _replace_grid_mod.py_ to create the desired number of files _IN.in_ and _SH.sh_, in this example we created 10 grid files.
   
   * **_replace_grid_mod.py_**:
-    ```python
-    #The range must bu n+1. Here we inted to create 10 files, so the range must be (1,11)
+  ```python
+  #The range must bu n+1. Here we inted to create 10 files, so the range must be (1,11)
     for x in range(1,11):
       #name of the _IN.in_ and _SH.sh_ freference files created before
 	    fin = open("IN.in", "rt")
@@ -54,7 +54,6 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 - Now, use the _grid_runner.sh_ script to create the grid boxes with **Glide | Schrödinger** using the _IN.in_ and _SH.sh_ files previously created
   
   * Example of _grid_runner.sh_:
-  
   ```bash
     #!/bin/bash
     #The range must be exactly
@@ -114,7 +113,7 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 - Now, use the _docking_runner.sh_ script to run all docking simulations with **Glide | Schrödinger** using the _IN.in_ and _SH.sh_ files previously created.
   
   * **_docking_runner.sh_**:
-    ```bash
+  ```bash
     #!/bin/bash
     #The range must be exactly
     for i in {1..10}
