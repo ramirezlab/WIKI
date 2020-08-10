@@ -2,7 +2,7 @@
 
 Here we use AutoDock Vina to perform massive docking of one ligand: 100 runs -> top-10 poses per run -> 1000 poses. The idea is to use a single ligand and do multiple dockings on the same receptor to extend the conformational sampling of that ligand. Then you can use a tool to cluster the conformers and know which are the most visited poses during the molecular docking.
 
-You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer. Also the _input.conf_ file with the configuration, and the script _loop_vina.sh_. 
+You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https://github.com/ramirezlab/WIKI/tree/master/Docking%20and%20Virtual%20Screening/Files) & [Openbabel](http://openbabel.org/wiki/Main_Page) installed in your computer. Also the _input.conf_ file with the configuration, and the script _loop_vina.sh_.
 
 
 #### Example of _input.conf_
@@ -32,15 +32,15 @@ num_modes = 1
 
 ##Carry out the first Docking and convert the outputs from .pdbqt to .pdb
 for i in {1..1}
-do 
+do
 	mkdir output
 	mkdir pdbqt
 	mkdir ./pdbqt/splitpdbqt1/
 	mkdir ./pdbqt/merge/
 	/path/to/vina --config input.conf --out ./pdbqt/merge/ligand$i.pdbqt >> ./output/output$i.log
-	/path/to/vina_split --input ./pdbqt/merge/ligand1.pdbqt --ligand ./pdbqt/splitpdbqt1/ligand 
+	/path/to/vina_split --input ./pdbqt/merge/ligand1.pdbqt --ligand ./pdbqt/splitpdbqt1/ligand
 	for e in {1..9}
-	do	
+	do
 		/path/to/babel -d ./pdbqt/splitpdbqt1/ligand0$e.pdbqt -r ./pdbqt/splitpdbqt1/ligando0$e.pdb
 	done
 		/path/to/babel -d ./pdbqt/splitpdbqt1/ligand10.pdbqt -r ./pdbqt/splitpdbqt1/ligando10.pdb
@@ -92,4 +92,4 @@ done
 ```
 
 
-Thanks!!!
+Thanks !!!
