@@ -52,8 +52,7 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 
 
 - Now, use the _grid_runner.sh_ script to create the grid boxes with **Glide | Schrödinger** using the _IN.in_ and _SH.sh_ files previously created
-  
-  * Example of _grid_runner.sh_:
+  * **_grid_runner.sh_**:
   ```bash
     #!/bin/bash
     #The range must be exactly
@@ -78,7 +77,7 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
   ```
   
   * Example of _dock.sh_ file:
-  ```
+  ```bash
     "${SCHRODINGER}/glide" "dock.in" "-OVERWRITE" "-NJOBS" "8" "-HOST" "localhost:8" "-TMPLAUNCHDIR" "-ATTACHED"
   ```
 
@@ -106,12 +105,10 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 	    fin2 = open("dock_%s.sh" % x, "wt")
 	    fin2.write(data2)
 	    fin2.close()
-
   ```
 
 
 - Now, use the _docking_runner.sh_ script to run all docking simulations with **Glide | Schrödinger** using the _IN.in_ and _SH.sh_ files previously created.
-  
   * **_docking_runner.sh_**:
   ```bash
     #!/bin/bash
