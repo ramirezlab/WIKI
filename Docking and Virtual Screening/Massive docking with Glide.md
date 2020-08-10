@@ -7,7 +7,7 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 1. Preparing the Grid boxes:
 - You need to align and save all the receptor files in a maestro type: _receptor_frame-1.maegz_, _receptor_frame-2.maegz_, _receptor_frame-3.maegz_, ... _receptor_frame-n.maegz_
 - Using the **Receptor grid generation** panel in **Maestro**, generate the _IN.in_ and _SH.sh_ reference files with the desired dimentions of the grid boxes
-  * Example of _IN.in_:
+  * Example of _IN.in_ file:
   ```bash
     GRID_CENTER   -25.4521884493, 22.4021285524, 35.6183791122
     GRIDFILE      receptor_frame-1.zip
@@ -16,15 +16,15 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
     RECEP_FILE    receptor_frame-1.maegz
   ```
   
-  * Example of _SH.sh_:
+  * Example of _SH.sh_ fille:
   ```bash
     "${SCHRODINGER}/glide" "IN.in" "-OVERWRITE" "-HOST" "localhost" "-TMPLAUNCHDIR" "-ATTACHED"
   ```
 
 - Now, use the _replace_grid_mod.py_ to create the desired number of files _IN.in_ and _SH.sh_, in this example we created 10 grid files.
-  * Example of _replace_grid_mod.py_:
   
-  ```python
+  * **_replace_grid_mod.py_**:
+    ```python
     #The range must bu n+1. Here we inted to create 10 files, so the range must be (1,11)
     for x in range(1,11):
       #name of the _IN.in_ and _SH.sh_ freference files created before
@@ -68,7 +68,7 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 
 2. Now is time to dock!!! 
 - Using the **Docking Panel** in **Maestro** generate the template _dock.in_ and _dock.sh_ reference files with the desired docking configurations
-  * Example of _dock.in_:
+  * Example of _dock.in_ file:
   ```bash
     GRIDFILE          grid_1.zip
     LIGANDFILE        Ligand-to-dock.maegz
@@ -78,13 +78,13 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
     PRECISION         SP
   ```
   
-  * Example of _dock.sh_:
+  * Example of _dock.sh_ file:
   ```
     "${SCHRODINGER}/glide" "dock.in" "-OVERWRITE" "-NJOBS" "8" "-HOST" "localhost:8" "-TMPLAUNCHDIR" "-ATTACHED"
   ```
 
 - Now, use the _replace_dock_mod.py_ to create the desired number of files _dock.in_ and _dock.sh_, in this example we created 10 docking files.
-  * Example of _replace_dock_mod.py_:
+  * **_replace_dock_mod.py_**:
   ```python
      #The range must bu n+1. Here we inted to create 10 files, so the range must be (1,11)
      for x in range(1,11):
@@ -113,9 +113,8 @@ You will need: [Glide | Schrödinger](https://www.schrodinger.com/glide).
 
 - Now, use the _docking_runner.sh_ script to run all docking simulations with **Glide | Schrödinger** using the _IN.in_ and _SH.sh_ files previously created.
   
-  * Example of _docking_runner.sh_:
-  
-  ```bash
+  * **_docking_runner.sh_**:
+    ```bash
     #!/bin/bash
     #The range must be exactly
     for i in {1..10}
