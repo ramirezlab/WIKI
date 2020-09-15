@@ -23,7 +23,7 @@ num_modes = 10
 
 
 
-#### loop_vina.sh
+#### loop_vina.sh to create 1000 poses of one ligand and one receptor
 
 ```bash
 #####################################################################
