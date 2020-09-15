@@ -8,6 +8,7 @@ You will need: [Vina](http://vina.scripps.edu/download.html), [Vina_split](https
 #### Example of _input.conf_
 ```json
 receptor = /path/to/receptor/receptor.pdbqt
+ligand = /path/to/ligand/ligand.pdbqt
 
 center_x = -14.33
 center_y = -41.71
@@ -16,10 +17,8 @@ size_x =  30
 size_y =  30
 size_z =  30
 
-out = /path/to/results/results.docked.pdbqt
-log = /path/to/results/results.docked.log
-cpu = 4
-num_modes = 1
+cpu = 8
+num_modes = 10
 ```
 
 
