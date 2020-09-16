@@ -37,7 +37,7 @@ do
 	mkdir pdbqt
 	mkdir ./pdbqt/splitpdbqt1/
 	mkdir ./pdbqt/merge/
-	/path/to/vina --config input.conf --out ./pdbqt/merge/ligand$i.pdbqt >> ./output/output$i.log
+	/path/to/vina --config input.conf --out ./pdbqt/merge/ligand$i.pdbqt > ./output/output$i.log
 	/path/to/vina_split --input ./pdbqt/merge/ligand1.pdbqt --ligand ./pdbqt/splitpdbqt1/ligand
 	for e in {1..9}
 	do
@@ -51,7 +51,7 @@ done
 for a in {2..5}
 do
 	mkdir ./pdbqt/splitpdbqt$a
-	/path/to/vina --config input.conf --ligand ./pdbqt/splitpdbqt1/ligand0$((RANDOM % (10 - 1 + 1 ) + 1 )).pdbqt --out ./pdbqt/merge/ligand$a.pdbqt >> ./output/output$a.log
+	/path/to/vina --config input.conf --ligand ./pdbqt/splitpdbqt1/ligand0$((RANDOM % (10 - 1 + 1 ) + 1 )).pdbqt --out ./pdbqt/merge/ligand$a.pdbqt > ./output/output$a.log
 	/path/to/vina_split --input ./pdbqt/merge/ligand$a.pdbqt --ligand ./pdbqt/splitpdbqt$a/ligand
        for e in {1..9}
        do      
@@ -65,7 +65,7 @@ done
 for t in {6..50}
 do
     mkdir ./pdbqt/splitpdbqt$t
-	/path/to/vina --config input.conf --ligand ./pdbqt/splitpdbqt$(( RANDOM % (5 - 1 + 1 ) + 1 ))/ligand0$(( RANDOM % (9 - 1 + 1 ) + 1 )).pdbqt --out ./pdbqt/merge/ligand$t.pdbqt >> ./output/output$t.log
+	/path/to/vina --config input.conf --ligand ./pdbqt/splitpdbqt$(( RANDOM % (5 - 1 + 1 ) + 1 ))/ligand0$(( RANDOM % (9 - 1 + 1 ) + 1 )).pdbqt --out ./pdbqt/merge/ligand$t.pdbqt > ./output/output$t.log
 	/path/to/vina_split --input ./pdbqt/merge/ligand$t.pdbqt --ligand ./pdbqt/splitpdbqt$t/ligand
        for y in {1..9}
        do
@@ -79,7 +79,7 @@ done
 for u in {51..100}
 do
         mkdir ./pdbqt/splitpdbqt$u
-       /path/to/vina --config input.conf --ligand ./pdbqt/splitpdbqt$(( RANDOM % (50 - 1 + 1 ) + 1 ))/ligand0$(( RANDOM % (9 - 1 + 1 ) + 1 )).pdbqt --out ./pdbqt/merge/ligand$u.pdbqt >> ./output/output$u.log
+       /path/to/vina --config input.conf --ligand ./pdbqt/splitpdbqt$(( RANDOM % (50 - 1 + 1 ) + 1 ))/ligand0$(( RANDOM % (9 - 1 + 1 ) + 1 )).pdbqt --out ./pdbqt/merge/ligand$u.pdbqt > ./output/output$u.log
        /path/to/vina_split --input ./pdbqt/merge/ligand$u.pdbqt --ligand ./pdbqt/splitpdbqt$u/ligand
        for w in {1..9}
        do
