@@ -109,7 +109,7 @@ quit
 
 ## Citing
 
-* Melissa Alegria-Arcos & David Ramírez. (2020, October 15). Getting residues within a given distance of a ligand during a trajectory (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.4089160
+* David Ramirez & Melissa Alegría-Arcos. (2020, October 15). Getting residues within a given distance of a ligand during a trajectory (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.4089160
 * [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4089160.svg)](https://doi.org/10.5281/zenodo.4089160)
 
 
