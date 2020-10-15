@@ -12,9 +12,9 @@ Example:
 #### contacts.tcl
 ```markdown
 #!/usr/bin/tclsh
-##########################################################################
-############# Created by Melissa Alegria Arcos - Ramirez Lab #############
-##########################################################################
+####################################################################################
+############# Created by Melissa Alegria & David Ramirez - Ramirez Lab #############
+####################################################################################
 # Get arguments.
 # "Usage: vmd -dispdev text -e contacts.tcl -args pdb dcd distancia receptor ligando outDir"
 # "Example: vmd -dispdev text -e contacts.tcl -args My_Complex.pdb Me_Complex.dcd 4 protein "resname LIG" output_resdiues"
@@ -106,6 +106,11 @@ cat $outName/residues-receptor.csv | tr '}' '\n' | sed s/.*\{//g | tr " " "_" | 
 
 quit
 ```
+
+## Citing
+
+* Melissa Alegria-Arcos & David Ramírez. (2020, October 15). Getting residues within a given distance of a ligand during a trajectory (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.4089160
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4089160.svg)](https://doi.org/10.5281/zenodo.4089160)
 
 
 
