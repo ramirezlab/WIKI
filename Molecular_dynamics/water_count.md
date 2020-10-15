@@ -42,6 +42,9 @@ for {set i 0} {$i < $n} {incr i} {
 close $output 
 ```
 
+## Citing
 
-Thanks!!!
+* Daniel Bustos, & David Ramirez. (2020, October 13). Script to count the water molecules in an ion channel pore (or any pore) along a MD trajectory (Version 1). Zenodo. http://doi.org/10.5281/zenodo.4086113
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4086113.svg)](https://doi.org/10.5281/zenodo.4086113)
+
 
