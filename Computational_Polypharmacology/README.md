@@ -1,4 +1,4 @@
-## Welcome to the Ramirez Lab Wiki - Docking & Virtual Screening section
+## Welcome to the Ramirez Lab Wiki - Computational polypharmacology
 
 You will find here tutorials, scripts and other open tools for pharmacoinformatics and drug design. The contributions have been done by the Ramirez Lab team.
 
