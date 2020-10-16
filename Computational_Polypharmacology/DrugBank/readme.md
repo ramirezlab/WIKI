@@ -7,8 +7,8 @@ The contributions have been done by the Ramirez Lab team.
 
 ## Citing
 
-* Jessica Martínez Bernal & David Ramírez. (2020, October 15). Massive docking with vina (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.4089225
-* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4089225.svg)](https://doi.org/10.5281/zenodo.4089225)
+* David Ramíez, & Melissa Alegría-Arcos. (2020, October 16). Approved drugs from Drugbank (Version 1). Zenodo. http://doi.org/10.5281/zenodo.4095861
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4095861.svg)](https://doi.org/10.5281/zenodo.4095861)
 
 
 Have fun!!!
