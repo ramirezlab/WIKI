@@ -42,12 +42,13 @@ set sel [atomselect top "$receptor and same residue as within $distancia of ($li
 ## Selection of CA from receptor
 set sel2 [atomselect top "$receptor and name CA and same residue as within $distancia of $ligando"]
 
-## Selection of ligand
+## Selection of ligand (If it is a Protein-Protein or Peptide-Protein interaction, comment the folloiwng line)
 set sel3 [atomselect top "($ligando) and same residue as within $distancia of $receptor"]
-
-## If it is a Protein-Protein or Peptide-Protein interaction, uncomment the second line and comment on the first one
 set sel4 $sel3 
+
+## If it is a Protein-Protein or Peptide-Protein interaction uncomment the following line 
 #set sel4 [atomselect top "($ligando) and name CA and same residue as within $distancia of ($receptor)"]
+
 
 
 set file [open $outName/residues-receptor.csv w]
@@ -101,7 +102,9 @@ close $file2
 close $file3
 close $file4
 
-echo "Residue,Occurrence,Percentage" >$outName/residues-receptor_total.csv 
+echo "Residue,Occurrence,Percentage" >$outName/residues-receptor_total.csv
+
+#In the following line please repalce the **1002** by the total number of frames in your simulation.
 cat $outName/residues-receptor.csv | tr '}' '\n' | sed s/.*\{//g | tr " " "_" | grep . | sort | sed s/\_//g | uniq -c | awk {{print $2","$1","$1*100/1002}} >>$outName/residues-receptor_total.csv 
 
 quit
