@@ -6,10 +6,12 @@ Here we use a KNIME workflow to post-process the output file *CSV* from a multip
 The workflow was programed with KNIME v 4.1.0, and can be found in */Files/Pharmacophores_matrix.knwf*
 
 ### Workflow
-
+![Imagen](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Files/Pharmacofore.png)
 
 
 Created by Carlos Peña-Varas - Ramirez Lab
+
+
 Have fun!!!
 
 
