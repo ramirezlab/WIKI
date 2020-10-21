@@ -49,4 +49,7 @@ cd PDBQTs
 obabel *.pdb -opdbqt -m -p 7.4 -xr
 ```
 Aca te toca seguir Lily
+sdf
+sDFad
+f
 
