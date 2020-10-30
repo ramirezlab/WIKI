@@ -69,9 +69,10 @@ num_modes = 10
 ```
 
 
-First to define the name of the files, the **tar** variable must be replaced with the PDBQTs name without the numbers from 1 to 100 , in our case is rot-AChE_4EY6 (from rot-AChE_4EY6_99,pdbqt). Also, In order to sort the input and output files established directories will be created, using the follow commands.
+First to define the name of the files, the **tar** variable must be replaced with the PDBQTs name without the numbers from 1 to 100 , in our case is rot-AChE_4EY6 (from *rot-AChE_4EY6_99.pdbqt*). Also, In order to sort the input and output files established directories will be created, using the follow commands.
 
-```tar="rot-AChE_4EY6" 
+```bash
+tar = "rot-AChE_4EY6" 
 mkdir ligands
 mv ligand.pdbqt ligands
 mkdir all
@@ -80,7 +81,7 @@ mkdir all/results/output
 mkdir all/results/all_mol2
 ```
 
-For each pdbqt from 1 to 100 it's going to create a vina configuration file (input.conf) with the parameters spicified above and will rename it to read the corresponding target pdbqt. Then it will run the first docking from which you will get 10 poses as result, which will be separated in different pdbqt files using vina_split and will be used as new input files to obtain a total of 1000 different poses. Each obtained result will be in pdbqt and mol2 format.
+For each pdbqt from 1 to 100 the script creates a vina configuration file (input.conf) with the parameters spicified above and also rename it to read the corresponding receptor pdbqt file. Then it will run the first docking from which you will get 10 poses as result, which will be separated in different pdbqt files using *vina_split* and will be used as new input files to obtain a total of 1000 different poses. Each obtained result will be in *pdbqt* and *mol2* format.
 
 ```bash 
 for s in {1..100}
