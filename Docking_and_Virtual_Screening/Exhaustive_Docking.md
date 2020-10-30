@@ -132,4 +132,12 @@ mv *.conf ./all/input/conf
 mv ligands ./all/input
 ````
 
-**Lily, falta poner las conlcusiones**
+## Lo que falta
+--> **David:** Fig con RMSD de la MDs del receptor
+
+--> **Lily:**
+- Fig del gridbox en VMD:  Prot siempre new cartoon, color orange,
+- Tabla con clusters y con estadistica de clusters significativos
+- Resultados docking: Prot + cluster mas poblado + cristal todo sin H´s
+- Matrices antes y despues del clustering
+
