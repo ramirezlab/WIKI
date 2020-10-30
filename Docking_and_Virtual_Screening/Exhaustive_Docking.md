@@ -95,21 +95,31 @@ for s in {1..100}
 		mkdir "$co"/pdbqt/split/
     
 		./vina --config "$co".conf --out ./"$co"/pdbqt/"$co"_1.pdbqt > ./"$co"/output/output_1.log             ### To Carry out the first Docking to obtain 10 poses
-  	./vina_split --input ./"$co"/pdbqt/"$co"_1.pdbqt --ligand ./"$co"/pdbqt/split/"$co"_                   ### Split the 10 poses from docking 1 into 10 new files
-    obabel ./"$co"/pdbqt/split/*.pdbqt -omol2 -m                                                           ### Convert .pdbqt from the results into .mol2 files to be analysed 	
+  		./vina_split --input ./"$co"/pdbqt/"$co"_1.pdbqt --ligand ./"$co"/pdbqt/split/"$co"_                   ### Split the 10 poses from docking 1 into 10 new files
+    		obabel ./"$co"/pdbqt/split/*.pdbqt -omol2 -m                                                           ### Convert .pdbqt from the results into .mol2 files to be analysed 	
 		mv "$co" all/results/output
-done 
+	done 
 ````
 
 ## 6. Clustering of conformers
-In order to be able to analyze the results, all mol2 obtained files will be saved in a single mol2 file, to subsequently create the clusters according to RMSD criteria using conformer_cluster.py script from schrodinger suite.
-            
-````$SCHRODINGER/utilities/structcat -i *.mol2 -o ./all/results/all.mol2                               ### Concat all .mol2 files into a single file
-mv *.mol2 ./all/results/all_mol2
+In order to be able to analyze the results, all *mol2* obtained files will be saved in a single *mol2* file, to subsequently create the clusters according to RMSD criteria using the conformer_cluster.py script from Schrödinger Suite.
 
-$SCHRODINGER/run conformer_cluster.py -a ha -l Average -n 0 -j cluster_"$tar" -in_place -comb -keep_rmsd_file ./all/results/all.mol2 &                ##### Clustering of conformers: the conformer_cluster.py script from schrodinger suite will be used to clustering the docking conformers based in the RMSD. To see all options open the help menu as: $SCHRODINGER/run conformer_cluster.py -h 
+First al *mol2* files will be merged into a silgle *mol2* file with the utility *structcat*, To see the help menu of the utility *structalign* use:
+> $SCHRODINGER/utilities/structcat -h
+            
+```bash
+$SCHRODINGER/utilities/structcat -i *.mol2 -o ./all/results/all.mol2
+mv *.mol2 ./all/results/all_mol2
+```
+
+Then, using the *conformer_cluster.py* all conformers will be clustered. To see the help menu of the script *conformer_cluster.py* use:
+> $SCHRODINGER/run conformer_cluster.py -h
+
+```bash
+$SCHRODINGER/run conformer_cluster.py -a ha -l Average -n 0 -j cluster_"$tar" -in_place -comb -keep_rmsd_file ./all/results/all.mol2 &
 ```` 
-Finally, just to order the following commands can be executed. 
+
+Finally, we will orde the results with the following commands: 
 
 ````sleep 20s
 mkdir all/input
