@@ -51,9 +51,10 @@ obabel *.pdb -opdbqt -m -p 7.4 -xr
 The PDBQT file *AChE_4EY6_0.pdbqt* was renamed to *AChE_4EY6_100.pdbqt*
 
 ## 5. Running exhaustive docking 
-To run the docking you need create in the same directory as vina executables an initial vina input.conf file, with the structure shown below, where you must specify the coordinates and dimensions of the gridbox (in angstroms). 
+To run the docking you should have in the same folder the *vina* and *vina_split* executables files, the ligand and receptors PDBQTs files, as well as the vina *input.conf* file. In this tutorial the ligand is called *ligand.pdbqt* The *input.conf* must contain the receptor and liagnds PDBQTs files as well as the gridbox (in angstroms) coordinates and dimensions. 
 
-```receptor = aaa.pdbqt
+```bash
+receptor = aaa.pdbqt
 ligand = ./ligands/ligand.pdbqt
 
 center_x = -14.02269725
@@ -63,12 +64,10 @@ size_x =  35
 size_y =  30
 size_z =  30
 
-
 cpu = 8
 num_modes = 10
 ```
 
-Also, the files obtained in step 4 (100 PDBQTs) and the ligand in pdbqt format must be in the same directory. **It is important that the ligand file is called ligand.pdbqt.
 
 First to define the name of the files, the **tar** variable must be replaced with the PDBQTs name without the numbers from 1 to 100 , in our case is rot-AChE_4EY6 (from rot-AChE_4EY6_99,pdbqt). Also, In order to sort the input and output files established directories will be created, using the follow commands.
 
