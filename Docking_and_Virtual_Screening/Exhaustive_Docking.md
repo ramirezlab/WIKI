@@ -48,7 +48,7 @@ cp *.pdb PDBQTs/
 cd PDBQTs
 obabel *.pdb -opdbqt -m -p 7.4 -xr
 ```
-*The PDBQT 0 file was renamed to the number 100
+The PDBQT file *AChE_4EY6_0.pdbqt* was renamed to *AChE_4EY6_100.pdbqt*
 
 ## 5. Running exhaustive docking 
 To run the docking you need create in the same directory as vina executables an initial vina input.conf file, with the structure shown below, where you must specify the coordinates and dimensions of the gridbox (in angstroms). 
