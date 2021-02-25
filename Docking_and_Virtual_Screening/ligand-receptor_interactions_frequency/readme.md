@@ -4,7 +4,8 @@
 To analyze the frequency of interactions between ligand and receptor on a set of poses we use scripts included on Schrödinger suit 2020 and in-house functional workflow built on Knime.
 ## 1. Requirements ##
 - Schrödinger suit 2020 or newer (full or academic Desmond version). 2020 poseviewer script include more interaction types that older versions. [Academic Desmond version](https://www.deshawresearch.com/downloads/download_desmond.cgi/).
--Knime, a programing software via functional work flows. [Knime website](https://www.knime.com/).
+- Knime, a programing software via functional work flows. [Knime website](https://www.knime.com/).
+- Our in-house Knime workflow to calculate interaction frequencies. [Cluster_interactions_frequency_v2.knwf](https://github.com/ramirezlab/WIKI/blob/master./Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/cluster_interactions_frequency_v2.knwf)
 - A set of receptor complex-ligand conformations, could be a poses obtained from molecular dynamics simulations or different poses that belong to a cluster. To test this pipe-line we provide a example cluster with all interactions already calculated on csv files. [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
 
 ## 2. Split receptor-ligand complex into separate files ##
@@ -60,10 +61,14 @@ To calculate the frequency of interactions in function on the number of poses of
 - **Table Creator:** The user need to list all ligand atoms on the first column and to which fragment it belongs.
 - **Excel Writer:**  Finally the user has to configure a path to where save the file as an Excel data sheet.
 
-<!-- subir imagen del workflow -->
+
+![image1](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png)
+
+Example of ligand fragment naming on table creator node:
+
+![image2](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_fragment_config.png)
 
 ## 5. Results ##
 The results table shows ligand framents, which resudue is interacting with and frequency of each interaction in relation with the number of poses.
 
-
-<!-- subir imagen de resultados-->
+![image3](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_results.png)
