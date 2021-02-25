@@ -5,7 +5,7 @@ To analyze the frequency of interactions between ligand and receptor on a set of
 ## 1. Requirements ##
 - Schrödinger suit 2020 or newer (full or academic Desmond version). 2020 poseviewer script include more interaction types that older versions. [Academic Desmond version](https://www.deshawresearch.com/downloads/download_desmond.cgi/).
 -Knime, a programing software via functional work flows. [Knime website](https://www.knime.com/).
-- A set of receptor complex-ligand conformations, could be a poses obtained from molecular dynamics simulations or different poses that belong to a cluster. To test this pipe-line we provide a example cluster with all files split and interactions calculated on csv files. [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
+- A set of receptor complex-ligand conformations, could be a poses obtained from molecular dynamics simulations or different poses that belong to a cluster. To test this pipe-line we provide a example cluster with all interactions already calculated on csv files. [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
 
 ## 2. Split receptor-ligand complex into separate files ##
 
