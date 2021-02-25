@@ -1,0 +1,760 @@
+Number of ligands: 1
+
+
+========== Hydrogen Bonds ===================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+HAccep nn      1 c1                     _:900(UNK)    25( O6 )    E:58(TYR) 22338( HH )  1.806
+HAccep nn      1 c1                     _:900(UNK)    32( O7 )   D:206(SER) 19496( HG )  1.838
+HAccep nn      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19507( HG1)  1.895
+HDonor nn      1 c1                     _:900(UNK)    69( H36)   D:205(SER) 19480( OG )  1.775
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+   HBond D:205(SER)            1        1
+    ligand title:                   c1    interactions:   1
+   HBond D:206(SER)            1        1
+    ligand title:                   c1    interactions:   1
+   HBond D:207(THR)            1        1
+    ligand title:                   c1    interactions:   1
+   HBond E:58(TYR)             1        1
+    ligand title:                   c1    interactions:   1
+Total Hydrogen Bonds interactions: 4
+
+========== Halogen Bonds ====================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Halogen Bonds interactions: 0
+
+========== Good Contacts ====================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:100(PHE) 17832( CE1)  4.125
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:100(PHE) 17834( CZ )  4.062
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:100(PHE) 17841( HE1)  3.474
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:100(PHE) 17843( HZ )  3.327
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:210(TYR) 19538( CG )  4.004
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:210(TYR) 19539( CD1)  4.013
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:210(TYR) 19540( CD2)  4.020
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:210(TYR) 19541( CE1)  4.059
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:210(TYR) 19542( CE2)  4.085
+     Good      1 c1                     _:900(UNK)     1( O1 )   D:210(TYR) 19543( CZ )  4.108
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:205(SER) 19479( CB )  3.712
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:205(SER) 19480( OG )  3.404
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:205(SER) 19483( HB3)  3.400
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:205(SER) 19484( HB2)  3.630
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:210(TYR) 19538( CG )  4.331
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:210(TYR) 19540( CD2)  3.890
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:210(TYR) 19542( CE2)  3.870
+     Good      1 c1                     _:900(UNK)     2( C1 )   D:210(TYR) 19543( CZ )  4.270
+     Good      1 c1                     _:900(UNK)     3( C2 )   D:205(SER) 19479( CB )  4.122
+     Good      1 c1                     _:900(UNK)     3( C2 )   D:205(SER) 19480( OG )  3.440
+     Good      1 c1                     _:900(UNK)     3( C2 )   D:207(THR) 19502( OG1)  3.631
+     Good      1 c1                     _:900(UNK)     3( C2 )   D:207(THR) 19507( HG1)  2.819
+     Good      1 c1                     _:900(UNK)     3( C2 )   D:210(TYR) 19542( CE2)  4.168
+     Good      1 c1                     _:900(UNK)     3( C2 )   D:210(TYR) 19543( CZ )  4.413
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:58(TYR) 22322( CB )  3.992
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:58(TYR) 22323( CG )  3.824
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:58(TYR) 22324( CD1)  3.723
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:58(TYR) 22332( HB3)  3.338
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22614( CB )  3.964
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22615( CG )  3.377
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22616( CD1)  3.872
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22617( CD2)  3.090
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22618( CE1)  4.054
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22619( CE2)  3.327
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22620( CZ )  3.796
+     Good      1 c1                     _:900(UNK)     4( O2 )    E:77(PHE) 22626( HD2)  3.313
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:58(TYR) 22323( CG )  4.015
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:58(TYR) 22324( CD1)  3.518
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:58(TYR) 22326( CE1)  3.650
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:58(TYR) 22328( CZ )  4.252
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:58(TYR) 22334( HD1)  3.586
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:77(PHE) 22615( CG )  4.189
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:77(PHE) 22617( CD2)  3.474
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:77(PHE) 22619( CE2)  3.247
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:77(PHE) 22620( CZ )  3.801
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:77(PHE) 22626( HD2)  3.612
+     Good      1 c1                     _:900(UNK)     5( C3 )    E:77(PHE) 22628( HE2)  3.223
+     Good      1 c1                     _:900(UNK)     6( C4 )   D:102(HIE) 17871( CD2)  4.320
+     Good      1 c1                     _:900(UNK)     6( C4 )   D:205(SER) 19480( OG )  3.769
+     Good      1 c1                     _:900(UNK)     6( C4 )   D:205(SER) 19485( HG )  3.385
+     Good      1 c1                     _:900(UNK)     6( C4 )    E:58(TYR) 22326( CE1)  4.465
+     Good      1 c1                     _:900(UNK)     6( C4 )    E:77(PHE) 22619( CE2)  3.954
+     Good      1 c1                     _:900(UNK)     6( C4 )    E:77(PHE) 22620( CZ )  4.150
+     Good      1 c1                     _:900(UNK)     7( O3 )   D:206(SER) 19491( OG )  3.599
+     Good      1 c1                     _:900(UNK)     7( O3 )   D:206(SER) 19496( HG )  3.211
+     Good      1 c1                     _:900(UNK)     7( O3 )   D:207(THR) 19508(HG21)  3.492
+     Good      1 c1                     _:900(UNK)     7( O3 )    E:77(PHE) 22614( CB )  3.696
+     Good      1 c1                     _:900(UNK)     7( O3 )    E:77(PHE) 22615( CG )  3.495
+     Good      1 c1                     _:900(UNK)     7( O3 )    E:77(PHE) 22616( CD1)  3.457
+     Good      1 c1                     _:900(UNK)     7( O3 )    E:77(PHE) 22617( CD2)  4.104
+     Good      1 c1                     _:900(UNK)     7( O3 )    E:77(PHE) 22618( CE1)  4.000
+     Good      1 c1                     _:900(UNK)     7( O3 )    E:77(PHE) 22623( HB3)  3.268
+     Good      1 c1                     _:900(UNK)     8( C5 )   D:206(SER) 19490( CB )  4.358
+     Good      1 c1                     _:900(UNK)     8( C5 )   D:206(SER) 19491( OG )  3.103
+     Good      1 c1                     _:900(UNK)     8( C5 )   D:206(SER) 19496( HG )  2.471
+     Good      1 c1                     _:900(UNK)     8( C5 )   D:207(THR) 19503( CG2)  4.215
+     Good      1 c1                     _:900(UNK)     8( C5 )   D:207(THR) 19508(HG21)  3.273
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:58(TYR) 22322( CB )  4.200
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:58(TYR) 22332( HB3)  3.578
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:58(TYR) 22333( HB2)  3.753
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:77(PHE) 22614( CB )  3.380
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:77(PHE) 22615( CG )  3.736
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:77(PHE) 22616( CD1)  4.035
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:77(PHE) 22617( CD2)  4.440
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:77(PHE) 22623( HB3)  2.860
+     Good      1 c1                     _:900(UNK)     8( C5 )    E:77(PHE) 22624( HB2)  3.066
+     Good      1 c1                     _:900(UNK)     9( C6 )   D:205(SER) 19480( OG )  3.634
+     Good      1 c1                     _:900(UNK)     9( C6 )   D:206(SER) 19491( OG )  3.488
+     Good      1 c1                     _:900(UNK)     9( C6 )   D:206(SER) 19496( HG )  3.229
+     Good      1 c1                     _:900(UNK)     9( C6 )    E:77(PHE) 22615( CG )  3.955
+     Good      1 c1                     _:900(UNK)     9( C6 )    E:77(PHE) 22616( CD1)  4.061
+     Good      1 c1                     _:900(UNK)     9( C6 )    E:77(PHE) 22617( CD2)  4.089
+     Good      1 c1                     _:900(UNK)     9( C6 )    E:77(PHE) 22618( CE1)  4.250
+     Good      1 c1                     _:900(UNK)     9( C6 )    E:77(PHE) 22619( CE2)  4.288
+     Good      1 c1                     _:900(UNK)     9( C6 )    E:77(PHE) 22620( CZ )  4.351
+     Good      1 c1                     _:900(UNK)    11( O5 )   D:207(THR) 19501( CB )  3.943
+     Good      1 c1                     _:900(UNK)    11( O5 )   D:207(THR) 19502( OG1)  3.118
+     Good      1 c1                     _:900(UNK)    11( O5 )   D:207(THR) 19503( CG2)  3.514
+     Good      1 c1                     _:900(UNK)    11( O5 )   D:207(THR) 19507( HG1)  2.605
+     Good      1 c1                     _:900(UNK)    11( O5 )   D:207(THR) 19508(HG21)  3.251
+     Good      1 c1                     _:900(UNK)    11( O5 )   D:207(THR) 19509(HG22)  2.995
+     Good      1 c1                     _:900(UNK)    12( C7 )   D:102(HIE) 17871( CD2)  3.627
+     Good      1 c1                     _:900(UNK)    12( C7 )   D:102(HIE) 17872( CE1)  4.247
+     Good      1 c1                     _:900(UNK)    12( C7 )   D:102(HIE) 17873( NE2)  3.429
+     Good      1 c1                     _:900(UNK)    12( C7 )   D:102(HIE) 17878( HD2)  3.578
+     Good      1 c1                     _:900(UNK)    12( C7 )    E:60(ASN) 22361( OD1)  4.155
+     Good      1 c1                     _:900(UNK)    12( C7 )   D:102(HIE) 27215( HE2)  3.256
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:100(PHE) 17843( HZ )  3.750
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:207(THR) 19502( OG1)  3.281
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:207(THR) 19507( HG1)  2.738
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:210(TYR) 19542( CE2)  4.117
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:210(TYR) 19543( CZ )  3.867
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:210(TYR) 19544( OH )  3.698
+     Good      1 c1                     _:900(UNK)    13( C8 )   D:210(TYR) 19553( HH )  3.434
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:160(TYR) 18778( CD1)  4.360
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:160(TYR) 18779( CD2)  4.201
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:160(TYR) 18780( CE1)  3.881
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:160(TYR) 18781( CE2)  3.693
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:160(TYR) 18782( CZ )  3.495
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:160(TYR) 18783( OH )  3.679
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:207(THR) 19502( OG1)  3.863
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:207(THR) 19503( CG2)  3.969
+     Good      1 c1                     _:900(UNK)    14( C9 )   D:207(THR) 19509(HG22)  3.110
+     Good      1 c1                     _:900(UNK)    14( C9 )   E:142(THR) 23752(HG23)  3.680
+     Good      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18777( CG )  4.236
+     Good      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18779( CD2)  3.732
+     Good      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18781( CE2)  3.560
+     Good      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18782( CZ )  3.936
+     Good      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18791( HE2)  3.672
+     Good      1 c1                     _:900(UNK)    15( C10)   D:161(ALA) 18793( N  )  3.410
+     Good      1 c1                     _:900(UNK)    15( C10)   D:161(ALA) 18794( CA )  3.775
+     Good      1 c1                     _:900(UNK)    15( C10)   D:161(ALA) 18798( H  )  2.589
+     Good      1 c1                     _:900(UNK)    15( C10)   D:161(ALA) 18799( HA )  3.030
+     Good      1 c1                     _:900(UNK)    15( C10)   D:207(THR) 19501( CB )  4.184
+     Good      1 c1                     _:900(UNK)    15( C10)   D:207(THR) 19502( OG1)  3.535
+     Good      1 c1                     _:900(UNK)    15( C10)   D:207(THR) 19503( CG2)  3.997
+     Good      1 c1                     _:900(UNK)    15( C10)   D:207(THR) 19509(HG22)  3.101
+     Good      1 c1                     _:900(UNK)    15( C10)   D:210(TYR) 19543( CZ )  4.362
+     Good      1 c1                     _:900(UNK)    15( C10)   D:210(TYR) 19544( OH )  3.314
+     Good      1 c1                     _:900(UNK)    15( C10)   D:210(TYR) 19553( HH )  3.154
+     Good      1 c1                     _:900(UNK)    15( C10)   E:130(MET) 23527( CB )  4.063
+     Good      1 c1                     _:900(UNK)    15( C10)   E:130(MET) 23529( SD )  3.825
+     Good      1 c1                     _:900(UNK)    15( C10)   E:130(MET) 23534( HB2)  3.236
+     Good      1 c1                     _:900(UNK)    16( C11)   D:205(SER) 19479( CB )  4.199
+     Good      1 c1                     _:900(UNK)    16( C11)   D:205(SER) 19480( OG )  3.205
+     Good      1 c1                     _:900(UNK)    16( C11)   D:205(SER) 19485( HG )  3.177
+     Good      1 c1                     _:900(UNK)    16( C11)    E:77(PHE) 22620( CZ )  4.374
+     Good      1 c1                     _:900(UNK)    17( C12)   D:205(SER) 19479( CB )  3.661
+     Good      1 c1                     _:900(UNK)    17( C12)   D:205(SER) 19480( OG )  3.093
+     Good      1 c1                     _:900(UNK)    17( C12)   D:205(SER) 19483( HB3)  3.794
+     Good      1 c1                     _:900(UNK)    17( C12)   D:205(SER) 19484( HB2)  3.372
+     Good      1 c1                     _:900(UNK)    17( C12)   D:205(SER) 19485( HG )  3.183
+     Good      1 c1                     _:900(UNK)    18( C13)   D:205(SER) 19480( OG )  3.617
+     Good      1 c1                     _:900(UNK)    18( C13)    E:77(PHE) 22616( CD1)  4.290
+     Good      1 c1                     _:900(UNK)    18( C13)    E:77(PHE) 22618( CE1)  4.002
+     Good      1 c1                     _:900(UNK)    18( C13)    E:77(PHE) 22619( CE2)  4.410
+     Good      1 c1                     _:900(UNK)    18( C13)    E:77(PHE) 22620( CZ )  4.057
+     Good      1 c1                     _:900(UNK)    19( C14)   D:206(SER) 19491( OG )  3.902
+     Good      1 c1                     _:900(UNK)    19( C14)   D:206(SER) 19496( HG )  3.379
+     Good      1 c1                     _:900(UNK)    19( C14)   D:207(THR) 19503( CG2)  3.576
+     Good      1 c1                     _:900(UNK)    19( C14)   D:207(THR) 19508(HG21)  2.908
+     Good      1 c1                     _:900(UNK)    19( C14)   D:207(THR) 19509(HG22)  3.399
+     Good      1 c1                     _:900(UNK)    19( C14)    E:77(PHE) 22614( CB )  3.689
+     Good      1 c1                     _:900(UNK)    19( C14)    E:77(PHE) 22615( CG )  4.330
+     Good      1 c1                     _:900(UNK)    19( C14)    E:77(PHE) 22616( CD1)  4.392
+     Good      1 c1                     _:900(UNK)    19( C14)    E:77(PHE) 22623( HB3)  2.795
+     Good      1 c1                     _:900(UNK)    19( C14)    E:77(PHE) 22624( HB2)  3.651
+     Good      1 c1                     _:900(UNK)    19( C14)   E:142(THR) 23743( CB )  4.342
+     Good      1 c1                     _:900(UNK)    19( C14)   E:142(THR) 23744( OG1)  3.432
+     Good      1 c1                     _:900(UNK)    19( C14)   E:142(THR) 23745( CG2)  4.163
+     Good      1 c1                     _:900(UNK)    19( C14)   E:142(THR) 23750(HG21)  3.416
+     Good      1 c1                     _:900(UNK)    20( C15)   D:206(SER) 19491( OG )  4.152
+     Good      1 c1                     _:900(UNK)    20( C15)   D:207(THR) 19503( CG2)  3.960
+     Good      1 c1                     _:900(UNK)    20( C15)   D:207(THR) 19508(HG21)  3.410
+     Good      1 c1                     _:900(UNK)    20( C15)    E:77(PHE) 22614( CB )  4.382
+     Good      1 c1                     _:900(UNK)    20( C15)    E:77(PHE) 22623( HB3)  3.543
+     Good      1 c1                     _:900(UNK)    20( C15)    E:79(ALA) 22654( CB )  3.862
+     Good      1 c1                     _:900(UNK)    20( C15)    E:79(ALA) 22659( HB3)  2.874
+     Good      1 c1                     _:900(UNK)    20( C15)   E:142(THR) 23743( CB )  4.092
+     Good      1 c1                     _:900(UNK)    20( C15)   E:142(THR) 23744( OG1)  3.338
+     Good      1 c1                     _:900(UNK)    20( C15)   E:142(THR) 23745( CG2)  4.229
+     Good      1 c1                     _:900(UNK)    20( C15)   E:142(THR) 23750(HG21)  3.461
+     Good      1 c1                     _:900(UNK)    21( C16)    E:57(MET) 22302( CA )  4.341
+     Good      1 c1                     _:900(UNK)    21( C16)    E:57(MET) 22310( HA )  3.340
+     Good      1 c1                     _:900(UNK)    21( C16)    E:58(TYR) 22318( N  )  4.051
+     Good      1 c1                     _:900(UNK)    21( C16)    E:58(TYR) 22330( H  )  3.490
+     Good      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22611( CA )  4.306
+     Good      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22612( C  )  3.507
+     Good      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22613( O  )  3.171
+     Good      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22614( CB )  3.819
+     Good      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22623( HB3)  3.187
+     Good      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22624( HB2)  3.520
+     Good      1 c1                     _:900(UNK)    21( C16)    E:78(PHE) 22630( N  )  3.934
+     Good      1 c1                     _:900(UNK)    21( C16)    E:78(PHE) 22631( CA )  4.167
+     Good      1 c1                     _:900(UNK)    21( C16)    E:78(PHE) 22632( C  )  3.792
+     Good      1 c1                     _:900(UNK)    21( C16)    E:79(ALA) 22650( N  )  3.629
+     Good      1 c1                     _:900(UNK)    21( C16)    E:79(ALA) 22651( CA )  4.148
+     Good      1 c1                     _:900(UNK)    21( C16)    E:79(ALA) 22654( CB )  3.570
+     Good      1 c1                     _:900(UNK)    21( C16)    E:79(ALA) 22657( HB1)  3.457
+     Good      1 c1                     _:900(UNK)    21( C16)    E:79(ALA) 22659( HB3)  2.847
+     Good      1 c1                     _:900(UNK)    21( C16)   E:142(THR) 23744( OG1)  3.552
+     Good      1 c1                     _:900(UNK)    21( C16)   E:142(THR) 23749( HG1)  3.465
+     Good      1 c1                     _:900(UNK)    22( C17)   D:206(SER) 19490( CB )  3.686
+     Good      1 c1                     _:900(UNK)    22( C17)   D:206(SER) 19491( OG )  3.346
+     Good      1 c1                     _:900(UNK)    22( C17)   D:206(SER) 19495( HB2)  3.014
+     Good      1 c1                     _:900(UNK)    22( C17)   D:206(SER) 19496( HG )  2.952
+     Good      1 c1                     _:900(UNK)    22( C17)   D:207(THR) 19503( CG2)  3.754
+     Good      1 c1                     _:900(UNK)    22( C17)   D:207(THR) 19508(HG21)  3.147
+     Good      1 c1                     _:900(UNK)    22( C17)   D:207(THR) 19510(HG23)  3.386
+     Good      1 c1                     _:900(UNK)    22( C17)    E:79(ALA) 22654( CB )  4.227
+     Good      1 c1                     _:900(UNK)    22( C17)    E:79(ALA) 22659( HB3)  3.386
+     Good      1 c1                     _:900(UNK)    23( C18)    E:58(TYR) 22328( CZ )  4.114
+     Good      1 c1                     _:900(UNK)    23( C18)    E:58(TYR) 22329( OH )  3.510
+     Good      1 c1                     _:900(UNK)    23( C18)    E:58(TYR) 22338( HH )  2.740
+     Good      1 c1                     _:900(UNK)    24( C19)   D:203(VAL) 19447( CG1)  3.927
+     Good      1 c1                     _:900(UNK)    24( C19)   D:203(VAL) 19452(HG11)  3.238
+     Good      1 c1                     _:900(UNK)    24( C19)   D:203(VAL) 19453(HG12)  3.768
+     Good      1 c1                     _:900(UNK)    24( C19)   D:204(GLN) 19461( O  )  3.909
+     Good      1 c1                     _:900(UNK)    24( C19)    E:58(TYR) 22329( OH )  4.067
+     Good      1 c1                     _:900(UNK)    24( C19)    E:58(TYR) 22338( HH )  3.496
+     Good      1 c1                     _:900(UNK)    25( O6 )    E:58(TYR) 22326( CE1)  3.737
+     Good      1 c1                     _:900(UNK)    25( O6 )    E:58(TYR) 22328( CZ )  3.460
+     Good      1 c1                     _:900(UNK)    25( O6 )    E:58(TYR) 22329( OH )  2.719
+     Good      1 c1                     _:900(UNK)    25( O6 )    E:58(TYR) 22336( HE1)  3.418
+     Good      1 c1                     _:900(UNK)    26( C20)   D:159(SER) 18764( O  )  4.126
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19537( CB )  3.835
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19538( CG )  3.511
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19539( CD1)  3.616
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19540( CD2)  3.911
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19541( CE1)  4.112
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19542( CE2)  4.389
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19547( HB3)  3.649
+     Good      1 c1                     _:900(UNK)    26( C20)   D:210(TYR) 19548( HB2)  3.554
+     Good      1 c1                     _:900(UNK)    26( C20)   D:212(VAL) 19576( CG2)  4.326
+     Good      1 c1                     _:900(UNK)    27( C21)   D:100(PHE) 17832( CE1)  3.637
+     Good      1 c1                     _:900(UNK)    27( C21)   D:100(PHE) 17834( CZ )  4.017
+     Good      1 c1                     _:900(UNK)    27( C21)   D:100(PHE) 17841( HE1)  3.114
+     Good      1 c1                     _:900(UNK)    27( C21)   D:158(GLY) 18756( C  )  4.400
+     Good      1 c1                     _:900(UNK)    27( C21)   D:158(GLY) 18759( HA3)  3.733
+     Good      1 c1                     _:900(UNK)    27( C21)   D:159(SER) 18763( C  )  4.374
+     Good      1 c1                     _:900(UNK)    27( C21)   D:159(SER) 18764( O  )  3.376
+     Good      1 c1                     _:900(UNK)    27( C21)   D:210(TYR) 19538( CG )  4.326
+     Good      1 c1                     _:900(UNK)    27( C21)   D:210(TYR) 19539( CD1)  4.024
+     Good      1 c1                     _:900(UNK)    27( C21)   D:212(VAL) 19576( CG2)  4.172
+     Good      1 c1                     _:900(UNK)    27( C21)   D:212(VAL) 19584(HG22)  3.454
+     Good      1 c1                     _:900(UNK)    28( C22)   D:100(PHE) 17832( CE1)  4.168
+     Good      1 c1                     _:900(UNK)    28( C22)   D:100(PHE) 17834( CZ )  4.297
+     Good      1 c1                     _:900(UNK)    28( C22)   D:102(HIE) 17868( CB )  4.332
+     Good      1 c1                     _:900(UNK)    28( C22)   D:102(HIE) 17877( HB2)  3.335
+     Good      1 c1                     _:900(UNK)    28( C22)   D:158(GLY) 18754( N  )  4.131
+     Good      1 c1                     _:900(UNK)    28( C22)   D:158(GLY) 18755( CA )  4.215
+     Good      1 c1                     _:900(UNK)    28( C22)   D:158(GLY) 18759( HA3)  3.538
+     Good      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19575( CG1)  4.061
+     Good      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19576( CG2)  3.711
+     Good      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19582(HG13)  3.357
+     Good      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19583(HG21)  3.253
+     Good      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19584(HG22)  3.188
+     Good      1 c1                     _:900(UNK)    29( C23)   D:102(HIE) 17868( CB )  3.582
+     Good      1 c1                     _:900(UNK)    29( C23)   D:102(HIE) 17869( CG )  3.903
+     Good      1 c1                     _:900(UNK)    29( C23)   D:102(HIE) 17871( CD2)  4.190
+     Good      1 c1                     _:900(UNK)    29( C23)   D:102(HIE) 17876( HB3)  3.710
+     Good      1 c1                     _:900(UNK)    29( C23)   D:102(HIE) 17877( HB2)  2.719
+     Good      1 c1                     _:900(UNK)    29( C23)   D:212(VAL) 19575( CG1)  4.191
+     Good      1 c1                     _:900(UNK)    29( C23)   D:212(VAL) 19576( CG2)  4.052
+     Good      1 c1                     _:900(UNK)    29( C23)   D:212(VAL) 19580(HG11)  3.644
+     Good      1 c1                     _:900(UNK)    29( C23)   D:212(VAL) 19583(HG21)  3.229
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17827( O  )  3.562
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17829( CG )  4.377
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17830( CD1)  3.869
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17832( CE1)  3.572
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17833( CE2)  4.266
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17834( CZ )  3.790
+     Good      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17841( HE1)  3.759
+     Good      1 c1                     _:900(UNK)    30( C24)   D:102(HIE) 17864( N  )  4.176
+     Good      1 c1                     _:900(UNK)    30( C24)   D:102(HIE) 17865( CA )  4.373
+     Good      1 c1                     _:900(UNK)    30( C24)   D:102(HIE) 17868( CB )  3.773
+     Good      1 c1                     _:900(UNK)    30( C24)   D:102(HIE) 17877( HB2)  2.798
+     Good      1 c1                     _:900(UNK)    30( C24)   D:157(PHE) 18735( CA )  4.128
+     Good      1 c1                     _:900(UNK)    30( C24)   D:157(PHE) 18736( C  )  3.864
+     Good      1 c1                     _:900(UNK)    30( C24)   D:157(PHE) 18746( HA )  3.312
+     Good      1 c1                     _:900(UNK)    30( C24)   D:158(GLY) 18754( N  )  3.366
+     Good      1 c1                     _:900(UNK)    30( C24)   D:158(GLY) 18755( CA )  3.841
+     Good      1 c1                     _:900(UNK)    30( C24)   D:158(GLY) 18756( C  )  4.031
+     Good      1 c1                     _:900(UNK)    30( C24)   D:158(GLY) 18757( O  )  4.011
+     Good      1 c1                     _:900(UNK)    30( C24)   D:158(GLY) 18758( H  )  3.135
+     Good      1 c1                     _:900(UNK)    30( C24)   D:158(GLY) 18759( HA3)  3.556
+     Good      1 c1                     _:900(UNK)    30( C24)   D:212(VAL) 19582(HG13)  3.684
+     Good      1 c1                     _:900(UNK)    31( H1 )   D:100(PHE) 17843( HZ )  2.956
+     Good      1 c1                     _:900(UNK)    31( H1 )    E:77(PHE) 22616( CD1)  3.492
+     Good      1 c1                     _:900(UNK)    31( H1 )    E:77(PHE) 22618( CE1)  3.007
+     Good      1 c1                     _:900(UNK)    31( H1 )    E:77(PHE) 22619( CE2)  3.773
+     Good      1 c1                     _:900(UNK)    31( H1 )    E:77(PHE) 22620( CZ )  3.162
+     Good      1 c1                     _:900(UNK)    32( O7 )   D:206(SER) 19490( CB )  3.770
+     Good      1 c1                     _:900(UNK)    32( O7 )   D:206(SER) 19491( OG )  2.714
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:58(TYR) 22322( CB )  3.108
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:58(TYR) 22323( CG )  3.843
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:58(TYR) 22332( HB3)  2.692
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:58(TYR) 22333( HB2)  2.550
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:77(PHE) 22614( CB )  3.603
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:77(PHE) 22615( CG )  4.130
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:77(PHE) 22623( HB3)  3.353
+     Good      1 c1                     _:900(UNK)    32( O7 )    E:77(PHE) 22624( HB2)  2.922
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:203(VAL) 19447( CG1)  3.954
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:203(VAL) 19453(HG12)  3.339
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:210(TYR) 19537( CB )  3.116
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:210(TYR) 19538( CG )  3.182
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:210(TYR) 19539( CD1)  3.724
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:210(TYR) 19540( CD2)  3.570
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:210(TYR) 19547( HB3)  3.062
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:210(TYR) 19548( HB2)  2.567
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:212(VAL) 19576( CG2)  3.610
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:212(VAL) 19583(HG21)  3.057
+     Good      1 c1                     _:900(UNK)    33( O8 )   D:212(VAL) 19584(HG22)  3.363
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:205(SER) 19479( CB )  3.328
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:205(SER) 19480( OG )  2.736
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:205(SER) 19483( HB3)  2.879
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:206(SER) 19491( OG )  3.642
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19497( N  )  3.679
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19501( CB )  3.774
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19502( OG1)  2.801
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19503( CG2)  3.983
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19504( H  )  2.719
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19508(HG21)  3.369
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:210(TYR) 19542( CE2)  3.766
+     Good      1 c1                     _:900(UNK)    34( O9 )   D:210(TYR) 19552( HE2)  3.335
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:205(SER) 19479( CB )  3.010
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:205(SER) 19480( OG )  3.098
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:205(SER) 19483( HB3)  2.518
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:205(SER) 19484( HB2)  2.936
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:210(TYR) 19538( CG )  3.605
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:210(TYR) 19540( CD2)  2.978
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:210(TYR) 19542( CE2)  3.126
+     Good      1 c1                     _:900(UNK)    35( H2 )   D:210(TYR) 19550( HD2)  3.045
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:58(TYR) 22323( CG )  3.470
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:58(TYR) 22324( CD1)  2.673
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:58(TYR) 22326( CE1)  2.749
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:58(TYR) 22328( CZ )  3.594
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:58(TYR) 22334( HD1)  2.678
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:58(TYR) 22336( HE1)  2.813
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:77(PHE) 22617( CD2)  3.306
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:77(PHE) 22619( CE2)  3.153
+     Good      1 c1                     _:900(UNK)    36( H3 )    E:77(PHE) 22628( HE2)  2.875
+     Good      1 c1                     _:900(UNK)    37( H4 )   D:205(SER) 19480( OG )  2.818
+     Good      1 c1                     _:900(UNK)    37( H4 )   D:206(SER) 19491( OG )  2.569
+     Good      1 c1                     _:900(UNK)    37( H4 )   D:206(SER) 19496( HG )  2.487
+     Good      1 c1                     _:900(UNK)    38( H5 )   D:102(HIE) 17869( CG )  3.596
+     Good      1 c1                     _:900(UNK)    38( H5 )   D:102(HIE) 17871( CD2)  2.789
+     Good      1 c1                     _:900(UNK)    38( H5 )   D:102(HIE) 17872( CE1)  3.657
+     Good      1 c1                     _:900(UNK)    38( H5 )   D:102(HIE) 17873( NE2)  2.891
+     Good      1 c1                     _:900(UNK)    38( H5 )   D:102(HIE) 17878( HD2)  2.807
+     Good      1 c1                     _:900(UNK)    39( H6 )   D:102(HIE) 17871( CD2)  3.525
+     Good      1 c1                     _:900(UNK)    39( H6 )   D:102(HIE) 17872( CE1)  3.775
+     Good      1 c1                     _:900(UNK)    39( H6 )   D:102(HIE) 17873( NE2)  2.940
+     Good      1 c1                     _:900(UNK)    39( H6 )    E:60(ASN) 22361( OD1)  3.130
+     Good      1 c1                     _:900(UNK)    39( H6 )   D:102(HIE) 27215( HE2)  2.515
+     Good      1 c1                     _:900(UNK)    40( H7 )   D:100(PHE) 17832( CE1)  3.696
+     Good      1 c1                     _:900(UNK)    40( H7 )   D:100(PHE) 17834( CZ )  3.496
+     Good      1 c1                     _:900(UNK)    40( H7 )   D:100(PHE) 17843( HZ )  2.740
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:207(THR) 19502( OG1)  2.796
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:207(THR) 19507( HG1)  2.523
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:210(TYR) 19541( CE1)  3.464
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:210(TYR) 19542( CE2)  3.216
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:210(TYR) 19543( CZ )  2.802
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:210(TYR) 19544( OH )  2.654
+     Good      1 c1                     _:900(UNK)    41( H8 )   D:210(TYR) 19553( HH )  2.511
+     Good      1 c1                     _:900(UNK)    42( H9 )   D:160(TYR) 18781( CE2)  3.671
+     Good      1 c1                     _:900(UNK)    42( H9 )   D:160(TYR) 18782( CZ )  3.395
+     Good      1 c1                     _:900(UNK)    42( H9 )   D:160(TYR) 18783( OH )  3.195
+     Good      1 c1                     _:900(UNK)    42( H9 )   D:207(THR) 19503( CG2)  3.759
+     Good      1 c1                     _:900(UNK)    42( H9 )   D:207(THR) 19509(HG22)  2.814
+     Good      1 c1                     _:900(UNK)    42( H9 )   E:142(THR) 23745( CG2)  3.463
+     Good      1 c1                     _:900(UNK)    42( H9 )   E:142(THR) 23752(HG23)  2.754
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18777( CG )  3.750
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18778( CD1)  3.391
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18779( CD2)  3.706
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18780( CE1)  2.899
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18781( CE2)  3.253
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18782( CZ )  2.798
+     Good      1 c1                     _:900(UNK)    43( H10)   D:160(TYR) 18783( OH )  3.175
+     Good      1 c1                     _:900(UNK)    44( H11)   D:160(TYR) 18777( CG )  3.733
+     Good      1 c1                     _:900(UNK)    44( H11)   D:160(TYR) 18779( CD2)  2.933
+     Good      1 c1                     _:900(UNK)    44( H11)   D:160(TYR) 18781( CE2)  2.720
+     Good      1 c1                     _:900(UNK)    44( H11)   D:160(TYR) 18782( CZ )  3.399
+     Good      1 c1                     _:900(UNK)    44( H11)   D:160(TYR) 18789( HD2)  3.083
+     Good      1 c1                     _:900(UNK)    44( H11)   D:160(TYR) 18791( HE2)  2.700
+     Good      1 c1                     _:900(UNK)    44( H11)   D:161(ALA) 18793( N  )  3.216
+     Good      1 c1                     _:900(UNK)    44( H11)   D:161(ALA) 18794( CA )  3.477
+     Good      1 c1                     _:900(UNK)    44( H11)   D:161(ALA) 18798( H  )  2.631
+     Good      1 c1                     _:900(UNK)    44( H11)   D:161(ALA) 18799( HA )  2.803
+     Good      1 c1                     _:900(UNK)    44( H11)   E:130(MET) 23527( CB )  3.178
+     Good      1 c1                     _:900(UNK)    44( H11)   E:130(MET) 23529( SD )  3.626
+     Good      1 c1                     _:900(UNK)    44( H11)   E:130(MET) 23534( HB2)  2.264
+     Good      1 c1                     _:900(UNK)    45( H12)   D:161(ALA) 18799( HA )  2.904
+     Good      1 c1                     _:900(UNK)    45( H12)   D:207(THR) 19501( CB )  3.223
+     Good      1 c1                     _:900(UNK)    45( H12)   D:207(THR) 19502( OG1)  2.786
+     Good      1 c1                     _:900(UNK)    45( H12)   D:207(THR) 19503( CG2)  3.148
+     Good      1 c1                     _:900(UNK)    45( H12)   D:207(THR) 19506( HB )  3.063
+     Good      1 c1                     _:900(UNK)    45( H12)   D:207(THR) 19509(HG22)  2.322
+     Good      1 c1                     _:900(UNK)    45( H12)   D:210(TYR) 19544( OH )  2.955
+     Good      1 c1                     _:900(UNK)    45( H12)   D:210(TYR) 19553( HH )  2.570
+     Good      1 c1                     _:900(UNK)    45( H12)   E:130(MET) 23529( SD )  3.035
+     Good      1 c1                     _:900(UNK)    46( H13)   D:160(TYR) 18774( C  )  3.660
+     Good      1 c1                     _:900(UNK)    46( H13)   D:160(TYR) 18779( CD2)  3.750
+     Good      1 c1                     _:900(UNK)    46( H13)   D:160(TYR) 18785( HA )  3.078
+     Good      1 c1                     _:900(UNK)    46( H13)   D:161(ALA) 18793( N  )  2.671
+     Good      1 c1                     _:900(UNK)    46( H13)   D:161(ALA) 18794( CA )  3.303
+     Good      1 c1                     _:900(UNK)    46( H13)   D:161(ALA) 18799( HA )  2.773
+     Good      1 c1                     _:900(UNK)    46( H13)   D:210(TYR) 19543( CZ )  3.583
+     Good      1 c1                     _:900(UNK)    46( H13)   D:210(TYR) 19544( OH )  2.687
+     Good      1 c1                     _:900(UNK)    46( H13)   D:210(TYR) 19553( HH )  2.808
+     Good      1 c1                     _:900(UNK)    47( H14)   D:203(VAL) 19453(HG12)  2.971
+     Good      1 c1                     _:900(UNK)    47( H14)   D:205(SER) 19479( CB )  3.700
+     Good      1 c1                     _:900(UNK)    47( H14)   D:205(SER) 19480( OG )  3.390
+     Good      1 c1                     _:900(UNK)    47( H14)   D:205(SER) 19484( HB2)  3.107
+     Good      1 c1                     _:900(UNK)    48( H15)    E:77(PHE) 22614( CB )  3.111
+     Good      1 c1                     _:900(UNK)    48( H15)    E:77(PHE) 22615( CG )  3.758
+     Good      1 c1                     _:900(UNK)    48( H15)    E:77(PHE) 22616( CD1)  3.683
+     Good      1 c1                     _:900(UNK)    48( H15)    E:77(PHE) 22625( HD1)  3.117
+     Good      1 c1                     _:900(UNK)    48( H15)   E:142(THR) 23744( OG1)  2.777
+     Good      1 c1                     _:900(UNK)    49( H16)   D:207(THR) 19503( CG2)  2.612
+     Good      1 c1                     _:900(UNK)    49( H16)   D:207(THR) 19509(HG22)  2.333
+     Good      1 c1                     _:900(UNK)    49( H16)   D:207(THR) 19510(HG23)  3.012
+     Good      1 c1                     _:900(UNK)    49( H16)   E:142(THR) 23745( CG2)  3.690
+     Good      1 c1                     _:900(UNK)    49( H16)   E:142(THR) 23750(HG21)  2.831
+     Good      1 c1                     _:900(UNK)    50( H17)    E:79(ALA) 22654( CB )  3.256
+     Good      1 c1                     _:900(UNK)    50( H17)    E:79(ALA) 22659( HB3)  2.181
+     Good      1 c1                     _:900(UNK)    50( H17)   E:142(THR) 23743( CB )  3.136
+     Good      1 c1                     _:900(UNK)    50( H17)   E:142(THR) 23744( OG1)  2.645
+     Good      1 c1                     _:900(UNK)    50( H17)   E:142(THR) 23745( CG2)  3.302
+     Good      1 c1                     _:900(UNK)    50( H17)   E:142(THR) 23748( HB )  2.896
+     Good      1 c1                     _:900(UNK)    50( H17)   E:142(THR) 23750(HG21)  2.586
+     Good      1 c1                     _:900(UNK)    51( H18)    E:57(MET) 22303( C  )  3.771
+     Good      1 c1                     _:900(UNK)    51( H18)    E:57(MET) 22310( HA )  3.012
+     Good      1 c1                     _:900(UNK)    51( H18)    E:58(TYR) 22318( N  )  3.103
+     Good      1 c1                     _:900(UNK)    51( H18)    E:58(TYR) 22322( CB )  3.601
+     Good      1 c1                     _:900(UNK)    51( H18)    E:58(TYR) 22330( H  )  2.583
+     Good      1 c1                     _:900(UNK)    51( H18)    E:77(PHE) 22612( C  )  3.289
+     Good      1 c1                     _:900(UNK)    51( H18)    E:77(PHE) 22613( O  )  2.710
+     Good      1 c1                     _:900(UNK)    51( H18)    E:77(PHE) 22614( CB )  3.365
+     Good      1 c1                     _:900(UNK)    51( H18)    E:77(PHE) 22623( HB3)  3.008
+     Good      1 c1                     _:900(UNK)    51( H18)    E:77(PHE) 22624( HB2)  2.797
+     Good      1 c1                     _:900(UNK)    52( H19)    E:56(ASP) 22292( O  )  3.499
+     Good      1 c1                     _:900(UNK)    52( H19)    E:57(MET) 22310( HA )  2.878
+     Good      1 c1                     _:900(UNK)    52( H19)    E:77(PHE) 22613( O  )  3.488
+     Good      1 c1                     _:900(UNK)    52( H19)    E:78(PHE) 22632( C  )  3.649
+     Good      1 c1                     _:900(UNK)    52( H19)    E:79(ALA) 22650( N  )  3.122
+     Good      1 c1                     _:900(UNK)    52( H19)    E:79(ALA) 22651( CA )  3.559
+     Good      1 c1                     _:900(UNK)    52( H19)    E:79(ALA) 22654( CB )  2.850
+     Good      1 c1                     _:900(UNK)    52( H19)    E:79(ALA) 22657( HB1)  2.501
+     Good      1 c1                     _:900(UNK)    52( H19)    E:79(ALA) 22659( HB3)  2.382
+     Good      1 c1                     _:900(UNK)    53( H20)    E:77(PHE) 22611( CA )  3.624
+     Good      1 c1                     _:900(UNK)    53( H20)    E:77(PHE) 22612( C  )  2.766
+     Good      1 c1                     _:900(UNK)    53( H20)    E:77(PHE) 22613( O  )  2.769
+     Good      1 c1                     _:900(UNK)    53( H20)    E:77(PHE) 22614( CB )  3.395
+     Good      1 c1                     _:900(UNK)    53( H20)    E:77(PHE) 22623( HB3)  2.695
+     Good      1 c1                     _:900(UNK)    53( H20)    E:78(PHE) 22630( N  )  2.980
+     Good      1 c1                     _:900(UNK)    53( H20)    E:78(PHE) 22631( CA )  3.315
+     Good      1 c1                     _:900(UNK)    53( H20)    E:78(PHE) 22632( C  )  2.942
+     Good      1 c1                     _:900(UNK)    53( H20)    E:78(PHE) 22633( O  )  3.277
+     Good      1 c1                     _:900(UNK)    53( H20)    E:79(ALA) 22650( N  )  3.106
+     Good      1 c1                     _:900(UNK)    53( H20)    E:79(ALA) 22654( CB )  3.624
+     Good      1 c1                     _:900(UNK)    53( H20)    E:79(ALA) 22659( HB3)  2.943
+     Good      1 c1                     _:900(UNK)    53( H20)   E:142(THR) 23744( OG1)  2.863
+     Good      1 c1                     _:900(UNK)    53( H20)   E:142(THR) 23749( HG1)  2.609
+     Good      1 c1                     _:900(UNK)    54( H21)   D:206(SER) 19490( CB )  3.017
+     Good      1 c1                     _:900(UNK)    54( H21)   D:206(SER) 19491( OG )  2.792
+     Good      1 c1                     _:900(UNK)    54( H21)   D:206(SER) 19495( HB2)  2.395
+     Good      1 c1                     _:900(UNK)    54( H21)   D:206(SER) 19496( HG )  2.253
+     Good      1 c1                     _:900(UNK)    55( H22)   D:206(SER) 19488( C  )  3.760
+     Good      1 c1                     _:900(UNK)    55( H22)   D:206(SER) 19490( CB )  3.344
+     Good      1 c1                     _:900(UNK)    55( H22)   D:206(SER) 19491( OG )  2.984
+     Good      1 c1                     _:900(UNK)    55( H22)   D:206(SER) 19495( HB2)  2.764
+     Good      1 c1                     _:900(UNK)    55( H22)   D:207(THR) 19503( CG2)  2.820
+     Good      1 c1                     _:900(UNK)    55( H22)   D:207(THR) 19508(HG21)  2.266
+     Good      1 c1                     _:900(UNK)    55( H22)   D:207(THR) 19510(HG23)  2.449
+     Good      1 c1                     _:900(UNK)    56( H23)    E:79(ALA) 22654( CB )  3.538
+     Good      1 c1                     _:900(UNK)    56( H23)    E:79(ALA) 22659( HB3)  2.879
+     Good      1 c1                     _:900(UNK)    57( H24)    E:58(TYR) 22329( OH )  3.531
+     Good      1 c1                     _:900(UNK)    58( H25)   D:203(VAL) 19447( CG1)  3.517
+     Good      1 c1                     _:900(UNK)    58( H25)   D:203(VAL) 19452(HG11)  2.714
+     Good      1 c1                     _:900(UNK)    59( H26)   D:203(VAL) 19447( CG1)  3.329
+     Good      1 c1                     _:900(UNK)    59( H26)   D:203(VAL) 19452(HG11)  2.782
+     Good      1 c1                     _:900(UNK)    59( H26)   D:204(GLN) 19461( O  )  3.040
+     Good      1 c1                     _:900(UNK)    59( H26)   D:205(SER) 19479( CB )  3.748
+     Good      1 c1                     _:900(UNK)    59( H26)   D:205(SER) 19484( HB2)  3.092
+     Good      1 c1                     _:900(UNK)    60( H27)   D:158(GLY) 18755( CA )  3.755
+     Good      1 c1                     _:900(UNK)    60( H27)   D:158(GLY) 18756( C  )  3.672
+     Good      1 c1                     _:900(UNK)    60( H27)   D:158(GLY) 18759( HA3)  2.993
+     Good      1 c1                     _:900(UNK)    60( H27)   D:159(SER) 18761( N  )  3.565
+     Good      1 c1                     _:900(UNK)    60( H27)   D:159(SER) 18763( C  )  3.768
+     Good      1 c1                     _:900(UNK)    60( H27)   D:159(SER) 18764( O  )  2.801
+     Good      1 c1                     _:900(UNK)    60( H27)   D:210(TYR) 19539( CD1)  3.420
+     Good      1 c1                     _:900(UNK)    60( H27)   D:210(TYR) 19549( HD1)  3.046
+     Good      1 c1                     _:900(UNK)    60( H27)   D:212(VAL) 19584(HG22)  3.050
+     Good      1 c1                     _:900(UNK)    61( H28)   D:100(PHE) 17830( CD1)  3.561
+     Good      1 c1                     _:900(UNK)    61( H28)   D:100(PHE) 17834( CZ )  3.065
+     Good      1 c1                     _:900(UNK)    61( H28)   D:100(PHE) 17843( HZ )  2.990
+     Good      1 c1                     _:900(UNK)    61( H28)   D:159(SER) 18764( O  )  2.941
+     Good      1 c1                     _:900(UNK)    62( H29)   D:158(GLY) 18755( CA )  3.689
+     Good      1 c1                     _:900(UNK)    62( H29)   D:158(GLY) 18759( HA3)  2.872
+     Good      1 c1                     _:900(UNK)    62( H29)   D:212(VAL) 19574( CB )  3.493
+     Good      1 c1                     _:900(UNK)    62( H29)   D:212(VAL) 19575( CG1)  3.137
+     Good      1 c1                     _:900(UNK)    62( H29)   D:212(VAL) 19576( CG2)  2.778
+     Good      1 c1                     _:900(UNK)    62( H29)   D:212(VAL) 19582(HG13)  2.445
+     Good      1 c1                     _:900(UNK)    62( H29)   D:212(VAL) 19583(HG21)  2.521
+     Good      1 c1                     _:900(UNK)    62( H29)   D:212(VAL) 19584(HG22)  2.233
+     Good      1 c1                     _:900(UNK)    63( H30)   D:102(HIE) 17868( CB )  3.316
+     Good      1 c1                     _:900(UNK)    63( H30)   D:102(HIE) 17869( CG )  3.426
+     Good      1 c1                     _:900(UNK)    63( H30)   D:102(HIE) 17871( CD2)  3.412
+     Good      1 c1                     _:900(UNK)    63( H30)   D:102(HIE) 17877( HB2)  2.428
+     Good      1 c1                     _:900(UNK)    64( H31)   D:102(HIE) 17868( CB )  2.924
+     Good      1 c1                     _:900(UNK)    64( H31)   D:102(HIE) 17869( CG )  3.339
+     Good      1 c1                     _:900(UNK)    64( H31)   D:102(HIE) 17876( HB3)  2.809
+     Good      1 c1                     _:900(UNK)    64( H31)   D:102(HIE) 17877( HB2)  2.282
+     Good      1 c1                     _:900(UNK)    64( H31)   D:212(VAL) 19575( CG1)  3.721
+     Good      1 c1                     _:900(UNK)    64( H31)   D:212(VAL) 19580(HG11)  3.061
+     Good      1 c1                     _:900(UNK)    65( H32)   D:212(VAL) 19576( CG2)  3.588
+     Good      1 c1                     _:900(UNK)    65( H32)   D:212(VAL) 19583(HG21)  2.613
+     Good      1 c1                     _:900(UNK)    66( H33)   D:100(PHE) 17829( CG )  3.606
+     Good      1 c1                     _:900(UNK)    66( H33)   D:100(PHE) 17830( CD1)  3.253
+     Good      1 c1                     _:900(UNK)    66( H33)   D:100(PHE) 17831( CD2)  3.563
+     Good      1 c1                     _:900(UNK)    66( H33)   D:100(PHE) 17832( CE1)  2.873
+     Good      1 c1                     _:900(UNK)    66( H33)   D:100(PHE) 17833( CE2)  3.193
+     Good      1 c1                     _:900(UNK)    66( H33)   D:100(PHE) 17834( CZ )  2.839
+     Good      1 c1                     _:900(UNK)    66( H33)   D:102(HIE) 17868( CB )  3.374
+     Good      1 c1                     _:900(UNK)    66( H33)   D:102(HIE) 17877( HB2)  2.360
+     Good      1 c1                     _:900(UNK)    67( H34)   D:100(PHE) 17827( O  )  3.065
+     Good      1 c1                     _:900(UNK)    67( H34)   D:100(PHE) 17830( CD1)  3.428
+     Good      1 c1                     _:900(UNK)    67( H34)   D:100(PHE) 17832( CE1)  3.398
+     Good      1 c1                     _:900(UNK)    67( H34)   D:157(PHE) 18736( C  )  3.525
+     Good      1 c1                     _:900(UNK)    67( H34)   D:158(GLY) 18754( N  )  2.697
+     Good      1 c1                     _:900(UNK)    67( H34)   D:158(GLY) 18755( CA )  3.027
+     Good      1 c1                     _:900(UNK)    67( H34)   D:158(GLY) 18756( C  )  2.993
+     Good      1 c1                     _:900(UNK)    67( H34)   D:158(GLY) 18757( O  )  2.931
+     Good      1 c1                     _:900(UNK)    67( H34)   D:158(GLY) 18758( H  )  2.363
+     Good      1 c1                     _:900(UNK)    67( H34)   D:158(GLY) 18759( HA3)  2.933
+     Good      1 c1                     _:900(UNK)    68( H35)   D:100(PHE) 17827( O  )  3.341
+     Good      1 c1                     _:900(UNK)    68( H35)   D:102(HIE) 17864( N  )  3.532
+     Good      1 c1                     _:900(UNK)    68( H35)   D:102(HIE) 17868( CB )  3.298
+     Good      1 c1                     _:900(UNK)    68( H35)   D:102(HIE) 17874( H  )  2.944
+     Good      1 c1                     _:900(UNK)    68( H35)   D:102(HIE) 17877( HB2)  2.530
+     Good      1 c1                     _:900(UNK)    68( H35)   D:157(PHE) 18735( CA )  3.270
+     Good      1 c1                     _:900(UNK)    68( H35)   D:157(PHE) 18736( C  )  3.274
+     Good      1 c1                     _:900(UNK)    68( H35)   D:157(PHE) 18746( HA )  2.437
+     Good      1 c1                     _:900(UNK)    68( H35)   D:158(GLY) 18754( N  )  3.126
+     Good      1 c1                     _:900(UNK)    68( H35)   D:158(GLY) 18758( H  )  2.957
+     Good      1 c1                     _:900(UNK)    69( H36)   D:205(SER) 19479( CB )  2.501
+     Good      1 c1                     _:900(UNK)    69( H36)   D:205(SER) 19483( HB3)  2.295
+     Good      1 c1                     _:900(UNK)    69( H36)   D:205(SER) 19485( HG )  2.592
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+    Good D:100(PHE)            1       34
+    ligand title:                   c1    interactions:  34
+    Good D:102(HIE)            1       40
+    ligand title:                   c1    interactions:  40
+    Good D:157(PHE)            1        7
+    ligand title:                   c1    interactions:   7
+    Good D:158(GLY)            1       24
+    ligand title:                   c1    interactions:  24
+    Good D:159(SER)            1        7
+    ligand title:                   c1    interactions:   7
+    Good D:160(TYR)            1       30
+    ligand title:                   c1    interactions:  30
+    Good D:161(ALA)            1       12
+    ligand title:                   c1    interactions:  12
+    Good D:203(VAL)            1       10
+    ligand title:                   c1    interactions:  10
+    Good D:204(GLN)            1        2
+    ligand title:                   c1    interactions:   2
+    Good D:205(SER)            1       34
+    ligand title:                   c1    interactions:  34
+    Good D:206(SER)            1       27
+    ligand title:                   c1    interactions:  27
+    Good D:207(THR)            1       49
+    ligand title:                   c1    interactions:  49
+    Good D:210(TYR)            1       53
+    ligand title:                   c1    interactions:  53
+    Good D:212(VAL)            1       27
+    ligand title:                   c1    interactions:  27
+    Good E:56(ASP)             1        1
+    ligand title:                   c1    interactions:   1
+    Good E:57(MET)             1        5
+    ligand title:                   c1    interactions:   5
+    Good E:58(TYR)             1       38
+    ligand title:                   c1    interactions:  38
+    Good E:60(ASN)             1        2
+    ligand title:                   c1    interactions:   2
+    Good E:77(PHE)             1       78
+    ligand title:                   c1    interactions:  78
+    Good E:78(PHE)             1        8
+    ligand title:                   c1    interactions:   8
+    Good E:79(ALA)             1       21
+    ligand title:                   c1    interactions:  21
+    Good E:130(MET)            1        7
+    ligand title:                   c1    interactions:   7
+    Good E:142(THR)            1       23
+    ligand title:                   c1    interactions:  23
+Total Good Contacts interactions: 539
+
+========== Bad Contacts =====================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+      Bad      1 c1                     _:900(UNK)    34( O9 )   D:207(THR) 19507( HG1)  1.895
+      Bad      1 c1                     _:900(UNK)    48( H15)    E:77(PHE) 22623( HB3)  2.078
+      Bad      1 c1                     _:900(UNK)    49( H16)   D:207(THR) 19508(HG21)  2.090
+      Bad      1 c1                     _:900(UNK)    61( H28)   D:100(PHE) 17832( CE1)  2.581
+      Bad      1 c1                     _:900(UNK)    61( H28)   D:100(PHE) 17841( HE1)  2.046
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+     Bad D:100(PHE)            1        2
+    ligand title:                   c1    interactions:   2
+     Bad D:207(THR)            1        2
+    ligand title:                   c1    interactions:   2
+     Bad E:77(PHE)             1        1
+    ligand title:                   c1    interactions:   1
+Total Bad Contacts interactions: 5
+
+========== Ugly Contacts ====================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+     Ugly      1 c1                     _:900(UNK)    25( O6 )    E:58(TYR) 22338( HH )  1.806
+     Ugly      1 c1                     _:900(UNK)    32( O7 )   D:206(SER) 19496( HG )  1.838
+     Ugly      1 c1                     _:900(UNK)    46( H13)   D:161(ALA) 18798( H  )  1.719
+     Ugly      1 c1                     _:900(UNK)    69( H36)   D:205(SER) 19480( OG )  1.775
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+    Ugly D:161(ALA)            1        1
+    ligand title:                   c1    interactions:   1
+    Ugly D:205(SER)            1        1
+    ligand title:                   c1    interactions:   1
+    Ugly D:206(SER)            1        1
+    ligand title:                   c1    interactions:   1
+    Ugly E:58(TYR)             1        1
+    ligand title:                   c1    interactions:   1
+Total Ugly Contacts interactions: 4
+
+========== Salt Bridges =====================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Salt Bridges interactions: 0
+
+========== Pi-Cation ========================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Pi-Cation interactions: 0
+
+========== Pi-pi Face-to-Face ===============================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Pi-pi Face-to-Face interactions: 0
+
+========== Pi-pi Edge-to-Face ===============================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Pi-pi Edge-to-Face interactions: 0
+
+========== Hydrophobic ======================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+    HPhob      1 c1                     _:900(UNK)     6( C4 )    E:77(PHE) 22619( CE2)  3.954
+    HPhob      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18779( CD2)  3.732
+    HPhob      1 c1                     _:900(UNK)    15( C10)   D:160(TYR) 18781( CE2)  3.560
+    HPhob      1 c1                     _:900(UNK)    15( C10)   D:207(THR) 19503( CG2)  3.997
+    HPhob      1 c1                     _:900(UNK)    15( C10)   E:130(MET) 23527( CB )  4.063
+    HPhob      1 c1                     _:900(UNK)    15( C10)   E:130(MET) 23529( SD )  3.825
+    HPhob      1 c1                     _:900(UNK)    18( C13)    E:77(PHE) 22618( CE1)  4.002
+    HPhob      1 c1                     _:900(UNK)    18( C13)    E:77(PHE) 22620( CZ )  4.057
+    HPhob      1 c1                     _:900(UNK)    19( C14)   D:207(THR) 19503( CG2)  3.576
+    HPhob      1 c1                     _:900(UNK)    19( C14)    E:77(PHE) 22614( CB )  3.689
+    HPhob      1 c1                     _:900(UNK)    20( C15)   D:207(THR) 19503( CG2)  3.960
+    HPhob      1 c1                     _:900(UNK)    20( C15)    E:79(ALA) 22654( CB )  3.862
+    HPhob      1 c1                     _:900(UNK)    21( C16)    E:77(PHE) 22614( CB )  3.819
+    HPhob      1 c1                     _:900(UNK)    21( C16)    E:79(ALA) 22654( CB )  3.570
+    HPhob      1 c1                     _:900(UNK)    22( C17)   D:207(THR) 19503( CG2)  3.754
+    HPhob      1 c1                     _:900(UNK)    24( C19)   D:203(VAL) 19447( CG1)  3.927
+    HPhob      1 c1                     _:900(UNK)    27( C21)   D:100(PHE) 17832( CE1)  3.637
+    HPhob      1 c1                     _:900(UNK)    27( C21)   D:100(PHE) 17834( CZ )  4.017
+    HPhob      1 c1                     _:900(UNK)    27( C21)   D:210(TYR) 19539( CD1)  4.024
+    HPhob      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19575( CG1)  4.061
+    HPhob      1 c1                     _:900(UNK)    28( C22)   D:212(VAL) 19576( CG2)  3.711
+    HPhob      1 c1                     _:900(UNK)    29( C23)   D:102(HIE) 17868( CB )  3.582
+    HPhob      1 c1                     _:900(UNK)    29( C23)   D:212(VAL) 19576( CG2)  4.052
+    HPhob      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17830( CD1)  3.869
+    HPhob      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17832( CE1)  3.572
+    HPhob      1 c1                     _:900(UNK)    30( C24)   D:100(PHE) 17834( CZ )  3.790
+    HPhob      1 c1                     _:900(UNK)    30( C24)   D:102(HIE) 17868( CB )  3.773
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+   HPhob D:100(PHE)            1        5
+    ligand title:                   c1    interactions:   5
+   HPhob D:102(HIE)            1        2
+    ligand title:                   c1    interactions:   2
+   HPhob D:160(TYR)            1        2
+    ligand title:                   c1    interactions:   2
+   HPhob D:203(VAL)            1        1
+    ligand title:                   c1    interactions:   1
+   HPhob D:207(THR)            1        4
+    ligand title:                   c1    interactions:   4
+   HPhob D:210(TYR)            1        1
+    ligand title:                   c1    interactions:   1
+   HPhob D:212(VAL)            1        3
+    ligand title:                   c1    interactions:   3
+   HPhob E:77(PHE)             1        5
+    ligand title:                   c1    interactions:   5
+   HPhob E:79(ALA)             1        2
+    ligand title:                   c1    interactions:   2
+   HPhob E:130(MET)            1        2
+    ligand title:                   c1    interactions:   2
+Total Hydrophobic interactions: 27
+
+========== Water-mediated H-Bonds ===========================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Water-mediated H-Bonds interactions: 0
+
+========== Aromatic H-Bonds =================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Aromatic H-Bonds interactions: 0
+
+========== Metal Contacts ===================================================================
+     Type Ligand Title                  LigResidue     LigAtom   RecResidue     RecAtom   Dist
+
+Interactions grouped by receptor residue:
+    Type Residue        # of ligands # of contacts
+Total Metal Contacts interactions: 0
