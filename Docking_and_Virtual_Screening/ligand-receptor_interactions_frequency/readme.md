@@ -4,7 +4,7 @@
 To analyze the frequency of receptor-ligand interactions on a set of poses we use scripts included on Schrödinger Suit (v.2020-1) and *in-house* functional workflow built on [Knime](https://www.knime.com/).
 ## 1. Requirements ##
 - Schrödinger Suit (version 2020 or newer; comercial or academic version) [Schrödinger](https://www.schrodinger.com/).
-- Knime, a programing software via functional workflows. [Knime website](https://www.knime.com/).
+- Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
 - Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency_v2.knwf](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/cluster_interactions_frequency_v2.knwf)
 - A set of receptor-ligand complexes. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations. 
 To test this pipeline we provide a example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
@@ -65,7 +65,7 @@ To calculate the interaction frequency of each ligand-receptor complex we use a 
 
 <!---![image1](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png)
 --->
-<img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png" width="100" height="100">
+<img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png" width="100">
 
 Example of ligand fragment naming on table creator node:
 
