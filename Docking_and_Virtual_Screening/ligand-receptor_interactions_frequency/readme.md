@@ -66,7 +66,7 @@ To calculate the interaction frequency of each ligand-receptor complex we use a 
 <!---![image1](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png)
 --->
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png" width="900">
+    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/WF_frequency_interactions.png" width="900">
 </p>
 Example of ligand fragment naming on table creator node:
 <!---
