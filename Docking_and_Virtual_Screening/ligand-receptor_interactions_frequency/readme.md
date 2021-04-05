@@ -63,7 +63,7 @@ To calculate the interaction frequency of each ligand-receptor complex we use a 
 - **Excel Writer:**  Finally, the user must configure a path to save the final file as an Excel datasheet.
 
 
-![image1](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png)
+![image1](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png=800x)
 
 Example of ligand fragment naming on table creator node:
 
