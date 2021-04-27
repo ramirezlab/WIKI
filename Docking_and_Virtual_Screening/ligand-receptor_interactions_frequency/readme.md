@@ -5,7 +5,7 @@ To analyze the frequency of receptor-ligand interactions on a set of poses we us
 ## 1. Requirements ##
 - Schrödinger Suit (version 2020 or newer; comercial or academic version) [Schrödinger](https://www.schrodinger.com/).
 - Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
-- Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency_v2.knwf](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/cluster_interactions_frequency_v2.knwf)
+- Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency.knwf](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/cluster_interactions_frequency.knwf)
 - A set of receptor-ligand complexes. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations. 
 To test this pipeline we provide a example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
 
@@ -68,7 +68,7 @@ To calculate the interaction frequency of each ligand-receptor complex we use a 
 <!---![image1](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_WF.png)
 --->
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/WF_frequency_interactions.png" width="700">
+    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/WF_frequency_interactions_v2.png" width="700">
 </p>
 Example of ligand fragment naming on table creator node:
 <!---
