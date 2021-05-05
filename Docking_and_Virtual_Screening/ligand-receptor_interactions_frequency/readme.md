@@ -90,3 +90,11 @@ The results table shows ligand framents, which resudue is interacting with and f
 <p align="center">
     <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_results.png" width="900">
 </p>
+
+
+
+## Citing
+
+* Peña-Varas, Carlos, & Ramírez, David. (2021, May 5). Docking post-processing: Frequency interactions from cluster of conformers (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.4739320
+
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4739320.svg)](https://doi.org/10.5281/zenodo.4739320)
