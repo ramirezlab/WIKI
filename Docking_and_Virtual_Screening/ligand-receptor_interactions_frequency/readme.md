@@ -1,4 +1,4 @@
-# Welcome to the Ramirez Lab Wiki - Docking post-processing: Clustering and interactions analysis #
+# Welcome to the Ramirez Lab Wiki - Docking post-processing: Frequency interactions from cluster of conformers #
 <!-- como tambien usamos este workflow para analizar las dinamicas de la tubulina creo que deberiamos cambiar el titulo de este proceso -->
 
 To analyze the frequency of receptor-ligand interactions on a set of poses we use scripts included on Schrödinger Suit (v.2020-1) and *in-house* functional workflow built on [Knime](https://www.knime.com/).
