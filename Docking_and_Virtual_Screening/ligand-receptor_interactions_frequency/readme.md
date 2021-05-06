@@ -2,14 +2,14 @@
 
 
 To analyze the frequency of receptor-ligand interactions on a set of poses we use scripts included on Schrödinger Suit (v.2020-1) and *in-house* functional workflow built on [Knime](https://www.knime.com/).
-## 1. Requirements ##
+## Requirements ##
 - Schrödinger Suit (version 2020 or newer; comercial or academic version) [Schrödinger](https://www.schrodinger.com/).
 - Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
 - Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency.knwf](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/cluster_interactions_frequency.knwf)
 - A set of receptor-ligand complexes. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations. 
 To test this pipeline we provide a example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
 
-## 2. Split receptor-ligand complex into separate files ##
+## 1. Split receptor-ligand complex into separate files ##
 
 To make sure that receptor and ligand are being use as input in correct order we first split the receptor-ligand complexes into two separate files using the *split_structure.py* script from [Schrödinger](https://www.schrodinger.com/scriptcenter). This can be done to all complex within a folder writing and executing the following bash script:
 
@@ -32,7 +32,7 @@ For more information about the script options you can write in the terminal:
 ````
 $ $SCHRODINGER/run split_structure.py -h
 ````
-## 3. Calculate interactions between ligand and receptor ##
+## 2. Calculate interactions between ligand and receptor ##
 
 To calculate the interaction between receptor and ligand we use  the *poseviewer_interactions.py* script (Schrödinger suit version 2020-1). When setting inputs make sure to give first the receptor and then the ligand file, followed by "-csv" to also export the results on a *csv* format file. You can calculate the interactions on all the previously split files by writing the next script:
 
@@ -56,7 +56,7 @@ For more information about the script options you can write in the terminal:
 ````
 $ $SCHRODINGER/run poseviewer_interactions.py -h
 ````
-## 4. Calculate interaction frequencies for user defined ligand fragments ##
+## 3. Calculate interaction frequencies for user defined ligand fragments ##
 To calculate the interaction frequency of each ligand-receptor complex we use a Knime workflow. The user must to configure 3 nodes:
 - **List Files/Folders:** The user must select the folder with all *csv files* with the interactions previously calculated (step 3).
 - **Table Creator:** The user need to list all ligand atoms on the first column, and assign each atom to the fragment of the structure it belongs to.
@@ -82,7 +82,7 @@ Example of ligand fragment naming on table creator node:
     <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_fragment_config.png" width="500">
 </p>    
 
-## 5. Results ##
+## 4. Results ##
 The results table shows ligand framents, which resudue is interacting with and frequency of each interaction in relation with the number of poses.
 <!---
 ![image3](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/frequency_interactions_results.png)
