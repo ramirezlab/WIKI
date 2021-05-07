@@ -1,6 +1,7 @@
 # Welcome to the Ramirez Lab Wiki – Ensemble docking with Glide
 
 Here we use present a pipeline to perform ensemble docking to find the most probable binding mode of a given ligand in a given set (ensemble) of protein structures.
+
 The protocol consists in:
 
 ## 1. Molecular dynamics simulations of the target protein (without ligand) ##
@@ -40,7 +41,7 @@ The docking parameters of the ensemble_docking_glide.sh script must be adjusted.
 **NOTE:**
 Remember to assign the correct path of the glide executable, the center of the grid, and size, the path, and the name of the ligand or ligands to be docked, the number of output poses for each ligand, and the number of processors to use in the calculation.
 
-ensemble_docking_glide.sh:
+*ensemble_docking_glide.sh*:
 
 ```bash
 #!/usr/bin/env bash
@@ -59,7 +60,7 @@ ensemble_docking_glide.sh:
 # Glide path
 SCHRODINGER_GLIDE="/path-to-schrodinger/glide"
 
-# Grid parameters
+# Grid parameters (calculated with the VMD´s TKConsole)
 GRID_CENTER="xx, xx, xx"
 INNERBOX="10, 10, 10"
 OUTERBOX="20, 20, 20"
@@ -136,3 +137,8 @@ The above command will run the docking calculation on structures starting with t
 To release the console you can run the script like this:
 
 > ./ensemble_docking_glide.sh ../1_structures/*.maegz > out.log &disown
+
+
+This tutorial was created by Mauricio Bedoya in collaboration with the Ramirez Lab
+
+Enjoy!!!
