@@ -1,54 +1,137 @@
-# Welcome to the Ramirez Lab Wiki – Ensemble docking with GLide
+# Welcome to the Ramirez Lab Wiki – Ensemble docking with Glide
 
-Here we use present a pipeline to perform exhaustive docking to find the most probable binding mode of a given ligand.
-The protocol consits in:
+Here we use present a pipeline to perform ensemble docking to find the most probable binding mode of a given ligand in a given set (ensemble) of protein structures.
+The protocol consists in:
 
-## 1. Molecular dynamics simulations of the target (withput ligand) ##
-In this tutorial we use the Human Acetylcholinesterase (AChE) as target, and the ligand is the co-crystalized drug galantamine (PDB code 4EY6). Before to proced, please modeled any missing residue in the structure. In our case we complete the missing residues **XXX** to **XXX** (Falta revisar con Lily) and used only chain A of the crystallographic structure. After protein refinement, a 150 ns Molecular Dynamics (MD) simulation of the protein withput the ligand is performed to allow the side chaing of the binding site addopt diferent conformations. With this step we include protein-flexibility in our pipeline. To be sure that the binding site does not suffer mayor conformational changes, a posotional restriction to the protein backbone atoms is suggested (~ 1 kcal x mol<sup>-1</sup> x <span>&#8491;</span><sup>-2</sup>). 
+## 1. Molecular dynamics simulations of the target protein (without ligand) ##
+After a proper equilibration of the protein, a molecular dynamics simulation should be performed. We suggest generating 100 ns of Molecular Dynamics (MD) simulation of the protein in the apo form to produce an ensemble of protein conformations for subsequent molecular docking calculation. With this step we include protein-flexibility in our pipeline. To be sure that the binding site does not suffer mayor conformational changes, a positional restriction to the protein backbone atoms is suggested (~ 0.5 - 1.0 kcal x mol<sup>-1</sup> x <span>&#8491;</span><sup>-2</sup>). 
 
-Here we use the Desmond software (available without cost for non-commercial at https://www.deshawresearch.com/downloads/download_desmond.cgi/) and some Schrödinger scripts (available after Desmond instalation) to process the trajectory. The suggested production time is 150ns, here we employed the last 100ns.
+Here we use the Desmond software (available without cost for non-commercial use at https://www.deshawresearch.com/downloads/download_desmond.cgi/) and some Schrödinger scripts (available after Desmond instalation) to process the trajectory.
 
-## 2. Structures extraction from MDs ##
-Extract and pre-aling target PDBs (AChE_4EY6) from the last 100ns of the MDs (100 frames from 50 to 100 ns). To do that we use the *trj2mae.py* script (avalilable with your Desmond instalation). In this example our 150ns-MDs is composed by 1000 frames, so we extracted and prealignet the protein from frame 300 to 1000. To see the help menu of the *trj2mae.py* script use:
+## 2. Structures extraction from MD ##
+Extract and pre-align target frames from the 100ns of the MD (100 frames, 1 frame per ns). To do that we use the *trj2mae.py* script (avalilable at the Desmond installation). In this example the 100ns-MDs is composed by 1000 frames, so we extracted and prealigned the protein from frame 0 to 1000. To see the help menu of the *trj2mae.py* script use:
 > $SCHRODINGER/run trj2mae.py -h
 
-Please navegate to the folder where your MDs files are (you need the *simulation.out-cms* file as well as the *simulation_trj* trajectory file as positional arguments) and run the followng lines:
+1. Go to the directory where the 100ns-MD is stored.
+2. Run the followng commands:
 
 ```bash
-mkdir 2_frames_AChE_4EY6
-cd 2_frames_AChE_4EY6
-$SCHRODINGER/run trj2mae.py ../*-out.cms ../*_trj/ AChE_4EY6 -s 300:1000:7 -extract-asl protein -align-asl backbone -separate -out-format PDB
+mkdir 1_structures; cd 1_structures
+$SCHRODINGER/run trj2mae.py ../*-out.cms ../*_trj/ apo -s 0:1000:10 -extract-asl "protein" -align-asl "backbone_binding_site" -separate -out-format MAE
 cd ..
 ```
+The above command will read the path from frame 0 to 1000 and extract the frames every 10th. The basename will be: "apo".
+The ouput maegz files must be written at the *1_structures* folder, and start from *apo_0.maegz* to *apo_99.maegz*. 
+The option -align-asl, will be the selection in ASL format that will be used to align the structures. In this step the structures must be aligned by taking the backbone of the binding site residues, for instance, for residues 1, 2, 3, 4, and 5 of chain A and residues 8 and 9 of chain B the following ASL selection should be used:
+"(((chain.name A) AND (res.num 1,2,3,4,5)) OR ((chain.name B) AND (res.num 8,9))) AND (( backbone ))"
 
-The ouput PDBs files must be written at the *2_frames_AChE_4EY6* folder, and start from *AChE_4EY6_0.pdb* to *AChE_4EY6_99.pdb*. 
 
-## 3. Alignmet of the target structures ## 
-All the extracted structures must to be aligned to a reference target structure to ensure that the docking results all fall into the same binding site coordinates. Here we use the original protein we used to set the MD (*reference_AChE-4EY6.pdb*) to align all the extracted target PDBs (which is located into the *2_frames_AChE_4EY6* folder, and the utility *structalign* from Maestro (avalilable with your Desmond instalation). To see the help menu of the utility *structalign* use:
-> $SCHRODINGER/utilities/structalign -h
+## 3. Docking calculation ##
+The docking calculation will be performed with the Glide software available in the Schrödinger suite software.
+As the target structures are pre-aligned, the same center of the grid could be assigned for all the structures. To calculate the center of the grid, one or more structures can be taken and an average of its binding-site center can be carried out. With the following commands, the center of the binding site could be calculated using the TKConsole of the VMD software. You must first load the structure in VMD and then run in the TKConsole:
 
-Please run the following lines to aling the PDBs:
-
-```bash
-mkdir ./2_frames_AChE_4EY6/Structural_Alignment
-cd 2_frames_AChE_4EY6/Structural_Alignment
-$SCHRODINGER/utilities/structalign ../reference_AChE-4EY6.pdb ../AChE_4EY6_* > output.txt
+```tcl
+set selection "(chain A and resid 1 2 3 4 5 or chain B and resid 1 2) and backbone"
+measure center [atomselect top "($ selection)"]
 ```
 
-The ouput alinged PDBs files must be written at the *Structural_Alignment* folder, and start from *rot-AChE_4EY6_0.pdb* to *rot-AChE_4EY6_99.pdb*. The *output.txt* contained the sequence alignmet as well as the RMSD values for each PDB aligned against the *reference_AChE-4EY6.pdb*.
+The docking parameters of the ensemble_docking_glide.sh script must be adjusted.
+**NOTE:**
+Remember to assign the correct path of the glide executable, the center of the grid, and size, the path, and the name of the ligand or ligands to be docked, the number of output poses for each ligand, and the number of processors to use in the calculation.
 
-## 4. Target PDBs preparation to dock ligand ##
-The docking simulation will be performed with Autodock vina, so we need to convert the aligned PDBs to PDBQTs files. To do that we will employed *Open Babel* (http://openbabel.org/wiki/Main_Page). You can installed with conda as follows:
-> conda install -c openbabel openbabel
+ensemble_docking_glide.sh:
 
-Please be sure you are in the folder where the aligned PDBs are, create a copy of the aligned PDBs to the folder *PDBQTs* and convert the files as follows:
 ```bash
-mkdir PDBQTs
-cp *.pdb PDBQTs/
-cd PDBQTs
-obabel *.pdb -opdbqt -m -p 7.4 -xr
+#!/usr/bin/env bash
+
+# Glide docking ensemble executor
+
+# 1. Pass the mae or maegz files with the pre-aligned protein structures.
+# 2. Grid generation and docking calculation
+
+# Use as 
+# ./ensemble_docking_001.sh /path-to-structures/*.maegz
+# or if you rather to release the console use as:
+# ./ensemble_docking_001.sh /path-to-structures/*.maegz > out.log &disown 
+
+
+# Glide path
+SCHRODINGER_GLIDE="/path-to-schrodinger/glide"
+
+# Grid parameters
+GRID_CENTER="xx, xx, xx"
+INNERBOX="10, 10, 10"
+OUTERBOX="20, 20, 20"
+
+# Docking parameters
+ligand="ligand.maegz"
+# Primary
+POSES_PER_LIG="10"
+PRECISION="SP"
+# Extra
+EXPANDED_SAMPLING="True"
+FORCEPLANAR="False"
+NENHANCED_SAMPLING="4"
+POSE_DISPLACEMENT="0.0"
+POSE_RMSD="0.0"
+POSTDOCK_NPOSE="20"
+POSTDOCKSTRAIN="True"
+
+# Processors and host to use in each task
+processors=1
+HOST="localhost:$processors"
+
+# Grid generation
+total=$#
+count=0
+for F in "$@"; do
+    count=$((count+1))
+    basename=$(basename $F)
+    basename=${basename%.*}
+    printf "Generating grid $basename ($count/$total)..."
+    printf "\n"
+    cat > grid_$basename.in <<- EOS
+GRID_CENTER         $GRID_CENTER
+GRIDFILE            grid_$basename.zip
+INNERBOX            $INNERBOX
+OUTERBOX            $OUTERBOX
+RECEP_FILE          $F
+EOS
+
+    $SCHRODINGER_GLIDE "grid_$basename.in" -HOST "$HOST" -WAIT > /dev/null 2>&1
+
+    cat > dock_$basename.in <<- EOS
+EXPANDED_SAMPLING   $EXPANDED_SAMPLING
+FORCEPLANAR         $FORCEPLANAR
+GRIDFILE            grid_$basename.zip
+LIGANDFILE          $ligand
+NENHANCED_SAMPLING  $NENHANCED_SAMPLING
+POSE_DISPLACEMENT   $POSE_DISPLACEMENT
+POSE_RMSD           $POSE_RMSD
+POSES_PER_LIG       $POSES_PER_LIG
+POSTDOCK_NPOSE      $POSTDOCK_NPOSE
+POSTDOCKSTRAIN      $POSTDOCKSTRAIN
+PRECISION           $PRECISION
+EOS
+    printf "Running docking $basename ($count/$total)..."
+    printf "\n"
+    $SCHRODINGER_GLIDE -HOST "$HOST" "dock_$basename.in" -WAIT > /dev/null 2>&1
+done
 ```
-Aca te toca seguir Lily
-sdf
-sDFad
-f
+
+Finally, with the next commands a new folder will be created, then, it should be executed the ensemble_docking_glide.sh script.
+
+> mkdir 2_ensemble_docking; cd 2_ensemble_docking
+> ./ensemble_docking_glide.sh ../1_structures/*maegz
+
+
+Each grid and docking calculation will be executed for each structure consecutively. To parallelize the calculation, you can execute it several times selecting a certain number of frames, for example:
+
+
+> ./ensemble_docking_glide.sh ../1_structures/apo_1*.maegz
+
+The above command will run the docking calculation on structures starting with the name "apo_1".
+
+To release the console you can run the script like this:
+
+> ./ensemble_docking_glide.sh ../1_structures/*.maegz > out.log &disown
