@@ -36,6 +36,7 @@ measure center [atomselect top "($ selection)"]
 ```
 
 The docking parameters of the ensemble_docking_glide.sh script must be adjusted.
+
 **NOTE:**
 Remember to assign the correct path of the glide executable, the center of the grid, and size, the path, and the name of the ligand or ligands to be docked, the number of output poses for each ligand, and the number of processors to use in the calculation.
 
@@ -44,7 +45,7 @@ ensemble_docking_glide.sh:
 ```bash
 #!/usr/bin/env bash
 
-# Glide docking ensemble executor
+# Glide ensemble docking executor
 
 # 1. Pass the mae or maegz files with the pre-aligned protein structures.
 # 2. Grid generation and docking calculation
