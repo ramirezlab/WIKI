@@ -59,7 +59,7 @@ $ $SCHRODINGER/run poseviewer_interactions.py -h
 ## 3. Calculate interaction frequencies for user defined ligand fragments ##
 To calculate the interaction frequency of each ligand-receptor complex we use a Knime workflow. The user must to configure 3 nodes:
 - **List Files/Folders:** The user must select the folder with all *csv files* with the interactions previously calculated (step 3).
-- **Table Creator:** The user need to list all ligand atoms on the first column, and assign each atom to the fragment of the structure it belongs to.
+- **Table Creator:** The user need to list all ligand atoms (only use PDB format atom names) on the first column, and assign each atom to the fragment of the structure it belongs to.
 - **Excel Writer:**  Finally, the user must configure a path to save the final file as an Excel datasheet.
 
 
@@ -75,11 +75,7 @@ Example of ligand fragment naming on table creator node:
 ![image2](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_fragment_config.png)
 --->
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_atomname_fragments.png" width="1000">
-</p>    
-
-<p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_fragment_config.png" width="500">
+    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/lig_atomname_fragments_atomname_config.png" width="1000">
 </p>    
 
 ## 4. Results ##
