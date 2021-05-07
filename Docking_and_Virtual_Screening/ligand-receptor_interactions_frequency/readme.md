@@ -75,7 +75,7 @@ Example of ligand fragment naming on table creator node:
 ![image2](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_fragment_config.png)
 --->
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/lig_fragments_atomname_config.png" width="1000">
+    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/lig_fragments_atomname_config_2.png" width="1000">
 </p>    
 
 ## 4. Results ##
