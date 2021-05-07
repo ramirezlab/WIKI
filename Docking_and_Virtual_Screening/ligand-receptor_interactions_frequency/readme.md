@@ -95,6 +95,7 @@ The results table shows ligand framents, interacting resudues and frequency of e
 
 ## Citing
 
-* Peña-Varas, Carlos, & Ramírez, David. (2021, May 5). Docking post-processing: Frequency interactions from cluster of conformers (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.4739320
+* Peña-Varas, Carlos, & Ramírez, David. (2021, May 5). Docking post-processing: Interaction frequency among single-cluster conformers (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.4742721
 
-* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4739320.svg)](https://doi.org/10.5281/zenodo.4739320)
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4742721.svg)](https://doi.org/10.5281/zenodo.4742721)
+
