@@ -7,7 +7,7 @@ To analyze the frequency of receptor-ligand interactions on a set of poses from 
 - Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
 - Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency.knwf](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf)
 - A set of receptor-ligand complexes from a single cluster. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations. 
-To test this pipeline we provide an example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
+To test this pipeline we provide an example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf).
 
 ## 1. Split receptor-ligand complex from single clsuter into separate files ##
 
@@ -79,7 +79,7 @@ Example of ligand fragment naming on table creator node:
 </p>    
 
 ## 4. Results ##
-The results table shows ligand framents, interacting resudues and frequency of each interaction in relation with the number of poses included in the cluster.
+The results table shows ligand framents, interacting residues and frequency of each interaction in relation with the number of poses included in the cluster. [Download results file](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/04_ligand-receptor_complex_example_set_interactions_frequency.xlsx)
 <!---
 ![image3](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/frequency_interactions_results.png)
 --->
