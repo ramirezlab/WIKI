@@ -59,7 +59,7 @@ $ $SCHRODINGER/run poseviewer_interactions.py -h
 ## 3. Calculate interaction frequencies for user defined ligand fragments ##
 To calculate the interaction frequency of each ligand-receptor complex we use a Knime workflow. The user must to configure 3 nodes:
 - **List Files/Folders:** The user must select the folder with all *csv files* with the interactions previously calculated (step 3).
-- **Table Creator:** The user need to list all ligand atoms (only use PDB format atom names) on the first column, and assign each atom to the fragment of the structure it belongs to.
+- **Table Creator:** The user need to list all ligand atoms **(only use PDB format atom names)** on the first column, and assign each atom to the fragment of the structure it belongs to.
 - **Excel Writer:**  Finally, the user must configure a path to save the final file as an Excel datasheet.
 
 
