@@ -1,4 +1,4 @@
-# Welcome to the Ramirez Lab Wiki – Exhaustive docking protocol
+# Welcome to the Ramirez Lab Wiki – Ensemble docking with GLide
 
 Here we use present a pipeline to perform exhaustive docking to find the most probable binding mode of a given ligand.
 The protocol consits in:
