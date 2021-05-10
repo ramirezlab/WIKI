@@ -5,7 +5,7 @@ To analyze the frequency of receptor-ligand interactions on a set of poses from 
 ## Requirements ##
 - Schrödinger Suit (version 2020 or newer; comercial or academic version) [Schrödinger](https://www.schrodinger.com/).
 - Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
-- Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency.knwf](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf)
+- Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf)
 - A set of receptor-ligand complexes from a single cluster. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations. 
 To test this pipeline we provide an example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/ligand-receptor_complex_example_set).
 
@@ -57,7 +57,7 @@ For more information about the script options you can type in the terminal:
 $ $SCHRODINGER/run poseviewer_interactions.py -h
 ````
 ## 3. Calculate interaction frequencies for user defined ligand fragments ##
-To calculate the interaction frequency of each ligand-receptor complex we use a Knime workflow. The user must to configure 3 nodes:
+To calculate the interaction frequency of each ligand-receptor complex we use the Knime workflow [Cluster-interactions-frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf). The user must to configure 3 nodes:
 - **List Files/Folders:** The user must select the folder with all *csv files* with the interactions previously calculated (step 3).
 - **Table Creator:** The user need to list all ligand atoms **(use only PDB format atom names)** on the first column, and assign each atom to the fragment of the structure it belongs to.
 - **Excel Writer:**  Finally, the user must configure a path to save the final file as an Excel datasheet.
