@@ -1,14 +1,19 @@
 # Welcome to the Ramirez Lab Wiki - Knime: Active compounds for a given target from ChEMBL #
 
+This workflow use a local ChEBML database to search one or a list of targets and return information of compounds and activity reported to the input targets.
 
-To analyze the frequency of receptor-ligand interactions on a set of poses from a given cluster, we use scripts included on Schrödinger Suit (v.2020-1) and *in-house* functional workflow built on [Knime](https://www.knime.com/).
 ## Requirements ##
+- Last ChEMBL MySQL database. [Download from ChEBML](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/).
+- Our *in-house* Knime workflow to connect to MySQL database and search for the compounds.[Download Workflow](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/03_Active_compounds_for_a_given_target_from_ChEMBL.knwf).
+- A list of targets as UniprotIDs. [Download example](pendiente). 
 
 
-## 1. Split receptor-ligand complex from single clsuter into separate files ##
 
-texto
+## 1. Conect ChEMBL MySQL databse ##
+
+texto 
 ## 2. ##
+texto
 ## 3. ##
 
 
