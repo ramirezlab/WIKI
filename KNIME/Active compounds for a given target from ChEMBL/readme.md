@@ -14,21 +14,15 @@ This workflow use a local ChEBML database to search one or a list of targets and
 
 
 
-## 1. Conect ChEMBL MySQL database to the workflow ##
-<table>
- <tr>
-    <td>descripcion</td>
-    <td><img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/mysql%20connector.png" width="500"></td>
- </tr>
-
-</table>
+## 1. Conect ChEMBL MySQL database with the workflow ##
+<img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/mysql%20connector.png" width="500">
 
 
 
-<p align="right">
-    <h> </h>
-    
-</p>
+
+
+
+
 
 
 ## 2. Configure the list of targets ##
