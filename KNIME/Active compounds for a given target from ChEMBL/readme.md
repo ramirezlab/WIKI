@@ -26,7 +26,7 @@ This workflow use a local ChEBML database to search one or a list of targets and
 
 
 <p align="right">
-    <h> texto </h>
+    <h> </h>
     
 </p>
 
