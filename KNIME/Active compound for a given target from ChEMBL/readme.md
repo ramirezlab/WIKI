@@ -1,3 +1,3 @@
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/WF_frequency_interactions_v2.png" width="700">
+    <img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compound%20for%20a%20given%20target%20from%20ChEMBL/media/WF.png" width="700">
 </p>
