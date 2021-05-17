@@ -18,7 +18,7 @@ This workflow use a local ChEBML database to search one or a list of targets and
 <table>
  <tr>
     <td>descripcion</td>
-    <td><img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/mysql%20connector.png" width="600"></td>
+    <td><img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/mysql%20connector.png" width="500"></td>
  </tr>
 
 </table>
