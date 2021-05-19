@@ -92,6 +92,6 @@ The following steps describe how to load entries:
 
 ### 4. Citation
 
-* Hurtado-Pachon, Jonathan; Peña-Varas, Carlos; Ramírez, David. MAPPING PROTEIN TARGETS AND DRUGS BY INDICATION. Santiago, Chile; 2021.
+* Hurtado-Pachon, Jonathan; Peña-Varas, Carlos; Ramírez, David. Protein-protein interactions networks (PPI) for key targets in a given disease. Santiago, Chile; 2021.
 
   
