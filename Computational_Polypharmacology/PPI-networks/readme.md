@@ -1,4 +1,4 @@
-## *Welcome to the Ramirez Lab Wiki – MAPPING PROTEIN TARGETS AND DRUGS BY INDICATION*
+# Welcome to the Ramirez Lab Wiki – Protein-protein interactions networks (PPI) for key targets in a given disease
 
 <div align="justify">Here we present a KNIME workflow which can be used to capture relevant information from an indication of interest relying in different databases such as <a href="https://www.ebi.ac.uk/chembl" target="_blank"><b>CHEMBL</b></a></b>, <b><a href="http://db.idrblab.net/ttd/" target="_blank">TTD</a></b>, <b><a href="https://go.drugbank.com/" target="_blank"<b>DRUGBANK</b></a>, <b><a href="https://string-db.org/" target="_blank"<b>STRING</b></a> and <b><a href="https://www.opentargets.org/" target="_blank"<b>OPEN TARGETS</b></a>,  to obtain a complete list of protein targets, drug names and their respective study phase, as well as key protein-protein interactions related to these targets in order to achieve a biological characterization of the processes associated with a selected disease. This workflow was standardized using Alzheimer's disease as an example.</div>
 
