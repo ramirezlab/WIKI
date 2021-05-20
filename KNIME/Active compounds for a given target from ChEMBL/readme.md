@@ -17,6 +17,7 @@ To follow these instructions you must have previously installed [MySQL](https://
 ## 1. Conect ChEMBL local MySQL database with the workflow ##
 
 First download and import our workflow [Active_compounds_for_a_given_target_from_ChEMBL workflow](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/01_Active_compounds_for_a_given_target_from_ChEMBL.knwf) to Knime software. Then **configure MySQL Connector** node by right clicking at the node and click configure, and complete Hostname, Database name, username and Password based on your personal MySQL information.
+
 <img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/mysql%20connector.png" width="500">
 
 
