@@ -26,6 +26,10 @@ First download and import our workflow [Active_compounds_for_a_given_target_from
 
 To ensure that our workflow correctly recognice the list of target, the input file has to be a excel file (xslx format), with a column named UniprotID that contains the list of targets as UniprotIDs.
 
+<p align="center">
+<img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/UniprotID_excel_file.png" width="500">
+</p>
+
 
 ## 3. Results ##
 
