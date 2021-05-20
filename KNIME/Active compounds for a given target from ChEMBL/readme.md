@@ -7,9 +7,9 @@ This workflow use a local ChEBML database to search one or a list of targets and
 </p>
 
 ## Requirements ##
-- MySQL database service.[MySQL website and manual](https://dev.mysql.com/doc/refman/8.0/en/installing.html).
+- MySQL database service. [MySQL website and manual](https://dev.mysql.com/doc/refman/8.0/en/installing.html).
 - Last ChEMBL MySQL database. [ChEBML databases](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/).
-- Our *in-house* [Knime](https://www.knime.com/) workflow to connect to MySQL database and search for the compounds.[Active_compounds_for_a_given_target_from_ChEMBL workflow](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/01_Active_compounds_for_a_given_target_from_ChEMBL.knwf).
+- Our *in-house* [Knime](https://www.knime.com/) workflow to connect to MySQL database and search for the compounds. [Active_compounds_for_a_given_target_from_ChEMBL workflow](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/01_Active_compounds_for_a_given_target_from_ChEMBL.knwf).
 - A list of targets as UniprotIDs. [Download example set](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/02_UniprotIDs.xlsx). 
 
 To follow these instructions you must have previously installed [MySQL](https://dev.mysql.com/doc/refman/8.0/en/installing.html) and configured the lastest [ChEBML database](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/) on your local machine.
