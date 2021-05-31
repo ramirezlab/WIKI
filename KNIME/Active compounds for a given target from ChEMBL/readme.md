@@ -38,8 +38,8 @@ With these nodes already configured, run the workflow by click on the green "exe
 In the same path of the Excel file used as input the workflow will create a folder named "ChEMBL_target_compounds" containing 4 excel files:
 
 - **01_Active_compounds.xlsx**: Compounds with reported activities below 5 µM associated to the list of targets.
-- **02_inactive_compounds.xlsx**: Compounds with reported activities over 5 $\mu$M associated to the list of targets.
-- **03_New_Target_Active_compounds.xlsx**: Other targets that also have reported activities below 5 $\mu$M with the same compounds that the file "01_Active_compounds.xlsx".
-- **04_New_Target_Inactive_compounds.xlsx**: Other targets that also have reported activities over 5 $\mu$M with the same compounds that the file "01_Active_compounds.xlsx".
+- **02_Inactive_compounds.xlsx**: Compounds with reported activities over 5 µM associated to the list of targets.
+- **03_New_Target_Active_compounds.xlsx**: Other targets that also have reported activities below 5 µM with the same compounds that the file "01_Active_compounds.xlsx".
+- **04_New_Target_Inactive_compounds.xlsx**: Other targets that also have reported activities over 5 µM with the same compounds that the file "01_Active_compounds.xlsx".
 
 
