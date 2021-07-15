@@ -27,7 +27,7 @@ num_modes = 10
 
 ```bash
 #####################################################################
-############# Created by Jessika Martinez - Ramirez Lab #############
+############# Created by Jessica Martinez - Ramirez Lab #############
 #####################################################################
 
 ##Carry out the first Docking and convert the outputs from .pdbqt to .pdb
@@ -91,6 +91,39 @@ done
 
 ```
 
+## Build Ligand-Receptor complexes after Massive Docking
+
+```bash
+#####################################################################
+############# Created by @davidRFB  #############
+#####################################################################
+
+cp receptor.pdbqt pdbqt/
+cd pdbqt/
+    obabel -ipdbqt receptor.pdbqt -opdb -O receptor.pdb
+    count=1
+    for i in {1..100};
+    do
+    cd splitpdbqt$i
+        for j in {01..10}; do
+            echo "$i $j"
+            obabel -ipdbqt ligand"$j".pdbqt -opdb -O ligand"$j".pdb ---errorlevel 0
+            #Generate a complex file with all poses and the receptor
+            echo "MODEL $count" >> ../Complexes.pdb
+            grep "REMARK\|HETA" ligand"$j".pdb >> ../Complexes.pdb
+            grep "ATOM" ../receptor.pdb >> ../Complexes.pdb
+            echo "ENDMDL" >> ../Complexes.pdb
+            #Generate a Poses file with all poses in pdb format
+            echo "MODEL $count" >> ../Poses.pdb
+            grep "REMARK\|HETA" ligand"$j".pdb >> ../Poses.pdb
+            echo "ENDMDL" >> ../Poses.pdb
+            ((count++))
+            done
+        cd ..
+    done
+#Generate clustering anaylsis folder.
+bitclust -top splitpdbqt1/ligand1.pdb -traj Complexes.pdb -odir Analysis -cutoff 3 -sel "resname UNK"
+```
 
 ## Citing
 
