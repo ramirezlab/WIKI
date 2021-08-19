@@ -80,9 +80,7 @@ Example of ligand fragment naming on table creator node:
 
 ## 4. Results ##
 The results table shows ligand framents, interacting residues and frequency of each interaction in relation with the number of poses included in the cluster. [Download results file](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/04_ligand-receptor_complex_example_set_interactions_frequency.xlsx)
-<!---
-![image3](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/frequency_interactions_results.png)
---->
+
 <p align="center">
     <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/frequency_interactions_results.png" width="900">
 </p>
