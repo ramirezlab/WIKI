@@ -23,7 +23,7 @@ To calculate the interaction frequency of each ligand-receptor complex cluster w
 
 ## 4. Results ##
 
-The results table shows ligand framents, interacting residues and frequency of each interaction in relation with the number of poses included in the cluster. [Download results file](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/03_results.xlsx)
+The results table shows ligand framents, interacting residues and the sum of frequencies of clusters. [Download results file](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/03_results.xlsx)
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/Results.png" width="900">
