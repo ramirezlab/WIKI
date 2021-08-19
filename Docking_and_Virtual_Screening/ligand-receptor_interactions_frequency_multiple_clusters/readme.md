@@ -6,7 +6,7 @@ To analyze the frequency of receptor-ligand interactions on a set of poses from 
 - Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
 - Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf).
 - A set of receptor-ligand complexes from a single cluster. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations.
-To test this pipeline we provide an example cluster with all interactions already calculated (*csv* files). [Example cluster set](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/01_System1_7clusters_example_set.zip).
+To test this pipeline, skipping steps 1 and 2, we provide an example ready for the workflow, with 7 clusters with all interactions already calculated (*csv* files), and separated into different folders. [Example cluster set](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/01_System1_7clusters_example_set.zip).
 
 ## 1. Split ligand-receptor complexes and calculate interactions ##
 
