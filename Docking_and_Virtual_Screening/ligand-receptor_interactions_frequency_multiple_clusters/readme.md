@@ -14,7 +14,7 @@ Follow steps 1 and 2 of [Interaction frequency among single-cluster conformers](
 
 ## 2. Split clusters into folders ##
 
-Make sure that each cluster has their own separated directory containing interactions files (*.csv).
+Make sure that each cluster has their own separated folder containing interactions files (*.csv). See the [Example cluster set](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/03_cluster_interactions_frequency.knwf).
 
 ## 3. Calculate interaction frequencies for user defined ligand fragments ##
 To calculate the interaction frequency of each ligand-receptor complex cluster we use the Knime workflow [Multiple_clusters_interactions_frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/02_Multiple-Clusters_interactions_frequency.knwf). The user must to configure 2 nodes:
