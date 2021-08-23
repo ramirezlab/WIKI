@@ -95,10 +95,15 @@ To calculate the interaction frequency of each ligand-receptor complex cluster w
 - **List Files/Folders:** The user must select the parent folder where separated cluster directories are located.
 - **Table Creator:** The user need to list all ligand atoms **(use only PDB format atom names)** on the first column, and assign each atom to the fragment of the structure it belongs to. Visit [Interaction frequency among single-cluster conformers](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency) for an example of maping ligands.
 
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/Results.png" width="900">
+</p>
+
 Example of ligand fragment naming on table creator node:
 
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/lig_fragments_atomname_config_2.png" width="1000">
+    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/WF_multiple_clusters_interaction_frequency.png" width="1000">
 </p>    
 
 ## 5. Results ##
