@@ -111,7 +111,7 @@ Example of ligand fragment naming on table creator node:
 The results table shows ligand framents, interacting residues and the sum of frequencies of clusters. [Download results file](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/05_results.xlsx)
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/Results.png" width="900">
+    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/05_Results.png" width="900">
 </p>
 
 ## Citing
