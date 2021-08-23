@@ -11,7 +11,7 @@ To test this pipeline, skipping steps 1 and 2, we provide an example ready for t
 
 ## 1. Split receptor-ligand complex from single clsuter into separate files ##
 
-To make sure that receptor and ligand are being use as input in correct order we first split the receptor-ligand complexes into two separate files using the *split_structure.py* script from [Schrödinger](https://www.schrodinger.com/scriptcenter). This can be done to all complex within a folder writing and executing the following bash script:
+To make sure that receptor and ligand are being use as input in correct order we first split the receptor-ligand complexes into two separate files using the *split_structure.py* script from [Schrödinger scripts](https://www.schrodinger.com/scriptcenter). This can be done to all complex within a folder writing and executing the following bash script:
 
 ***split.awk***
 ```bash
