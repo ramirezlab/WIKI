@@ -1,10 +1,10 @@
 # Welcome to the Ramirez Lab Wiki - Docking post-processing: Interaction frequency among multiple-cluster conformers #
 
-To analyze the frequency of receptor-ligand interactions on a set of poses from different clusters, we use scripts included on Schrödinger Suit (v.2020-3) to calculate the interactions on every pose and a *in-house* functional workflow built on [Knime](https://www.knime.com/) to get the frequency of interactions on each cluster and then sum the total.
+To analyze the frequency of receptor-ligand interactions on a set of poses from different clusters, we use scripts included on Schrödinger Suit (v.2020-3) to calculate the interactions on every pose and a *in-house* functional workflow built on Knime to get the frequency of interactions on each cluster and then sum the total.
 
 ## Requirements ##
 - Schrödinger Suit (version 2020 or newer; comercial or academic version) [Schrödinger](https://www.schrodinger.com/).
-- Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime website](https://www.knime.com/).
+- Knime version 4.3.2 or higher, a programing software via functional workflows. [Knime](https://www.knime.com/).
 - Our *in-house* Knime workflow to calculate interaction frequencies. [Cluster-interactions-frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/04_cluster_interactions_frequency.knwf).
 - A set of receptor-ligand complexes from a single cluster. All complexes must be of the same receptor and ligand. They can be obtained from different docking simulations, from a molecular dynamics trajectory, or even from free energy calculations.
 To test this pipeline, skipping steps 1 and 2, we provide an example ready for the workflow, with 7 clusters with all interactions already calculated (*csv* files), and separated into different folders. [Example cluster set](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/03_System1_7clusters_example_set.zip).
@@ -91,14 +91,12 @@ $ tree
 ````
 ## 4. Calculate interaction frequencies for user defined ligand fragments ##
 
-To calculate the interaction frequency of each ligand-receptor complex cluster we use the Knime workflow [Multiple_clusters_interactions_frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/02_Multiple-Clusters_interactions_frequency.knwf). The user must to configure 2 nodes:
+To calculate the interaction frequency of each ligand-receptor complex cluster we use the Knime workflow [Multiple_clusters_interactions_frequency](https://github.com/ramirezlab/WIKI/raw/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/04_Multiple-Clusters_interactions_frequency.knwf). The user must to configure 2 nodes:
 - **List Files/Folders:** The user must select the parent folder where separated cluster directories are located.
 - **Table Creator:** The user need to list all ligand atoms **(use only PDB format atom names)** on the first column, and assign each atom to the fragment of the structure it belongs to. Visit [Interaction frequency among single-cluster conformers](https://github.com/ramirezlab/WIKI/tree/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency) for an example of maping ligands.
 
 Example of ligand fragment naming on table creator node:
-<!---
-![image2](https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/lig_fragment_config.png)
---->
+
 <p align="center">
     <img src="https://github.com/ramirezlab/WIKI/blob/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency/media/lig_fragments_atomname_config_2.png" width="1000">
 </p>    
