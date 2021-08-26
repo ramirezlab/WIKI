@@ -102,6 +102,16 @@ To calculate the interaction frequency of each ligand-receptor complex cluster w
 
 Example of ligand fragment naming on table creator node:
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/4MTB_2D_noBG_fragments.png" width="700">
+</p>
+Example of ligand fragment naming on table creator node:
+<p align="center">
+    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/4MTB_3D.png" width="1000">
+</p>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/ramirezlab/WIKI/master/Docking_and_Virtual_Screening/ligand-receptor_interactions_frequency_multiple_clusters/media/4MTB_maping.png" width="1000">
+</p>
 
 ## 5. Results ##
 
