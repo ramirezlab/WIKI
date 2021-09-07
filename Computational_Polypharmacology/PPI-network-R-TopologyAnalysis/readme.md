@@ -93,7 +93,7 @@ If you load the data correctly, the data frame looks like the following table, w
 
 
 
-The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one. As well as the same network visualized in Cytoscape fore reference.
+The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one (Left). The same network could be also visualized in Cytoscape as reference (right graph).
 
 
     library(igraph)
