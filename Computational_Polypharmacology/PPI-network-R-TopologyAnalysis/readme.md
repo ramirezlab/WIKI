@@ -73,10 +73,10 @@ Now, that the libraries are loaded, we will define a multiplot function that is 
      ###################################################################
 ```
 
-Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-networks/Outputs/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
+Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
 
-
-    url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-networks/Outputs/02_output_Protein-Protein_Interaction_network.csv'
+```R
+    url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv'
     library(readr)
     Dat <- read_csv(url)
 
@@ -86,28 +86,28 @@ Once the multiplot function is defined, we are going to upload the file that has
     names(Dat)[3]<- "weight";
     Dat$weight <- as.numeric(Dat$weight)*100
     Dat$Prot_A <- NULL; Dat$Prot_B<-NULL
-
+```
 
 If you load the data correctly, the data frame looks like the following table, were each row is a connection between the two proteins in each column.
 
-
+```R
     head(Dat, 5)
-
+```
 
 
 The next step is to create the Graph that we are going to analyze, after you run this segment of code you will obtain an image like the following one (Left). The same network could be also visualized in Cytoscape as reference (right graph).
 
-
+```R
     library(igraph)
     g <- graph_from_data_frame(Dat, directed = FALSE)
     autograph(g)
 
  <img src=".\media\descarga.png" style="width:400px;" /> <img src=".\media\PPI-Blank_1.png" style="width:600px;" />
- 
+```
 
 Now, to obtain more information about the resulting graph, such as data that can be used to calculate some topological parameters like degree, centrality, betweenness, Pagerank, and closeness.
 
-
+```R
     print(paste("The Graph has",
             length(degree(g)),
             "vertex",
@@ -123,7 +123,7 @@ Now, to obtain more information about the resulting graph, such as data that can
        cg <- dg[[i]]
        print(paste("Component", i, "Size:", length(degree(cg)) ) )
      }
-
+```
 
 Next we compute the following indices of each vertex, we will normalize our values, that means we will put all our values between 0 and 1.
 
@@ -131,49 +131,49 @@ Next we compute the following indices of each vertex, we will normalize our valu
 ### Degree
 In graph theory, the degree of a vertex of a graph is the number of edges that are incident to the vertex. In a biological network, the degree may indicate the regulatory relevance of the node. Proteins with very high degree are interacting with several other signaling proteins, thus suggesting a central regulatory role, that is they are likely to be regulatory hubs. The degree could indicate a central role in amplification (kinases), diversification and turnover (small GTPases), signaling module assembly (docking proteins), gene expression (transcription factors), etc. (Scardoni et al. 2009).
 
-
+```R
     Vertex <- as.data.frame(degree(g))
     Vertex$Degree <- normalize(as.numeric(Vertex$`degree(g)`))
     Vertex$`degree(g)` <- NULL
-    
+```    
 
 ### Centrality
 Centrality or eigenvector centrality (also called prestige score) is a measure of the influence of a node in a network. Relative scores are assigned to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores. Betweenness Centrality of a node in a protein signaling network, can indicate the relevance of a protein as functionally capable of holding together communicating proteins. The higher the value the higher the relevance of the protein as organizing regulatory molecules. Centrality of a protein indicates the capability of a protein to bring in communication distant proteins. In signaling modules, proteins with high Centrality are likely crucial to maintain the network’s functionality and coherence of signaling mechanisms (Scardoni et al. 2009).
 
-
-
+```R
     Vertex$Centrality <- eigen_centrality(g)$vector
-    
+```
 
 ### Betweenness
 
 
 The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized.
 
-
+```R
     Vertex$Betweenness <- normalize(betweenness(g, normalized = TRUE ))
-    
+```    
 
 ### Pagerank
 
 
 PageRank is an algorithm used by Google Search to rank web pages, it is a way of measuring the importance of website pages. According to Google: “PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites.” Page-rank allows an immediate evaluation of the regulatory relevance of the node. A protein with a very high Page-rank is a protein interacting with several important proteins, thus suggesting a central regulatory role. A protein with low Page-rank, can be considered a peripheral protein, interacting with few and not central proteins (Scardoni et al. 2009).
 
-
+```R
     Vertex$PageRank <- normalize(page_rank(g)$vector)
-    
+```
 
 ### Closeness
 
 
 Closeness centrality (or closeness) of a node is a measure of centrality in a network, calculated as the reciprocal of the sum of the length of the shortest paths between the node and all other nodes in the graph. A protein with high closeness, compared to the average closeness of the network, will be central to the regulation of other proteins but with some proteins not influenced by its activity. A signaling network with a very high average closeness is more likely to be organized in functional units or modules, whereas a signaling network with very low average closeness will behave more likely as an open cluster of proteins connecting different regulatory modules (Scardoni et al. 2009).
 
-
+```R
     Vertex$Closeness <- normalize(closeness(g))
-
+```
 
 Next we classify the vertex with values over the 50%, and save a copy of the original vertex
 
+```R
     Vertex$N <- c(1:length(Vertex$Degree))
     Vertex$DegreeCat <- ifelse(Vertex$Degree < 0.5, "no", "yes")
     Vertex$CentralityCat <- ifelse(Vertex$Centrality < 0.5, "no", "yes")
@@ -189,15 +189,17 @@ Next we classify the vertex with values over the 50%, and save a copy of the ori
     Best_Centrality <- as.list(as.character(row.names(Vertex[Vertex$CentralityCat == "yes",])))
     Best_Betweenness <- as.list(as.character(row.names(Vertex[Vertex$BetweennessCat == "yes",])))
     Best_PageRank <- as.list(as.character(row.names(Vertex[Vertex$PageRankCat == "yes",])))
-
+```
 
 The final table for our vertex looks like this:
 
+```R
     head(Vertex, 5)
-
+```
 
 Let's see the behavior of all the topological index that we have
 
+```R
     library("tidyverse")
     Vertex <- Vertex[order(Vertex$Degree, decreasing = FALSE), ]
     Vertex$N <- c(1:nrow(Vertex) )
@@ -210,13 +212,13 @@ Let's see the behavior of all the topological index that we have
       labs(title="All variables")
 
 <img src=".\media\descarga (1).png" style="width:400px;" />
-
+```
 
 
 ### Set Theory and Venn Diagrams.
 We start by creating sets with the top 50% in each index, and the look for the intersections.
 
-
+```R
     library(ggvenn)
      x <- list(
          Closeness = Best_Closeness, 
@@ -247,10 +249,11 @@ We start by creating sets with the top 50% in each index, and the look for the i
 
     library(gplots)
     isect <- attr(venn(x, intersection=TRUE), "intersection")
-
+```
 
 Next we will see the size of the intersections in a bar diagram
 
+```R
     library(UpSetR)
      input <- c(
      Centrality = length(isect$Centrality),
@@ -289,11 +292,12 @@ Next we will see the size of the intersections in a bar diagram
 
 
 <img src=".\media\descarga (3).png" style="width:400px;" />
+```
 
+These proteins are grouped in modules, this information is in the file "FunctionalModules.csv" also available online at RamirezLab Github (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv" target="_blank"><b>here</b></a>), we would like too see how much every module add in each topological index. First we read the modules and find out in which module is each protein. The functional modules labeled and visualized in Cytoscape are in the following image for reference.
 
-These proteins are grouped in modules, this information is in the file "FunctionalModules.csv" also available online in Github, we would like too see how much every module add in each topological index. First we read the modules and find out in which module is each protein. The functional modules labeled and visualized in Cytoscape are in the following image for reference.
-
-    url <- 'https://raw.githubusercontent.com/gcombarGitHub/GrafosFarmacosChile/main/FunctionalModules.csv'
+```R
+    url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv'
     library(readr)
     Functional_modules <- read_csv(url)
     Functional_modules <- Functional_modules[-c(1),]
@@ -309,10 +313,11 @@ These proteins are grouped in modules, this information is in the file "Function
 
 
 <img src=".\media\PPI-post-MTGO.jpg" style="width:400px;" />
-
+```
 
 Now we will rename the modules from GO terms to numbers, in order to make the graphs easy to read.
 
+```R
     Vertex$Module2[Vertex$Module == "Acetylcholine-gated channel"] = "01"
     Vertex$Module2[Vertex$Module == "Adenylate cyclase activity"] = "02"
     Vertex$Module2[Vertex$Module == "Axon"] = "03"
@@ -333,10 +338,11 @@ Now we will rename the modules from GO terms to numbers, in order to make the gr
     Vertex$Module2[Vertex$Module == "Transmembrane receptor protein tyrosine kinase signaling"] = 18
     Vertex$Module2[Vertex$Module == "Ubiquitin protein ligase activity"] = 19
     Vertex$Module2[Vertex$Module == "Voltage-gated calcium channel complex"] = 20
-
+```
 
 Now we can do a boxplot for each module in each topological index. The resulting image is the following.
 
+```R
     p0 <- ggplot(subset(Vertex, !is.na(Module2))) +
           geom_boxplot(aes(x = Module2, y=Degree))+
           theme(axis.title.x=element_blank())
@@ -355,9 +361,11 @@ Now we can do a boxplot for each module in each topological index. The resulting
     multiplot(p0, p1, p2, p3, p4, cols=1 )
 
 <img src=".\media\descarga (5).png" style="width:400px;" />
+```
 
 Now, we can also create a barplot graph for each index. The resulting image is found next.
 
+```R
     p0 <- ggplot(subset(Vertex, !is.na(Module2))) +
          geom_col(aes(x = Module2, y=Degree, fill=DegreeCat))+ 
          labs( fill = "", title = "Greater than 50%")+
@@ -382,7 +390,7 @@ Now, we can also create a barplot graph for each index. The resulting image is f
 
 
 <img src=".\media\descarga (4).png" style="width:400px;" />
-
+```
 
 ## References
 + Scardoni G, Laudanna C, Tosadori G, Fabbri F, Faizaan M. (2009) Analyzing biological network parameters with CentiScaPe.  Bioinformatics. doi:10.1093/bioinformatics/btp517
