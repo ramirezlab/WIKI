@@ -1,3 +1,10 @@
+# Welcome to the Ramirez Lab Wiki – Topological Protein-protein interactions (PPI) networks analysis
+
+<div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "importancy" of each protein in a protein-protein interaction network in terms of its connections. For further information about Topological PPI networks analysis go to EMBL-EBI online tutorial  : <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a></b>.</div>
+
+### Requirements
+
+
 # Graph Theory on Proteins
 In this tutorial, we are going to learn how to compute some topological indices that will help us understand the "importancy" of each protein in a protein-protein interaction network in terms of its connections.
 
