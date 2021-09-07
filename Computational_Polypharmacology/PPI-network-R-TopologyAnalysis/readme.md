@@ -1,7 +1,7 @@
 # Welcome to the Ramirez Lab Wiki – Topological Protein-protein interactions (PPI) networks analysis
 
 <div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "importancy" of each protein in a PPI network in terms of its connections. For further information about Topological PPI networks analysis go to EMBL-EBI online tutorial: <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a>.</div>
-<div align="justify">Here we will use the PPI network for the Alzheimer's disease (PPI-AD) obteined in our group using KNIME, available <a href="https://github.com/ramirezlab/WIKI/edit/master/Computational_Polypharmacology/PPI-networks/readme.md" target="_blank"><b>here</b></a>.</div>
+<div align="justify">Here we will use the PPI network for the Alzheimer's disease (PPI-AD) obteined in our group using KNIME, available <a href="https://github.com/ramirezlab/WIKI/tree/master/Computational_Polypharmacology/PPI-networks" target="_blank"><b>here</b></a>.</div>
 
 
 ## Requirements
