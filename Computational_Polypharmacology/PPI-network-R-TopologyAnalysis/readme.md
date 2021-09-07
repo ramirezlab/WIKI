@@ -9,6 +9,7 @@
 
 The first step is installing in R the packages that are needed as well as loading their respective libraries. In order to do this, you can copy and paste the following code in R and run it.
 
+```R
     install.packages("ggplot2")
     install.packages("igraph")
     install.packages("ggraph")
@@ -26,10 +27,11 @@ The first step is installing in R the packages that are needed as well as loadin
     library(VennDiagram)
     library(gplots)
     library(UpSetR)
-
+```
 
 Now, that the libraries are loaded, we will define a multiplot function that is going to be used to visualize the network in our file.
 
+```R
     multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
     library(grid)
   
@@ -69,7 +71,7 @@ Now, that the libraries are loaded, we will define a multiplot function that is 
      normalize <- function(x) {                                        # 
        return ((x - min(x)) / (max(x) - min(x)))                 }     #
      ###################################################################
-
+```
 
 Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-networks/Outputs/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
 
