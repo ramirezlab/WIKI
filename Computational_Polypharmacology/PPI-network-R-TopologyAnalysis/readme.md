@@ -71,10 +71,10 @@ Now, that the libraries are loaded, we will define a multiplot function that is 
      ###################################################################
 
 
-Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online in GitHub, which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
+Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-networks/Outputs/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
 
 
-    url <- 'https://github.com/gcombarGitHub/GrafosFarmacosChile/raw/main/02_output_T1T2T3-interacting-with-T4.csv'
+    url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-networks/Outputs/02_output_Protein-Protein_Interaction_network.csv'
     library(readr)
     Dat <- read_csv(url)
 
@@ -127,8 +127,6 @@ Next we compute the following indices of each vertex, we will normalize our valu
 
 
 ### Degree
-
-
 In graph theory, the degree of a vertex of a graph is the number of edges that are incident to the vertex. In a biological network, the degree may indicate the regulatory relevance of the node. Proteins with very high degree are interacting with several other signaling proteins, thus suggesting a central regulatory role, that is they are likely to be regulatory hubs. The degree could indicate a central role in amplification (kinases), diversification and turnover (small GTPases), signaling module assembly (docking proteins), gene expression (transcription factors), etc. (Scardoni et al. 2009).
 
 
@@ -138,8 +136,6 @@ In graph theory, the degree of a vertex of a graph is the number of edges that a
     
 
 ### Centrality
-
-
 Centrality or eigenvector centrality (also called prestige score) is a measure of the influence of a node in a network. Relative scores are assigned to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores. Betweenness Centrality of a node in a protein signaling network, can indicate the relevance of a protein as functionally capable of holding together communicating proteins. The higher the value the higher the relevance of the protein as organizing regulatory molecules. Centrality of a protein indicates the capability of a protein to bring in communication distant proteins. In signaling modules, proteins with high Centrality are likely crucial to maintain the network’s functionality and coherence of signaling mechanisms (Scardoni et al. 2009).
 
 
