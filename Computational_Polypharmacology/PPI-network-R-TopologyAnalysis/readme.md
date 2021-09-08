@@ -3,14 +3,6 @@
 <div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "importancy" of each protein in a PPI network in terms of its connections. For further information about Topological PPI networks analysis go to EMBL-EBI online tutorial: <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a>.</div>
 <div align="justify">Here we will use the PPI network for the Alzheimer's disease (PPI-AD) obteined in our group using KNIME, available <a href="https://github.com/ramirezlab/WIKI/tree/master/Computational_Polypharmacology/PPI-networks" target="_blank"><b>here</b></a>.</div>
 
-
-If $A$  is the adjacency matrix of the graph $G$ the relative centrality, $x_v$ , score of vertex $v$ can be defined as:
-$$
-x_v = \frac{1}{\lambda}\sum_{t\in M(v)}x_t. 
-$$
-
-where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in terms of the adjacency matrix this is $Ax=\lambda x$.
-
 ## Requirements
 + R v4.1.1 or more recent.
 
