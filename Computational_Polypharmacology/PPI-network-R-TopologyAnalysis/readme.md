@@ -4,6 +4,13 @@
 <div align="justify">Here we will use the PPI network for the Alzheimer's disease (PPI-AD) obteined in our group using KNIME, available <a href="https://github.com/ramirezlab/WIKI/tree/master/Computational_Polypharmacology/PPI-networks" target="_blank"><b>here</b></a>.</div>
 
 
+If $A$  is the adjacency matrix of the graph $G$ the relative centrality, $x_v$ , score of vertex $v$ can be defined as:
+$$
+x_v = \frac{1}{\lambda}\sum_{t\in M(v)}x_t. 
+$$
+
+where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in terms of the adjacency matrix this is $Ax=\lambda x$.
+
 ## Requirements
 + R v4.1.1 or more recent.
 
