@@ -386,10 +386,10 @@ Now, we can also create a barplot graph for each index. The resulting image is f
          labs( fill = "") +
          theme(axis.title.x=element_blank())
     multiplot(p0, p1, p2, p3, p4, cols=1 )
-
+```
 
 <img src=".\media\descarga (4).png" style="width:400px;" />
-```
+
 
 ## References
 + Scardoni G, Laudanna C, Tosadori G, Fabbri F, Faizaan M. (2009) Analyzing biological network parameters with CentiScaPe.  Bioinformatics. doi:10.1093/bioinformatics/btp517
