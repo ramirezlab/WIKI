@@ -4,6 +4,7 @@
 <div align="justify">Here we will use the PPI network for the Alzheimer's disease (PPI-AD) obteined in our group using KNIME, available <a href="https://github.com/ramirezlab/WIKI/tree/master/Computational_Polypharmacology/PPI-networks" target="_blank"><b>here</b></a>.</div>
 
 
+
 ## Requirements
 + R v4.1.1 or more recent.
 
@@ -259,7 +260,7 @@ We start by creating sets with the top 50% in each index, and the look for the i
     )
 ```
 
-<img src=".\media\descarga (2).png" style="width:400px;" />
+<img src=".\media\Fig_3_Venn_Diagrama_1-1.png" style="width:400px;" />
 
 ```R
     library(gplots)
