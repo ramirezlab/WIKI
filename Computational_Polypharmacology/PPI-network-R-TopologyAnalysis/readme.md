@@ -142,11 +142,11 @@ Next we compute the following indices of each vertex, we will normalize our valu
 <div align="justify">Centrality or eigenvector centrality (also called prestige score) is a measure of the influence of a node in a network. Relative scores are assigned to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores. Betweenness Centrality of a node in a protein signaling network, can indicate the relevance of a protein as functionally capable of holding together communicating proteins. The higher the value the higher the relevance of the protein as organizing regulatory molecules. Centrality of a protein indicates the capability of a protein to bring in communication distant proteins. In signaling modules, proteins with high Centrality are likely crucial to maintain the network’s functionality and coherence of signaling mechanisms (Scardoni et al. 2009).</div>
 
 
-If A is the adjacency matrix of the graph G the relative centrality, $x_v$, score of vertex $v$ can be defined as:
+If **A** is the adjacency matrix of the graph **G** the relative centrality, <img src="https://render.githubusercontent.com/render/math?math=%24x_v%24">, score of vertex **v** can be defined as:
       
 <img src="https://render.githubusercontent.com/render/math?math=%24%0Ax_v%20%3D%20%5Cfrac%7B1%7D%7B%5Clambda%7D%5Csum_%7Bt%5Cin%20M(v)%7Dx_t.%20%0A%24"  style="width:150px;" />
 
-where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in terms of the adjacency matrix this is $Ax=\lambda x$.
+where **M(v)** is a set of the neighbors of **v** and <img src="https://render.githubusercontent.com/render/math?math=%24%5Clambda%24"> is a constant, in terms of the adjacency matrix this is <img src="https://render.githubusercontent.com/render/math?math=%24Ax%3D%5Clambda%20x%24">.
 
 ```R
     Vertex$Centrality <- eigen_centrality(g)$vector
@@ -155,11 +155,11 @@ where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in te
 ### Betweenness
 
 
-<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized. The betweenness  centrality $b(v)$ of a node $v$ is defined by:</div>
+<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized. The betweenness  centrality **b(v)** of a node **v** is defined by:</div>
 
 <img src="https://render.githubusercontent.com/render/math?math=%24%0Ab(v)%20%3D%20%5Csum_%7Bs%5Cne%20v%5Cne%20t%5Cin%20V%7D%5Cfrac%7B%5Csigma_%7Bst%7D(v)%7D%7B%5Csigma_%7Bst%7D%7D%0A%24"   style="width:150px;" />
 
-Where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$ and $\sigma_{st}(v)$ is the number of those paths that pass through $v$.
+Where <img src="https://render.githubusercontent.com/render/math?math=%24%5Csigma_%7Bst%7D%24"> is the total number of shortest paths from node **s** to node **t** and <img src="https://render.githubusercontent.com/render/math?math=%24%5Csigma_%7Bst%7D(v)%24"> is the number of those paths that pass through **v**.
 
 ```R
     Vertex$Betweenness <- normalize(betweenness(g, normalized = TRUE ))
@@ -181,7 +181,7 @@ Where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node 
 
 <img src="https://render.githubusercontent.com/render/math?math=%24%0AC(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Csum_y%20d(x%2Cy)%7D%0A%24"   style="width:150px;" />
 
-Where $d(x,y)$ is the distance between the vertices $x,y$. A high closeness can be thought of as an easy access to all nodes. 
+Where <img src="https://render.githubusercontent.com/render/math?math=%24d(x%2Cy)%24"> is the distance between the vertices **x,y**. A high closeness can be thought of as an easy access to all nodes. 
 
 ```R
     Vertex$Closeness <- normalize(closeness(g))
