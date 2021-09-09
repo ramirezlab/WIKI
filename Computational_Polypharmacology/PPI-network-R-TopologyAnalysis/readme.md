@@ -155,7 +155,7 @@ where **M(v)** is a set of the neighbors of **v** and <img src="https://render.g
 ### Betweenness
 
 
-<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized. The betweenness  centrality **b(v)** of a node **v** is defined by:</div>
+<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized. The betweenness  centrality <img src="https://render.githubusercontent.com/render/math?math=%24b(v)%24"> of a node v is defined by:</div>
 
 <img src="https://render.githubusercontent.com/render/math?math=%24%0Ab(v)%20%3D%20%5Csum_%7Bs%5Cne%20v%5Cne%20t%5Cin%20V%7D%5Cfrac%7B%5Csigma_%7Bst%7D(v)%7D%7B%5Csigma_%7Bst%7D%7D%0A%24"   style="width:150px;" />
 
