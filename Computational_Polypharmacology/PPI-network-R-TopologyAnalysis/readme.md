@@ -3,6 +3,7 @@
 <div align="justify">Here we present a R-Studio pipeline to compute some topological parameters that will help us understand the "importancy" of each protein in a PPI network in terms of its connections. For further information about Topological PPI networks analysis go to EMBL-EBI online tutorial: <a href="https://www.ebi.ac.uk/training/online/courses/network-analysis-of-protein-interaction-data-an-introduction/network-analysis-in-biology/" target="_blank"><b>Network analysis of protein interaction data</b></a>.</div>
 <div align="justify">Here we will use the PPI network for the Alzheimer's disease (PPI-AD) obteined in our group using KNIME, available <a href="https://github.com/ramirezlab/WIKI/tree/master/Computational_Polypharmacology/PPI-networks" target="_blank"><b>here</b></a>.</div>
 
+
 ## Requirements
 + R v4.1.1 or more recent.
 
@@ -101,7 +102,7 @@ The next step is to create the Graph that we are going to analyze, after you run
     g <- graph_from_data_frame(Dat, directed = FALSE)
     autograph(g)
 ```
- <img src=".\media\descarga.png" style="width:400px;" /> <img src=".\media\PPI-Blank_1.png" style="width:600px;" />
+ <img src=".\media\descarga.png" style="width:250px;" /> <img src=".\media\PPI-Blank_1.png" style="width:650px;" />
 
 
 Now, to obtain more information about the resulting graph, such as data that can be used to calculate some topological parameters like degree, centrality, betweenness, Pagerank, and closeness.
@@ -139,11 +140,10 @@ Next we compute the following indices of each vertex, we will normalize our valu
 ### Centrality
 <div align="justify">Centrality or eigenvector centrality (also called prestige score) is a measure of the influence of a node in a network. Relative scores are assigned to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores. Betweenness Centrality of a node in a protein signaling network, can indicate the relevance of a protein as functionally capable of holding together communicating proteins. The higher the value the higher the relevance of the protein as organizing regulatory molecules. Centrality of a protein indicates the capability of a protein to bring in communication distant proteins. In signaling modules, proteins with high Centrality are likely crucial to maintain the network’s functionality and coherence of signaling mechanisms (Scardoni et al. 2009).</div>
 
-\usepackage{amsmath}
 
-If $A$ is the adjacency matrix of the graph $G$ the relative centrality, $x_v$ , score of vertex $v$ can be defined as:
+If A is the adjacency matrix of the graph G the relative centrality, $x_v$, score of vertex $v$ can be defined as:
       
-$$x_v = \frac{1}{\lambda}\sum_{t\in M(v)}x_t.$$
+<img src="https://render.githubusercontent.com/render/math?math=%24%0Ax_v%20%3D%20%5Cfrac%7B1%7D%7B%5Clambda%7D%5Csum_%7Bt%5Cin%20M(v)%7Dx_t.%20%0A%24"  style="width:150px;" />
 
 where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in terms of the adjacency matrix this is $Ax=\lambda x$.
 
@@ -154,7 +154,11 @@ where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in te
 ### Betweenness
 
 
-<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized.</div>
+<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized. The betweenness  centrality $b(v)$ of a node $v$ is defined by:</div>
+
+<img src="https://render.githubusercontent.com/render/math?math=%24%0Ab(v)%20%3D%20%5Csum_%7Bs%5Cne%20v%5Cne%20t%5Cin%20V%7D%5Cfrac%7B%5Csigma_%7Bst%7D(v)%7D%7B%5Csigma_%7Bst%7D%7D%0A%24"   style="width:150px;" />
+
+Where $\sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$ and $\sigma_{st}(v)$ is the number of those paths that pass through $v$.
 
 ```R
     Vertex$Betweenness <- normalize(betweenness(g, normalized = TRUE ))
@@ -172,7 +176,11 @@ where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in te
 ### Closeness
 
 
-<div align="justify">Closeness centrality (or closeness) of a node is a measure of centrality in a network, calculated as the reciprocal of the sum of the length of the shortest paths between the node and all other nodes in the graph. A protein with high closeness, compared to the average closeness of the network, will be central to the regulation of other proteins but with some proteins not influenced by its activity. A signaling network with a very high average closeness is more likely to be organized in functional units or modules, whereas a signaling network with very low average closeness will behave more likely as an open cluster of proteins connecting different regulatory modules (Scardoni et al. 2009).</div>
+<div align="justify">Closeness centrality (or closeness) of a node is a measure of centrality in a network, calculated as the reciprocal of the sum of the length of the shortest paths between the node and all other nodes in the graph. A protein with high closeness, compared to the average closeness of the network, will be central to the regulation of other proteins but with some proteins not influenced by its activity. A signaling network with a very high average closeness is more likely to be organized in functional units or modules, whereas a signaling network with very low average closeness will behave more likely as an open cluster of proteins connecting different regulatory modules (Scardoni et al. 2009). The equation for closeness is:</div>
+
+<img src="https://render.githubusercontent.com/render/math?math=%24%0AC(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Csum_y%20d(x%2Cy)%7D%0A%24"   style="width:150px;" />
+
+Where $d(x,y)$ is the distance between the vertices $x,y$. A high closeness can be thought of as an easy access to all nodes. 
 
 ```R
     Vertex$Closeness <- normalize(closeness(g))
