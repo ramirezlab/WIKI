@@ -103,7 +103,7 @@ The next step is to create the Graph that we are going to analyze, after you run
     g <- graph_from_data_frame(Dat, directed = FALSE)
     autograph(g)
 ```
- <img src=".\media\descarga.png" style="width:230px;" /> <img src=".\media\PPI-Blank_1.png" style="width:630px;" />
+ <img src=".\media\descarga.png" style="width:200px;" /> <img src=".\media\PPI-Blank_1.png" style="width:610px;" />
 
 
 Now, to obtain more information about the resulting graph, such as data that can be used to calculate some topological parameters like degree, centrality, betweenness, Pagerank, and closeness.
