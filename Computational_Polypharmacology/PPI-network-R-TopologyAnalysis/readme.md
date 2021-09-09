@@ -72,7 +72,7 @@ Now, that the libraries are loaded, we will define a multiplot function that is 
      ###################################################################
 ```
 
-Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.
+<div align="justify"> Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.</div>
 
 ```R
     url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv'
@@ -128,7 +128,7 @@ Next we compute the following indices of each vertex, we will normalize our valu
 
 
 ### Degree
-In graph theory, the degree of a vertex of a graph is the number of edges that are incident to the vertex. In a biological network, the degree may indicate the regulatory relevance of the node. Proteins with very high degree are interacting with several other signaling proteins, thus suggesting a central regulatory role, that is they are likely to be regulatory hubs. The degree could indicate a central role in amplification (kinases), diversification and turnover (small GTPases), signaling module assembly (docking proteins), gene expression (transcription factors), etc. (Scardoni et al. 2009).
+<div align="justify">In graph theory, the degree of a vertex of a graph is the number of edges that are incident to the vertex. In a biological network, the degree may indicate the regulatory relevance of the node. Proteins with very high degree are interacting with several other signaling proteins, thus suggesting a central regulatory role, that is they are likely to be regulatory hubs. The degree could indicate a central role in amplification (kinases), diversification and turnover (small GTPases), signaling module assembly (docking proteins), gene expression (transcription factors), etc. (Scardoni et al. 2009).</div>
 
 ```R
     Vertex <- as.data.frame(degree(g))
@@ -137,7 +137,15 @@ In graph theory, the degree of a vertex of a graph is the number of edges that a
 ```    
 
 ### Centrality
-Centrality or eigenvector centrality (also called prestige score) is a measure of the influence of a node in a network. Relative scores are assigned to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores. Betweenness Centrality of a node in a protein signaling network, can indicate the relevance of a protein as functionally capable of holding together communicating proteins. The higher the value the higher the relevance of the protein as organizing regulatory molecules. Centrality of a protein indicates the capability of a protein to bring in communication distant proteins. In signaling modules, proteins with high Centrality are likely crucial to maintain the network’s functionality and coherence of signaling mechanisms (Scardoni et al. 2009).
+<div align="justify">Centrality or eigenvector centrality (also called prestige score) is a measure of the influence of a node in a network. Relative scores are assigned to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. A high eigenvector score means that a node is connected to many nodes who themselves have high scores. Betweenness Centrality of a node in a protein signaling network, can indicate the relevance of a protein as functionally capable of holding together communicating proteins. The higher the value the higher the relevance of the protein as organizing regulatory molecules. Centrality of a protein indicates the capability of a protein to bring in communication distant proteins. In signaling modules, proteins with high Centrality are likely crucial to maintain the network’s functionality and coherence of signaling mechanisms (Scardoni et al. 2009).</div>
+
+\usepackage{amsmath}
+
+If $A$ is the adjacency matrix of the graph $G$ the relative centrality, $x_v$ , score of vertex $v$ can be defined as:
+      
+$$x_v = \frac{1}{\lambda}\sum_{t\in M(v)}x_t.$$
+
+where $M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant, in terms of the adjacency matrix this is $Ax=\lambda x$.
 
 ```R
     Vertex$Centrality <- eigen_centrality(g)$vector
@@ -146,7 +154,7 @@ Centrality or eigenvector centrality (also called prestige score) is a measure o
 ### Betweenness
 
 
-The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized.
+<div align="justify">The betweenness centrality (or "betweenness”) is a measure of centrality, for each vertex the betweenness is by definition the number of these shortest paths that pass through the vertex. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that the number of edges that the path passes through is minimized.</div>
 
 ```R
     Vertex$Betweenness <- normalize(betweenness(g, normalized = TRUE ))
@@ -155,7 +163,7 @@ The betweenness centrality (or "betweenness”) is a measure of centrality, for 
 ### Pagerank
 
 
-PageRank is an algorithm used by Google Search to rank web pages, it is a way of measuring the importance of website pages. According to Google: “PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites.” Page-rank allows an immediate evaluation of the regulatory relevance of the node. A protein with a very high Page-rank is a protein interacting with several important proteins, thus suggesting a central regulatory role. A protein with low Page-rank, can be considered a peripheral protein, interacting with few and not central proteins (Scardoni et al. 2009).
+<div align="justify">PageRank is an algorithm used by Google Search to rank web pages, it is a way of measuring the importance of website pages. According to Google: “PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites.” Page-rank allows an immediate evaluation of the regulatory relevance of the node. A protein with a very high Page-rank is a protein interacting with several important proteins, thus suggesting a central regulatory role. A protein with low Page-rank, can be considered a peripheral protein, interacting with few and not central proteins (Scardoni et al. 2009).</div>
 
 ```R
     Vertex$PageRank <- normalize(page_rank(g)$vector)
@@ -164,7 +172,7 @@ PageRank is an algorithm used by Google Search to rank web pages, it is a way of
 ### Closeness
 
 
-Closeness centrality (or closeness) of a node is a measure of centrality in a network, calculated as the reciprocal of the sum of the length of the shortest paths between the node and all other nodes in the graph. A protein with high closeness, compared to the average closeness of the network, will be central to the regulation of other proteins but with some proteins not influenced by its activity. A signaling network with a very high average closeness is more likely to be organized in functional units or modules, whereas a signaling network with very low average closeness will behave more likely as an open cluster of proteins connecting different regulatory modules (Scardoni et al. 2009).
+<div align="justify">Closeness centrality (or closeness) of a node is a measure of centrality in a network, calculated as the reciprocal of the sum of the length of the shortest paths between the node and all other nodes in the graph. A protein with high closeness, compared to the average closeness of the network, will be central to the regulation of other proteins but with some proteins not influenced by its activity. A signaling network with a very high average closeness is more likely to be organized in functional units or modules, whereas a signaling network with very low average closeness will behave more likely as an open cluster of proteins connecting different regulatory modules (Scardoni et al. 2009).</div>
 
 ```R
     Vertex$Closeness <- normalize(closeness(g))
@@ -293,7 +301,7 @@ Next we will see the size of the intersections in a bar diagram
 <img src=".\media\descarga (3).png" style="width:400px;" />
 
 
-These proteins are grouped in modules, this information is in the file "FunctionalModules.csv" also available online at RamirezLab Github (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv" target="_blank"><b>here</b></a>), we would like too see how much every module add in each topological index. First we read the modules and find out in which module is each protein. The functional modules labeled and visualized in Cytoscape are in the following image for reference.
+<div align="justify">These proteins are grouped in modules, this information is in the file "FunctionalModules.csv" also available online at RamirezLab Github (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv" target="_blank"><b>here</b></a>), we would like too see how much every module add in each topological index. First we read the modules and find out in which module is each protein. The functional modules labeled and visualized in Cytoscape are in the following image for reference.</div>
 
 ```R
     url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv'
