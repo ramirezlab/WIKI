@@ -116,3 +116,7 @@ The results table shows ligand framents, interacting residues and the sum of fre
 </p>
 
 ## Citing
+
+* Peña-Varas, Carlos, & Ramírez, David. (2021, Sep 9). Docking post-processing: Interaction frequency among multiple-cluster conformers (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.5498074
+
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5498074.svg)](https://doi.org/10.5281/zenodo.5498074)
