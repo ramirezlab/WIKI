@@ -8,7 +8,7 @@
 ## Requirements
 + R v4.1.1 or more recent.
 
-The first step is installing in R the packages that are needed as well as loading their respective libraries. In order to do this, you can copy and paste the following code in R and run it.
+The first step is installing in R the packages that are needed, as well as loading their respective libraries. In order to do this, you can copy and paste the following code in R and run it.
 
 ```R
     install.packages("ggplot2")
@@ -19,6 +19,7 @@ The first step is installing in R the packages that are needed as well as loadin
     install.packages("gplots")
     install.packages("UpSetR")
     install.packages("tidyverse")
+    install.packages("readxl")
 
 
     library(igraph)
@@ -28,6 +29,7 @@ The first step is installing in R the packages that are needed as well as loadin
     library(VennDiagram)
     library(gplots)
     library(UpSetR)
+    library(readxl)
 ```
 
 Now, that the libraries are loaded, we will define a multiplot function that is going to be used to visualize the network in our file.
@@ -77,9 +79,7 @@ Now, that the libraries are loaded, we will define a multiplot function that is 
 <div align="justify"> Once the multiplot function is defined, we are going to upload the file that has the proteins and the connections, this file is available online at RamirezLab GitHub (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv" target="_blank"><b>here</b></a>), which is why we are going to upload it from an URL and not from a saved file, but in case you want to analyze a local file you can uploaded it using a read.csv of read.xlsx command.</div>
 
 ```R
-    url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/02_output_Protein-Protein_Interaction_network.csv'
-    library(readr)
-    Dat <- read_csv(url)
+    Dat <- read_excel("your-file-location.xlsx")
 
 
     names(Dat)[1]<- "X";  
@@ -310,12 +310,11 @@ Next we will see the size of the intersections in a bar diagram
 <img src=".\media\descarga (3).png" style="width:400px;" />
 
 
-<div align="justify">These proteins are grouped in modules, this information is in the file "FunctionalModules.csv" also available online at RamirezLab Github (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv" target="_blank"><b>here</b></a>), we would like too see how much every module add in each topological index. First we read the modules and find out in which module is each protein. The functional modules labeled and visualized in Cytoscape are in the following image for reference.</div>
+<div align="justify">These proteins are grouped in modules, this information is in the file "FunctionalModules.csv" also available online at RamirezLab Github (<a href="https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv" target="_blank"><b>here</b></a>). This file was generated for our input file using the program MTGO by Vella et al, 2018, available online at https://gitlab.com/d1vella/MTGO where you can find the User manual and the .exe file to download the program. MTGO uses your PPI data, and performs a functional enrichment of significant over represented GO terms.
+ We would like too see how much every module add in each topological index. First we read the modules and find out in which module is each protein. The functional modules labeled and visualized in Cytoscape are in the following image for reference.</div>
 
 ```R
-    url <- 'https://github.com/ramirezlab/WIKI/blob/master/Computational_Polypharmacology/PPI-network-R-TopologyAnalysis/input/FunctionalModules.csv'
-    library(readr)
-    Functional_modules <- read_csv(url)
+    Functional_modules <- - read_excel("your-file-location.xlsx")
     Functional_modules <- Functional_modules[-c(1),]
 
     Vertex$Module <- NA
