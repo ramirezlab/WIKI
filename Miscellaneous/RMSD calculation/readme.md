@@ -3,7 +3,7 @@
 The Root Mean Square Deviation (RMSD) is a common metric used to evaluate the distance between the predicted pose and the native pose, given a superposition of proteins or ligands. It is calculated with the following equation:
 
 <p align="center">
-  <img src="https://github.com/Claudia-Alejandra-Martinez/Calculate-RMSD/blob/main/Calculate%20RMSD/media/RMSD.PNG?raw=true">
+  <img src="https://github.com/ramirezlab/WIKI/blob/master/Miscellaneous/RMSD%20calculation/files/RMSD.png">
  </p>
 
 Equation taken from: [J. Cheminform 11, 40 (2019)](https://doi.org/10.1186/s13321-019-0362-7)
