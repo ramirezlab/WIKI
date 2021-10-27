@@ -27,7 +27,7 @@ You will need: Schrödinger
 
 
  ```bash
-Reference file: /home/cmartinez/docking_1eve/compare_ligand/reference_ligand.mae
+Reference file: /PATHWAY-TO/reference_ligand.mae
 Query file: sp1.pdb
 ASL: not atom.element H
 In-place RMSD = 2.18; maxd = 4.38 between atoms  28 ( C28) and  27 ( C23); atoms ASL: not atom.element H
@@ -39,7 +39,7 @@ Note: The script must be executed within the folder where the files to be used a
 
 
   ```bash
-  $SCHRODINGER_20/run rmsd.py /home/cmartinez/docking_1eve/compare_ligand/reference_ligand.mae /home/cmartinez/docking_1eve/compare_ligand/sp1.pdb
+  $SCHRODINGER/run rmsd.py /PATHWAY-TO/reference_ligand.mae /PATHWAY-TO/sp1.pdb
   ```
 
 
