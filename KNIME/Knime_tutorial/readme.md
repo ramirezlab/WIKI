@@ -1,4 +1,4 @@
-![image1](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2021_1.png)
+![image1](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2021_1.png style="width:80%")
 ![image2](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2021_2.png)
 ![image3](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2021_3.png)
 ![image4](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2021_4.png)
