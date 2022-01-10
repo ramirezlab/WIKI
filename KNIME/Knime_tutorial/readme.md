@@ -1,3 +1,4 @@
+https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/KNIME_Introduction_Tutorial_ChEMBL.pdf
 ![image1](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2022_1.png)
 ![image2](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2022_2.png)
 ![image3](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/Knime_tutorial_CP_2022_3.png)
