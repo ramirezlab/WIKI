@@ -7,4 +7,4 @@
 ![image7](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/KNIME_Introduction_Tutorial_ChEMBL-07.png)
 ![image8](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/KNIME_Introduction_Tutorial_ChEMBL-08.png)
 ![image9](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/KNIME_Introduction_Tutorial_ChEMBL-09.png)
-![image10](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/KNIME_Introduction_Tutorial_ChEMBL-010.png)
+![image10](https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/images/KNIME_Introduction_Tutorial_ChEMBL-10.png)
