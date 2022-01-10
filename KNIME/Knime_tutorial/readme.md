@@ -1,5 +1,5 @@
 <object data="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/KNIME_Introduction_Tutorial_ChEMBL.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://yoursite.com/the.pdf">
+    <embed src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Knime_tutorial/KNIME_Introduction_Tutorial_ChEMBL.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
     </embed>
 </object>
