@@ -3,7 +3,7 @@
 This workflow use a local ChEBML database to search one or a list of targets and return information of compounds and activity reported to the input targets.
 
 <p align="center">
-    <img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/WF.png" width="1000">
+    <img src="https://github.com/ramirezlab/WIKI/blob/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/media/ChEMBL_bioactive_compounds.png" width="1000">
 </p>
 
 ## Requirements ##
