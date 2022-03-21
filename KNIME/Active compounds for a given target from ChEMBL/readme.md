@@ -37,9 +37,9 @@ With these nodes already configured, run the workflow by click on the green "exe
 
 In the same path of the Excel file used as input the workflow will create a folder named "ChEMBL_target_compounds" containing 4 excel files:
 
-- **01_Active_compounds.xlsx**: Compounds with reported activities below 5 µM associated to the list of targets.
-- **02_Inactive_compounds.xlsx**: Compounds with reported activities over 5 µM associated to the list of targets.
-- **03_New_Target_Active_compounds.xlsx**: Other targets that also have reported activities below 5 µM with the same compounds that the file "01_Active_compounds.xlsx".
-- **04_New_Target_Inactive_compounds.xlsx**: Other targets that also have reported activities over 5 µM with the same compounds that the file "01_Active_compounds.xlsx".
+- **1_compounds_bioactivity.xlsx**: Compounds with reported activities below 5 µM associated to the input list of targets. The interactions are separated on sheets by EC<sub>50</sub>, IC<sub>50</sub>, Ki and ALL all then.
+- **2_multitarget_compounds_uM.xlsx**: Tables of compounds that have reported interactions with 2 or more targets. The tables are also separated on sheets by EC<sub>50</sub>, IC<sub>50</sub>, Ki and pChEMBL_value.
+- **3_all_targets_compounds_bioactivity.xlsx**: Other targets that also have reported activities below 5 µM with the same compounds that the file "01_Active_compounds.xlsx".
+- **4_NOTFOUND_UniprotIDs.xlsx**: Other targets that also have reported activities over 5 µM with the same compounds that the file "01_Active_compounds.xlsx".
 
 
