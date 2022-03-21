@@ -24,7 +24,7 @@ First download and import our workflow [Active_compounds_for_a_given_target_from
 
 ## 2. Set targets files and execute the workflow ##
 
-To ensure that our workflow correctly recognice the list of target, the input file has to be a excel file (xlsx format), with a column named UniprotID that contains the list of targets as UniprotIDs.
+To ensure that the workflow correctly recognice the list of targets, the input file has to be a excel file (xlsx format), with only one column named **UniprotID** that contains the list of targets as UniprotIDs.
 
 To set the excel file as input you need to configure the **Excel Reader** node and modify the file path to your excel file and a preview will appear as below.
 <p align="center">
