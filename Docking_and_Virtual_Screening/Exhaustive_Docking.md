@@ -1,10 +1,10 @@
 # Welcome to the Ramirez Lab Wiki – Exhaustive docking protocol
 
-Here we use present a pipeline to perform exhaustive docking to find the most probable binding mode of a given ligand.
+We present a pipeline to perform exhaustive docking to find the most probable binding conformation for a given ligand.
 The protocol consits in:
 
 ## 1. Molecular dynamics simulations of the target (withput ligand) ##
-In this tutorial we use the Human Acetylcholinesterase (AChE) as target, and the ligand is the co-crystalized drug galantamine (PDB code 4EY6). Before to proced, please modeled any missing residue in the structure. In our case we complete the missing residues **XXX** to **XXX** (Falta revisar con Lily) and used only chain A of the crystallographic structure. After protein refinement, a 150 ns Molecular Dynamics (MD) simulation of the protein withput the ligand is performed to allow the side chaing of the binding site addopt diferent conformations. With this step we include protein-flexibility in our pipeline. To be sure that the binding site does not suffer mayor conformational changes, a posotional restriction to the protein backbone atoms is suggested (~ 1 kcal x mol<sup>-1</sup> x <span>&#8491;</span><sup>-2</sup>). 
+In this tutorial we use the Human Acetylcholinesterase (AChE) as target with the co-crystalized ligand and drug galantamine (PDB code 4EY6). Before to proced, please model any missing residue in the structure. In our case we complete the missing residues **XXX** to **XXX** (Falta revisar con Lily) and used only chain A of the crystallographic structure. After protein refinement, a 150 ns Molecular Dynamics (MD) simulation of the protein with the ligand is performed to allow the side chain of the binding site adopt diferent conformations. With this step we include protein-flexibility in our pipeline. To be sure that the binding site does not suffer mayor conformational changes, a positional restriction to the protein backbone atoms is suggested (~ 1 kcal x mol<sup>-1</sup> x <span>&#8491;</span><sup>-2</sup>). 
 
 Here we use the Desmond software (available without cost for non-commercial at https://www.deshawresearch.com/downloads/download_desmond.cgi/) and some Schrödinger scripts (available after Desmond instalation) to process the trajectory. The suggested production time is 150ns, here we employed the last 100ns.
 
