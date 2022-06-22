@@ -1,0 +1,9 @@
+name: test-docking
+channels:
+- conda-forge
+dependencies:
+- smina
+- rdkit
+- py3dmol
+- spyrmsd
+- prody
