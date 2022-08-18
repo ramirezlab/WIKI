@@ -50,6 +50,6 @@ Taking into account the output of blocks 4 and 5 we want to search in each repre
 
 <img src="./media/Figure_8.png" style="zoom:75%;" />
 
-**6. Citation**
+**6. Adapted from**
 
-* Hurtado-Pachon, Jonathan; Peña-Varas, Carlos; Ramírez, David. Chemoinformatics analysis for computer-aided drug design (CADD). Santiago, Chile; 2021.
+* Sydow, Dominique, et al. "TeachOpenCADD-KNIME: a teaching platform for computer-aided drug design using KNIME workflows." Journal of Chemical Information and Modeling 59.10 (2019): 4083-4086.
