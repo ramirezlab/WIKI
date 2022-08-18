@@ -72,6 +72,6 @@ This block of the workflow shows how to perform R-group decomposition using the 
 
 <img src="./media\figure5.png" style="zoom:50%;" />
 
-### 4. Citation
+### 4. Adapted from:
 
-* Hurtado-Pachon, Jonathan; Peña-Varas, Carlos; Ramírez, David. Chemoinformatics analysis for computer-aided drug design (CADD). Santiago, Chile; 2021.
+* Sydow, Dominique, et al. "TeachOpenCADD-KNIME: a teaching platform for computer-aided drug design using KNIME workflows." Journal of Chemical Information and Modeling 59.10 (2019): 4083-4086.
