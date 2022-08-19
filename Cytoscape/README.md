@@ -6,6 +6,9 @@ This series teaches essential skills for starting in Cytoscape, an open source p
 Cytoscape is an open source software platform for visualizing molecular interaction networks and biological pathways and integrating these networks with annotations, gene expression profiles and other state data. Although Cytoscape was originally designed for biological research, now it is a general platform for complex network analysis and visualization. Cytoscape core distribution provides a basic set of features for data integration, analysis, and visualization. Additional features are available as Apps, which are available for network and molecular profiling analyses, new layouts, additional file format support, scripting, and connection with databases. Most of the Apps are freely available from [Cytoscape App Store](https://apps.cytoscape.org/). Cytoscape is a Java desktop application designed for large-scale network analysis and visualization with features, including new user interfaces, advanced visualization functions, headless (command-line) distribution, RESTful API, and multiple rendering engine support. 
 
 ![](https://cytoscape.org/images/screenshots/structure-aware-layout.jpg)
+<p align="center">
+Image taken from Cytoscape.org
+</p>
 
 ## Requirements
 You need the following tools to getting started on Cytoscape 3:
@@ -15,6 +18,6 @@ You need the following tools to getting started on Cytoscape 3:
 * [Cytoscape version 3.9.1 or latest](https://cytoscape.org/download.html)
 
 ## Cytoscape 101
-Available for download you can find a tutorial guiding step-by-step how to use the first tools that you may use in Cytoscape, including how to create a session, import files, create networks, change visualization of the networks, downloading apps, and more.
+Available at this repository you can find an introductory tutorial guiding step-by-step how to use the first tools that you may use in Cytoscape, including how to create a session, import files, create networks, change visualization of the networks, downloading apps, and more.
 
 ![](https://cytoscape.org/images/screenshots/cy3_5_0_desktop.png)
