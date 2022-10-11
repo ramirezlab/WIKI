@@ -1,4 +1,4 @@
-# Introductory guide to Cytoscape
+# Welcome to Ramírez Lab's introductory guide to Cytoscape
 
 <div align="justify">In this tutorial we are going to learn how to create a Protein-Protein Interaction Network in Cytoscape from a matrix of data which contains in Column A and Column B a list of proteins interacting with each other, and in a third column an interaction score between these proteins.</div>
 
