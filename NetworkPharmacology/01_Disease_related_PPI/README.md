@@ -74,7 +74,7 @@ mysql -u root -p chembl_XX < chembl_XX_mysql.dmp
 First download and import our workflow [Disease_related_protein_classification_and_PPI_networks](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/01_Active_compounds_for_a_given_target_from_ChEMBL.knwf) to Knime software. Then configure **MySQL Connector** node by right clicking at the node and click configure option. Complete the fields with your Hostname, Database name, username and Password based on your personal MySQL information.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/MySQL_Connector.png?raw=true" width="500">
+<img src="./media/MySQL_Connector.png?raw=true" width="500">
 </p>
 
 ## 2. Select input files from TTD and Open Targets Platform ##
@@ -82,25 +82,25 @@ First download and import our workflow [Disease_related_protein_classification_a
 Download the files "Target to disease mapping with ICD identifiers" and "Drug to disease mapping with ICD identifiers" files from [TTD](http://db.idrblab.net/ttd/full-data-download).
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/TTD_website.png?raw=true" width="500">
+<img src="./media/TTD_website.png?raw=true" width="500">
 </p>
 
 Configure the "Therapeutic Target Database" node by browsing the files. Taget file first and Drugs file second.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Therapeutic_Target_Database.png?raw=true" width="500">
+<img src="./media/Therapeutic_Target_Database.png?raw=true" width="500">
 </p>
 
 On Open Targets Platform search for any Disease and download the Associated Targets file on TSV format.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Open_Targets_Platform_website.png?raw=true" width="500">
+<img src="./media/Open_Targets_Platform_website.png?raw=true" width="500">
 </p>
 
 Configure "Open Targets Platform" node by browsing the file.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Open_Targets_Platform.png?raw=true" width="500">
+<img src="./media/Open_Targets_Platform.png?raw=true" width="500">
 </p>
 
 
@@ -109,13 +109,13 @@ Configure "Open Targets Platform" node by browsing the file.
 Frist execute "Disease list" node to read all available diseases on ChEMBL database.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Disease_list_node.png?raw=true" width="100">
+<img src="./media/Disease_list_node.png?raw=true" width="100">
 </p>
 
 Then configure and select one disease from the list on "Disease selector" node. If no list is displayed on "Disease selector" configuration reset and execute "Disease list" again, and try to configure "Disease selector" again.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Disease_selector.png?raw=true" width="500">
+<img src="./media/Disease_selector.png?raw=true" width="500">
 </p>
 
 ## 4. Choose a folder to write the results and execute the workflow ##
@@ -123,7 +123,7 @@ Then configure and select one disease from the list on "Disease selector" node. 
 Configure "Folder to write results" node by browsing to a folder to write result files. Make sure to select a folder and not a file.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Results_folder.png?raw=true" width="500">
+<img src="./media/Results_folder.png?raw=true" width="500">
 </p>
 
 Finaly execute the rest of the workflow by clicking on "Execute all executable nodes" buttom or press (SHIFT+F7).
@@ -192,5 +192,5 @@ Same as the previous file, but including only targets found on Open Targets Plat
 The network can be visualized with Cytoscape and the attributes can be added by loading [3_PPI-network_targets_attributes_Alzheimer's disease](https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/sample_outputs/3_PPI-network_targets_attributes_Alzheimer's%20disease.csv) file to the network nodes.
 
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/2_PPI_network_AD.png?raw=true" width="500">
+<img src="./media/2_PPI_network_AD.png?raw=true" width="500">
 </p>
