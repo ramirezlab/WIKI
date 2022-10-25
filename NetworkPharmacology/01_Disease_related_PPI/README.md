@@ -130,7 +130,7 @@ Finaly execute the rest of the workflow by clicking on "Execute all executable n
 
 ## 5. Results ##
 
-### [1_PPI_network_Alzheimer's disease_no-opentarget-filter.csv](./sample_outputs/1_PPI_network_Alzheimer's%20disease_no-opentarget-filter.csv) ###
+### [1_PPI_network_Alzheimer's disease_no-opentarget-filter.csv](./sample_outputs/1_PPI_network_Alzheimer_disease_no-opentarget-filter.csv) ###
  Has protein-protein interactions, as Prot_A and Prot_B columns with the protein genes, uniprot ID for each protein and Disease. If the target is a protein complex, the gene name is replaced by ChEMBL ID of the complex, and the uniprot ID will be a list of uniprot IDs.
  
 | Prot_A        | Prot_B        | uniprotID_Prot_A            | uniprotID_Prot_B            | Disease             |
@@ -146,10 +146,10 @@ Finaly execute the rest of the workflow by clicking on "Execute all executable n
 | GNB4          | CHEMBL3883319 | Q9HAV0                      | P62873 P59768               | Alzheimer's disease |
 | GNB4          | GNB1          | Q9HAV0                      | P62873                      | Alzheimer's disease |
 
-### [2_PPI_network_Alzheimer's disease_opentarget-filter.csv](./sample_outputs/2_PPI_network_Alzheimer's%20disease_opentarget-filter.csv) ###
+### [2_PPI_network_Alzheimer's disease_opentarget-filter.csv](./sample_outputs/2_PPI_network_Alzheimer_disease_opentarget-filter.csv) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
-### [3_PPI-network_targets_attributes_Alzheimer's disease](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer's%20disease.csv) ###
+### [3_PPI-network_targets_attributes_Alzheimer's disease](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer_disease.csv) ###
 List of single targets (including protein complexes) with attributes to add custom styles on Cytoscape.
 
 | gene_name     | target_type     | target_group | target_group_score_normalized | Disease             |
@@ -169,7 +169,7 @@ List of single targets (including protein complexes) with attributes to add cust
 | BCHE          | SINGLE PROTEIN  | T1 T2 T4     | 0.8285714285714285            | Alzheimer's disease |
 | CHRNE         | SINGLE PROTEIN  | T1 T2 T4     | 0.8285714285714285            | Alzheimer's disease |
 
-### [4_Targets_score_Alzheimer's disease_no-opentarget-filter.xlsx](./sample_outputs/3_Targets_score_Alzheimer's%20disease_no-opentarget-filter.xlsx) ###
+### [4_Targets_score_Alzheimer's disease_no-opentarget-filter.xlsx](./sample_outputs/3_Targets_score_Alzheimer_disease_no-opentarget-filter.xlsx) ###
 List of single proteins related to the disease, sorted by target score.
 
 | gene_name | target_type    | uniprotID | target_group   | source_db           | target_group_score | target_group_score_normalized | chembl_id_SplitResultList | Disease             |
@@ -185,11 +185,11 @@ List of single proteins related to the disease, sorted by target score.
 | SLC6A4    | SINGLE PROTEIN | P31645    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL228                 | Alzheimer's disease |
 | SLCO1B1   | SINGLE PROTEIN | Q9Y6L6    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL1697668             | Alzheimer's disease |
 
-### [5_Targets_score__Alzheimer's disease_opentarget-filter.xlsx](./sample_outputs/5_Targets_score_Alzheimer's%20disease_opentarget-filter.xlsx) ###
+### [5_Targets_score__Alzheimer's disease_opentarget-filter.xlsx](./sample_outputs/5_Targets_score_Alzheimer_disease_opentarget-filter.xlsx) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
 ### 6. Network visualization ###
-The network can be visualized with Cytoscape and the attributes can be added by loading [3_PPI-network_targets_attributes_Alzheimer's disease](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer's%20disease.csv) file to the network nodes.
+The network can be visualized with Cytoscape and the attributes can be added by loading [3_PPI-network_targets_attributes_Alzheimer's disease](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer_disease.csv) file to the network nodes.
 
 <p align="center">
 <img src="./media/2_PPI_network_AD.png?raw=true" width="500">
