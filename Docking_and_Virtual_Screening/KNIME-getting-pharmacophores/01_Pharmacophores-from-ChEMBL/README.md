@@ -41,7 +41,7 @@ To generate the clusters, we used the identification of groups by similar molecu
 ##### Step 3: Cluster dataset with hierarchical clustering algorithm
 The molecules are grouped according to the chemical structural similarity between them and thus find groups that share a common scaffold. These molecules are identified with fingerprints in this case was carried out by Morgan FingerPrint and in the case of similarity can be described by the Tanimoto coefficient, which varies from zero to one, where values close to zero represent a low similarity and values close to 1 a high similarity.
 
- ![fingerprint-tanimoto](/media/fig_4.png)
+ ![fingerprint-tanimoto](./fig_4.png)
  Through the hierarchical clustering assigner node, the values obtained by the assigned threshold can be observed.
  
 ![nodo_graph](./media/fig16.png)
@@ -108,7 +108,7 @@ The script has 2 functions, which are:
 - In the 01_cluster_prep folder the pharmacophore hypotheses are generated using the inp and def files for each cluster considering 3 to 7 features for the hypotheses and generating at most 10 hypotheses for each of these features and finally with an 85% match. The files with extension phprj and phypo.mae.gz are moved to the pharmacophore folder.
  
  - From the phypo.mae.gz file generated from the previous function, 2 columns are extracted corresponding to the name of the hypothesis and its phasehyposcore which is the score assigned to the hypothesis, this file is sorted with respect to the score from highest to lowest score and saved in csv format the first hypothesis in the list that is with the highest score is considered the best of the cluster.
-![script_2](/media/fig13.png)
+![script_2](./media/fig13.png)
 
    
 
