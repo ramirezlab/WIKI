@@ -71,7 +71,7 @@ mysql -u root -p chembl_XX < chembl_XX_mysql.dmp
 
 ## 1. Connect ChEMBL local MySQL database with the workflow ##
 
-First download and import our workflow [Disease_related_protein_classification_and_PPI_networks](https://github.com/ramirezlab/WIKI/raw/master/KNIME/Active%20compounds%20for%20a%20given%20target%20from%20ChEMBL/01_Active_compounds_for_a_given_target_from_ChEMBL.knwf) to Knime software. Then configure **MySQL Connector** node by right clicking at the node and click configure option. Complete the fields with your Hostname, Database name, username and Password based on your personal MySQL information.
+First download and import our workflow [Disease_related_protein_classification_and_PPI_networks](./Disease_related_protein_classification_and_PPI_networks.knwf) to Knime software. Then configure **MySQL Connector** node by right clicking at the node and click configure option. Complete the fields with your Hostname, Database name, username and Password based on your personal MySQL information.
 
 <p align="center">
 <img src="./media/MySQL_Connector.png?raw=true" width="500">
