@@ -1,7 +1,7 @@
 # Welcome to the Ramirez Lab Wiki - Knime: Disease related protein classification and PPI networks #
 
 <p align="center">
-    <img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/Disease_related_protein_classification_and_PPI_networks_WF.png?raw=true" width="1000">
+    <img src="./media/Disease_related_protein_classification_and_PPI_networks_WF.png?raw=true" width="1000">
 </p>
 
 This Knime workflow uses multiple databases to search for disease related proteins by experimental reports or manual annotations, then proteins are classified by the development phase of their related drugs and assigned a score as follows:
@@ -48,7 +48,7 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'p
 ### Download ChEMBL database and load data to MySQL ###
 Download the last release of  ChEMBL database of mysql (chembl_XX_mysql.tar.gz). **From now on, replace any XX for your downloaded ChEMBL database version.**
 <p align="center">
-<img src="https://github.com/AlePV/Disease_related_protein_classification_and_PPI_networks/blob/main/media/ChEMBLdb_download.png?raw=true" width="500">
+<img src="./media/ChEMBLdb_download.png?raw=true" width="500">
 </p>
 
 Extract files:
