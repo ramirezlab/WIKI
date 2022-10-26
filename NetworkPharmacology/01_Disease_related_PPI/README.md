@@ -169,7 +169,7 @@ List of single targets (including protein complexes) with attributes to add cust
 | BCHE          | SINGLE PROTEIN  | T1 T2 T4     | 0.8285714285714285            | Alzheimer's disease |
 | CHRNE         | SINGLE PROTEIN  | T1 T2 T4     | 0.8285714285714285            | Alzheimer's disease |
 
-### [4_Targets_score_Alzheimer_no-opentarget-filter.xlsx](./sample_outputs/3_Targets_score_Alzheimer_no-opentarget-filter.xlsx) ###
+### [4_Targets_score_Alzheimer_no-opentarget-filter.xlsx](.01_Disease_related_PPI/sample_outputs/4_Targets_score_Alzheimer_no-opentarget-filter.xlsx) ###
 List of single proteins related to the disease, sorted by target score.
 
 | gene_name | target_type    | uniprotID | target_group   | source_db           | target_group_score | target_group_score_normalized | chembl_id_SplitResultList | Disease             |
