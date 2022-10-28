@@ -185,7 +185,7 @@ List of single proteins related to the disease, sorted by target score.
 | SLC6A4    | SINGLE PROTEIN | P31645    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL228                 | Alzheimer's disease |
 | SLCO1B1   | SINGLE PROTEIN | Q9Y6L6    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL1697668             | Alzheimer's disease |
 
-### [5_Targets_score__Alzheimer_opentarget-filter.xlsx](./sample_outputs/5_Targets_score_Alzheimer_opentarget-filter.xlsx) ###
+### [5_Targets_score_Alzheimer_opentarget-filter.xlsx](./sample_outputs/5_Targets_score_Alzheimer_opentarget-filter.xlsx) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
 ### 6. Network visualization ###
