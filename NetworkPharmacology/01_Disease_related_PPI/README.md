@@ -192,5 +192,5 @@ Same as the previous file, but including only targets found on Open Targets Plat
 The network can be visualized with Cytoscape and the attributes can be added by loading [3_PPI-network_targets_attributes_Alzheimer](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer.csv) file to the network nodes.
 
 <p align="center">
-<img src="./media/2_PPI_network_AD.png?raw=true" width="500">
+<img src="./media/2_PPI_network_AD.png?raw=true" width="800">
 </p>
