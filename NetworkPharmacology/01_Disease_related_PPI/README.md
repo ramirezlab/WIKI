@@ -131,20 +131,20 @@ Finaly execute the rest of the workflow by clicking on "Execute all executable n
 ## 5. Results ##
 
 ### [1_PPI_network_Alzheimer_no-opentarget-filter.csv](./sample_outputs/1_PPI_network_Alzheimer_no-opentarget-filter.csv) ###
- Has protein-protein interactions, as Prot_A and Prot_B columns with the protein genes, uniprot ID for each protein and Disease. If the target is a protein complex, the gene name is replaced by ChEMBL ID of the complex, and the uniprot ID will be a list of uniprot IDs.
+ Has protein-protein interactions, as Prot_A and Prot_B columns with the protein genes, uniprot ID for each protein, interaction score and Disease. If the target is a protein complex, the gene name is replaced by ChEMBL ID of the complex, and the uniprot ID will be a list of uniprot IDs.
  
-| Prot_A        | Prot_B        | uniprotID_Prot_A            | uniprotID_Prot_B            | Disease             |
-|---------------|---------------|-----------------------------|-----------------------------|---------------------|
-| GNB3          | GNB2          | P16520                      | P62879                      | Alzheimer's disease |
-| GNB3          | CHEMBL3883319 | P16520                      | P62873 P59768               | Alzheimer's disease |
-| GNB3          | GNB1          | P16520                      | P62873                      | Alzheimer's disease |
-| GNB3          | GNB4          | P16520                      | Q9HAV0                      | Alzheimer's disease |
-| GNB3          | GNB5          | P16520                      | O14775                      | Alzheimer's disease |
-| GNB3          | HTR7          | P16520                      | P34969                      | Alzheimer's disease |
-| GNB3          | GNAL          | P16520                      | P38405                      | Alzheimer's disease |
-| GNB3          | GNAS          | P16520                      | P63092                      | Alzheimer's disease |
-| GNB4          | CHEMBL3883319 | Q9HAV0                      | P62873 P59768               | Alzheimer's disease |
-| GNB4          | GNB1          | Q9HAV0                      | P62873                      | Alzheimer's disease |
+| Prot_A        | Prot_B        | uniprotID_Prot_A            | uniprotID_Prot_B            | score | Disease             |
+|---------------|---------------|-----------------------------|-----------------------------|-------|---------------------|
+| GNB3          | GNB2          | P16520                      | P62879                      | 0.548 | Alzheimer's disease |
+| GNB3          | CHEMBL3883319 | P16520                      | P62873 P59768               | 0.548 | Alzheimer's disease |
+| GNB3          | GNB1          | P16520                      | P62873                      | 0.548 | Alzheimer's disease |
+| GNB3          | GNB4          | P16520                      | Q9HAV0                      | 0.55  | Alzheimer's disease |
+| GNB3          | GNB5          | P16520                      | O14775                      | 0.574 | Alzheimer's disease |
+| GNB3          | HTR7          | P16520                      | P34969                      | 0.649 | Alzheimer's disease |
+| GNB3          | GNAL          | P16520                      | P38405                      | 0.802 | Alzheimer's disease |
+| GNB3          | GNAS          | P16520                      | P63092                      | 0.879 | Alzheimer's disease |
+| GNB4          | CHEMBL3883319 | Q9HAV0                      | P62873 P59768               | 0.547 | Alzheimer's disease |
+| GNB4          | GNB1          | Q9HAV0                      | P62873                      | 0.547 | Alzheimer's disease |
 
 ### [2_PPI_network_Alzheimer_opentarget-filter.csv](./sample_outputs/2_PPI_network_Alzheimer_opentarget-filter.csv) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
