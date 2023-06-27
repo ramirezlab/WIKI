@@ -48,8 +48,91 @@ cp *.pdb PDBQTs/
 cd PDBQTs
 obabel *.pdb -opdbqt -m -p 7.4 -xr
 ```
-Aca te toca seguir Lily
-sdf
-sDFad
-f
+## 5. Exhaustive Docking ##
+#variables
+lig="ligand_file" #nombre del ligando con extensión en pdbqt
+name_system="example" #nombre del sistema
+#creando la capeta para el ligando preparado
+mkdir ligands
+mv $lig ligands
+#ESTO ES XQ VINA NO ESTA EN LA PATH
+export PATH=$PATH:/home/larrue/Eu/autodock/
+
+#genrando carpetas en orden
+mkdir $name_system
+
+mkdir $name_system/input
+mkdir $name_system/input/targets
+mkdir $name_system/input/conf
+
+mkdir $name_system/results
+mkdir $name_system/results/output
+mkdir $name_system/results/all_mol2
+
+mkdir $name_system/results/cluster
+mkdir $name_system/results/cluster/all_mae
+
+# For each pdbqt from 1 to 100 it's going to create a vina configuration file (input.conf)  and rename it to read the corresponding target pdbqt.
+for s in *.pdbqt
+do	
+#se cambian los nombres de los archivos de ocnfiguración
+sed "s/RECEPTOR/"${s}"/g" input > "${s%.*}".conf
+mkdir "${s%.*}"
+mkdir "${s%.*}"/output/
+mkdir "${s%.*}"/pdbqt/
+mkdir "${s%.*}"/pdbqt/split/
+
+### Carry out the first Docking to obtain 10 poses
+#poner el vina en la path
+vina --config "${s%.*}".conf --out ./"${s%.*}"/pdbqt/"${s%.*}".pdbqt > ./"${s%.*}"/output/output.log
+
+### Split the 10 poses from docking 1 into 10 new files
+#poner el vina en la path
+vina_split --input ./"${s%.*}"/pdbqt/"${s%.*}".pdbqt --ligand ./"${s%.*}"/pdbqt/split/"${s%.*}"_
+
+### Convert .pdbqt from the results into .mol2 files to be analysed 	
+obabel ./"${s%.*}"/pdbqt/split/*.pdbqt -omol2 -m 
+mv "${s%.*}" $name_system/results/output
+done 
+
+#Pasar de MOL2 a MAE en ./all/results/all_mol2
+for i in *.mol2
+do
+$SCHRODINGER/utilities/mol2convert -imol2 ${i} -omae ${i%.*}.mae
+done
+
+#Agregar Hidrogenos
+
+for i in *.mae
+do
+$SCHRODINGER/utilities/prepwizard -noepik -noprotassign -nopropka -noimpref ${i} ${i%.*}-Hs.mae
+done
+
+#Para agregar cargas parciales con campo de fuerza OPLS2005
+
+for i in *-Hs.mae
+do
+$SCHRODINGER/utilities/ffld_server -imae ${i%.*}.mae -omae ${i%.*}-charged.mae -version 2005
+done
+
+#reuniendo todos los nuevos mae
+cat *-charged.mae > all-charged.mae
+
+
+### Clustering of conformers: the conformer_cluster.py script from schrodinger suite will be used to clustering the docking conformers based in the RMSD. To see all options open the help menu as: $SCHRODINGER/run conformer_cluster.py -h 
+$SCHRODINGER/run conformer_cluster.py -a ha -l Average -n 0 -j $name_system -in_place -comb -keep_rmsd_file all-charged.mae &
+
+#poner un condicional cuando el proceso se acaba para lo de abajo
+
+### Just to order
+sleep 60s
+
+mv ligands $name_system/input
+mv *.pdbqt $name_system/input/targets
+mv *.conf $name_system/input/conf
+
+mv *.mol2 $name_system/results/all_mol2
+
+mv  *.log *.mae $name_system/results/cluster/all_mae
+mv *cluster* *$name_system*.* $name_system/results/cluster
 
