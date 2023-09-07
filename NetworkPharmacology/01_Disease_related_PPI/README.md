@@ -144,10 +144,10 @@ Finaly execute the rest of the workflow by clicking on "Execute all executable n
 | GNB3   | GNG10  | 0.998 | Alzheimer's Disease |
 | GNB3   | GNGT1  | 0.999 | Alzheimer's Disease |
 | GNB3   | GNG13  | 0.999 | Alzheimer's Disease |
-### [2_PPI_network_Alzheimer_opentarget-filter.csv](./sample_outputs/2_PPI_network_Alzheimer_opentarget-filter.csv) ###
+### [2_PPI_network_Alzheimer_opentarget-filter.csv](./sample_outputs/2_PPI-network_Alzheimer_Disease_opentarget-filter.csv) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
-### [3_Targets_score_Alzheimer_no-opentarget-filter.xlsx](./sample_outputs/3_Targets_score_Alzheimer_no-opentarget-filter.xlsx) ###
+### [3_Targets_score_Alzheimer_no-opentarget-filter.xlsx](./sample_outputs/3_Targets-score_Alzheimer_Disease_no-opentarget-filter.xlsx) ###
 List of single proteins related to the disease, sorted by target score.
 
 | target_name                                                | target | uniprotID  | target_type    | target_group | source_db   | target_group_score | target_group_score_normalized | Disease             |
@@ -161,7 +161,7 @@ List of single proteins related to the disease, sorted by target score.
 | Glutamate NMDA receptor; GRIN1/GRIN2B                      | GRIN1  | Q5VSF9     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
 | Glutamate NMDA receptor; GRIN1/GRIN2A                      | GRIN2A | A0A6Q8PGD2 | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
 | Prelamin-A/C                                               | LMNA   | P02545     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL      | 2.1                | 1                             | Alzheimer's Disease |
-### [4_Targets_score_Alzheimer_opentarget-filter.xlsx](./sample_outputs/4_Targets_score_Alzheimer_opentarget-filter.xlsx) ###
+### [4_Targets_score_Alzheimer_opentarget-filter.xlsx](./sample_outputs/4_Targets-score_Alzheimer_Disease_opentarget-filter.xlsx) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
 ### 6. Network visualization ###
