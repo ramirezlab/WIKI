@@ -130,7 +130,7 @@ Finaly execute the rest of the workflow by clicking on "Execute all executable n
 
 ## 5. Results ##
 
-### [1_PPI_network_Alzheimer_no-opentarget-filter.csv](./sample_outputs/1_PPI_network_Alzheimer_no-opentarget-filter.csv) ###
+### [1_PPI_network_Alzheimer_no-opentarget-filter.csv](./sample_outputs/1_PPI-network_Alzheimer_Disease_no-opentarget-filter.csv) ###
  Has protein-protein interactions, as Prot_A and Prot_B columns with the protein genes, uniprot ID for each protein, interaction score and Disease. If the target is a protein complex, the gene name is replaced by ChEMBL ID of the complex, and the uniprot ID will be a list of uniprot IDs.
  
 | Prot_A | Prot_B | score | Disease             |
