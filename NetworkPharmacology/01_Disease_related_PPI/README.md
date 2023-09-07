@@ -165,7 +165,7 @@ List of single proteins related to the disease, sorted by target score.
 Same as the previous file, but including only targets found on Open Targets Platform.
 
 ### 6. Network visualization ###
-The network can be visualized with Cytoscape and the attributes can be added by loading [3_PPI-network_targets_attributes_Alzheimer](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer.csv) file to the network nodes.
+The network can be visualized using Cytoscape and the attributes can be added by loading [3_Targets_score_Alzheimer_no-opentarget-filter](./sample_outputs/3_Targets-score_Alzheimer_Disease_no-opentarget-filter.xlsx) file to the network nodes.
 
 <p align="center">
 <img src="./media/2_PPI_network_AD.png?raw=true" width="800">
