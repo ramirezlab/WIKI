@@ -10,7 +10,8 @@ Using a workflow implemented with the [Knime](https://www-knime-com.translate.go
  
 This workflow is composed of 2 parts, the first corresponds to a flow with Knime that is subdivided into 4 steps, which can be seen in the figure and the second part corresponds to 3 codes implemented with bash. 
 
- ![Workflow KNIME](/media/fig1.png)
+ ![Workflow KNIME](/WIKI/Docking_and_Virtual_Screening/Getting-Pharmacohpores-KNIME
+/media/fig1.png)
 
  
   #### 1. Input file
