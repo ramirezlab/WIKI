@@ -130,67 +130,45 @@ Finaly execute the rest of the workflow by clicking on "Execute all executable n
 
 ## 5. Results ##
 
-### [1_PPI_network_Alzheimer_no-opentarget-filter.csv](./sample_outputs/1_PPI_network_Alzheimer_no-opentarget-filter.csv) ###
+The following tables are previews of the result files, not the complete results.
+
+### [1_PPI_network_Alzheimer_no-opentarget-filter.csv](./sample_outputs/1_PPI-network_Alzheimer_Disease_no-opentarget-filter.csv) ###
  Has protein-protein interactions, as Prot_A and Prot_B columns with the protein genes, uniprot ID for each protein, interaction score and Disease. If the target is a protein complex, the gene name is replaced by ChEMBL ID of the complex, and the uniprot ID will be a list of uniprot IDs.
  
-| Prot_A        | Prot_B        | uniprotID_Prot_A            | uniprotID_Prot_B            | score | Disease             |
-|---------------|---------------|-----------------------------|-----------------------------|-------|---------------------|
-| GNB3          | GNB2          | P16520                      | P62879                      | 0.548 | Alzheimer's disease |
-| GNB3          | CHEMBL3883319 | P16520                      | P62873 P59768               | 0.548 | Alzheimer's disease |
-| GNB3          | GNB1          | P16520                      | P62873                      | 0.548 | Alzheimer's disease |
-| GNB3          | GNB4          | P16520                      | Q9HAV0                      | 0.55  | Alzheimer's disease |
-| GNB3          | GNB5          | P16520                      | O14775                      | 0.574 | Alzheimer's disease |
-| GNB3          | HTR7          | P16520                      | P34969                      | 0.649 | Alzheimer's disease |
-| GNB3          | GNAL          | P16520                      | P38405                      | 0.802 | Alzheimer's disease |
-| GNB3          | GNAS          | P16520                      | P63092                      | 0.879 | Alzheimer's disease |
-| GNB4          | CHEMBL3883319 | Q9HAV0                      | P62873 P59768               | 0.547 | Alzheimer's disease |
-| GNB4          | GNB1          | Q9HAV0                      | P62873                      | 0.547 | Alzheimer's disease |
-
-### [2_PPI_network_Alzheimer_opentarget-filter.csv](./sample_outputs/2_PPI_network_Alzheimer_opentarget-filter.csv) ###
+| Prot_A | Prot_B | score | Disease             |
+|--------|--------|-------|---------------------|
+| GNB3   | HTR7   | 0.932 | Alzheimer's Disease |
+| GNB3   | GNAS   | 0.982 | Alzheimer's Disease |
+| GNB3   | GNG3   | 0.998 | Alzheimer's Disease |
+| GNB3   | GNG5   | 0.998 | Alzheimer's Disease |
+| GNB3   | GNG11  | 0.998 | Alzheimer's Disease |
+| GNB3   | GNG12  | 0.998 | Alzheimer's Disease |
+| GNB3   | GNG10  | 0.998 | Alzheimer's Disease |
+| GNB3   | GNGT1  | 0.999 | Alzheimer's Disease |
+| GNB3   | GNG13  | 0.999 | Alzheimer's Disease |
+### [2_PPI_network_Alzheimer_opentarget-filter.csv](./sample_outputs/2_PPI-network_Alzheimer_Disease_opentarget-filter.csv) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
-### [3_PPI-network_targets_attributes_Alzheimer.csv](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer.csv) ###
-List of single targets (including protein complexes) with attributes to add custom styles on Cytoscape.
-
-| gene_name     | target_type     | target_group | target_group_score_normalized | Disease             |
-|---------------|-----------------|--------------|-------------------------------|---------------------|
-| ACHE          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| APP           | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| CBX1          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| DRD2          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| EHMT2         | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| GMNN          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| LMNA          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| PPARG         | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| SLC6A4        | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| SLCO1B1       | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| TDP1          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| USP1          | SINGLE PROTEIN  | T1 T2 T3 T4  | 1                             | Alzheimer's disease |
-| BCHE          | SINGLE PROTEIN  | T1 T2 T4     | 0.8285714285714285            | Alzheimer's disease |
-| CHRNE         | SINGLE PROTEIN  | T1 T2 T4     | 0.8285714285714285            | Alzheimer's disease |
-
-### [4_Targets_score_Alzheimer_no-opentarget-filter.xlsx](./sample_outputs/4_Targets_score_Alzheimer_no-opentarget-filter.xlsx) ###
+### [3_Targets_score_Alzheimer_no-opentarget-filter.xlsx](./sample_outputs/3_Targets-score_Alzheimer_Disease_no-opentarget-filter.xlsx) ###
 List of single proteins related to the disease, sorted by target score.
 
-| gene_name | target_type    | uniprotID | target_group   | source_db           | target_group_score | target_group_score_normalized | chembl_id_SplitResultList | Disease             |
-|-----------|----------------|-----------|----------------|---------------------|--------------------|-------------------------------|---------------------------|---------------------|
-| ACHE      | SINGLE PROTEIN | P22303    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL220                 | Alzheimer's disease |
-| APP       | SINGLE PROTEIN | P05067    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL2487                | Alzheimer's disease |
-| CBX1      | SINGLE PROTEIN | P83916    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL1741193             | Alzheimer's disease |
-| DRD2      | SINGLE PROTEIN | P14416    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL217                 | Alzheimer's disease |
-| EHMT2     | SINGLE PROTEIN | Q96KQ7    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL6032                | Alzheimer's disease |
-| GMNN      | SINGLE PROTEIN | O75496    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL1293278             | Alzheimer's disease |
-| LMNA      | SINGLE PROTEIN | P02545    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL1293235             | Alzheimer's disease |
-| PPARG     | SINGLE PROTEIN | P37231    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL235                 | Alzheimer's disease |
-| SLC6A4    | SINGLE PROTEIN | P31645    | T1, T2, T3, T4 | ChEMBL, STRING, TTD | 2,2                | 1                             | CHEMBL228                 | Alzheimer's disease |
-| SLCO1B1   | SINGLE PROTEIN | Q9Y6L6    | T1, T2, T3, T4 | ChEMBL, STRING      | 2,2                | 1                             | CHEMBL1697668             | Alzheimer's disease |
-
-### [5_Targets_score_Alzheimer_opentarget-filter.xlsx](./sample_outputs/5_Targets_score_Alzheimer_opentarget-filter.xlsx) ###
+| target_name                                                | target | uniprotID  | target_type    | target_group | source_db   | target_group_score | target_group_score_normalized | Disease             |
+|------------------------------------------------------------|--------|------------|----------------|--------------|-------------|--------------------|-------------------------------|---------------------|
+| Acetylcholinesterase                                       | ACHE   | P22303     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
+| Beta amyloid A4 protein                                    | APP    | E9PG40     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
+| Chromobox protein homolog 1                                | CBX1   | P83916     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL      | 2.1                | 1                             | Alzheimer's Disease |
+| Dopamine D2 receptor                                       | DRD2   | P14416     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
+| Histone-lysine N-methyltransferase, H3 lysine-9 specific 3 | EHMT2  | Q96KQ7     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL      | 2.1                | 1                             | Alzheimer's Disease |
+| Geminin                                                    | GMNN   | E2QRF9     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL      | 2.1                | 1                             | Alzheimer's Disease |
+| Glutamate NMDA receptor; GRIN1/GRIN2B                      | GRIN1  | Q5VSF9     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
+| Glutamate NMDA receptor; GRIN1/GRIN2A                      | GRIN2A | A0A6Q8PGD2 | SINGLE PROTEIN | T1, T2, T3   | ChEMBL, TTD | 2.1                | 1                             | Alzheimer's Disease |
+| Prelamin-A/C                                               | LMNA   | P02545     | SINGLE PROTEIN | T1, T2, T3   | ChEMBL      | 2.1                | 1                             | Alzheimer's Disease |
+### [4_Targets_score_Alzheimer_opentarget-filter.xlsx](./sample_outputs/4_Targets-score_Alzheimer_Disease_opentarget-filter.xlsx) ###
 Same as the previous file, but including only targets found on Open Targets Platform.
 
 ### 6. Network visualization ###
-The network can be visualized with Cytoscape and the attributes can be added by loading [3_PPI-network_targets_attributes_Alzheimer](./sample_outputs/3_PPI-network_targets_attributes_Alzheimer.csv) file to the network nodes.
+The network can be visualized using Cytoscape and the attributes can be added by loading [3_Targets_score_Alzheimer_no-opentarget-filter](./sample_outputs/3_Targets-score_Alzheimer_Disease_no-opentarget-filter.xlsx) file to the network nodes.
 
 <p align="center">
-<img src="./media/2_PPI_network_AD.png?raw=true" width="800">
+<img src="./media/2_PPI_network_AD-01.png?raw=true" width="800">
 </p>
