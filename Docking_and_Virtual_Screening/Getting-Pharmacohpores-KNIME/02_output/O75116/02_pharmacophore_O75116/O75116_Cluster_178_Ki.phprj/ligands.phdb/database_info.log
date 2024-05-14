@@ -1,0 +1,66 @@
+********************************************************************************
+
+phase_database: Fri May 10 16:00:00 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_178_Ki_prep-out/O75116_Cluster_178_Ki_prep-out.phprj/ligands.phdb
+Task = import
+Job name = O75116_Cluster_178_Ki_prep-out_import
+Options:
+-NOJOBID
+-fd O75116_Cluster_178_Ki_prep-out.def
+-fmt xyz
+-i O75116_Cluster_178_Ki_prep-out.maegz
+-multi
+-new
+-stereo
+-verbose
+
+Adding molecules to database . . .
+
+LIGAND_NAME = block_1/mol_1  # Title = "9906347"  Confs = 1
+LIGAND_NAME = block_1/mol_2  # Title = "18516271"  Confs = 1
+LIGAND_NAME = block_1/mol_3  # Title = "49830789"  Confs = 1
+LIGAND_NAME = block_1/mol_4  # Title = "49830791"  Confs = 1
+LIGAND_NAME = block_1/mol_5  # Title = "18516237"  Confs = 1
+LIGAND_NAME = block_1/mol_6  # Title = "49830793"  Confs = 1
+LIGAND_NAME = block_1/mol_7  # Title = "18516214"  Confs = 1
+LIGAND_NAME = block_1/mol_8  # Title = "49830794"  Confs = 1
+LIGAND_NAME = block_1/mol_9  # Title = "18516349"  Confs = 1
+LIGAND_NAME = block_1/mol_10  # Title = "49830790"  Confs = 1
+LIGAND_NAME = block_1/mol_11  # Title = "49830795"  Confs = 1
+LIGAND_NAME = block_1/mol_12  # Title = "49830792"  Confs = 1
+LIGAND_NAME = block_1/mol_13  # Title = "49830796"  Confs = 1
+
+A total of 13 records added
+Total number of records stored = 13
+
+********************************************************************************
+
+phase_database: Fri May 10 16:00:01 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_178_Ki_prep-out/O75116_Cluster_178_Ki_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_178_Ki_prep-out_sites
+Options:
+-NOJOBID
+-role parent
+-setup
+-sites
+
+Setup for parent job complete
+
+********************************************************************************
+
+phase_database: Fri May 10 16:00:02 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_178_Ki_prep-out/O75116_Cluster_178_Ki_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_178_Ki_prep-out_sites
+Options:
+-cleanup
+-role parent
+
+Revision of 13 out of 13 records completed
+Average number of conformers per revised record = 1.00
+Total number of records stored = 13
+

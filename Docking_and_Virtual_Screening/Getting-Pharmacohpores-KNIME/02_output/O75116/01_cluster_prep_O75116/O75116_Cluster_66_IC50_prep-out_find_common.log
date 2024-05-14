@@ -1,0 +1,4482 @@
+Driver script for phase_find_common job O75116_Cluster_66_IC50_prep-out_find_common
+Current time: Fri May 10 16:27:15 2024
+Host name: Ragnar
+Number of CPUs requested = 12
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8323
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to do initial setup:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -JOBHOST localhost:12 -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -setup
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8323
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:15 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-JOBHOST localhost:12
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-setup
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0
+
+Doing setup for subjobs
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_setup . . .
+
+Number of actives = 69
+Number of active groups = 69
+Maximum allowed misses = 10
+Number of reference ligands = 69
+Number of CPUs requested = 12
+Writing subjob template lists to O75116_Cluster_66_IC50_prep-out_find_common_templates.csv
+
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_setup
+
+CPU time = 0.02 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+Control returned to phase_find_common driver script
+
+Launching phase_find_common subjobs . . .
+
+
+Running subjobs on hosts:
+  localhost (Max: 12)
+Number of jobs:       12
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1 11 | launched  Ragnar-0-663e8324 O75116_Cluster_66_IC50_prep-out_find_common_sub_1 localhost [Ragnar]
+ 0  2 10 | launched  Ragnar-0-663e8325 O75116_Cluster_66_IC50_prep-out_find_common_sub_2 localhost [Ragnar]
+ 0  3  9 | launched  Ragnar-0-663e8326 O75116_Cluster_66_IC50_prep-out_find_common_sub_3 localhost [Ragnar]
+ 0  4  8 | launched  Ragnar-0-663e8327 O75116_Cluster_66_IC50_prep-out_find_common_sub_4 localhost [Ragnar]
+ 0  5  7 | launched  Ragnar-0-663e8328 O75116_Cluster_66_IC50_prep-out_find_common_sub_5 localhost [Ragnar]
+ 1  4  7 | finished  Ragnar-0-663e8324 O75116_Cluster_66_IC50_prep-out_find_common_sub_1 localhost [Ragnar]
+ 2  3  7 | finished  Ragnar-0-663e8325 O75116_Cluster_66_IC50_prep-out_find_common_sub_2 localhost [Ragnar]
+ 2  4  6 | launched  Ragnar-0-663e8329 O75116_Cluster_66_IC50_prep-out_find_common_sub_6 localhost [Ragnar]
+ 2  5  5 | launched  Ragnar-0-663e832a O75116_Cluster_66_IC50_prep-out_find_common_sub_7 localhost [Ragnar]
+ 2  6  4 | launched  Ragnar-0-663e832b O75116_Cluster_66_IC50_prep-out_find_common_sub_8 localhost [Ragnar]
+ 2  7  3 | launched  Ragnar-0-663e832c O75116_Cluster_66_IC50_prep-out_find_common_sub_9 localhost [Ragnar]
+ 2  8  2 | launched  Ragnar-0-663e832d O75116_Cluster_66_IC50_prep-out_find_common_sub_10 localhost [Ragnar]
+ 3  7  2 | finished  Ragnar-0-663e8326 O75116_Cluster_66_IC50_prep-out_find_common_sub_3 localhost [Ragnar]
+ 4  6  2 | finished  Ragnar-0-663e8327 O75116_Cluster_66_IC50_prep-out_find_common_sub_4 localhost [Ragnar]
+ 5  5  2 | finished  Ragnar-0-663e8328 O75116_Cluster_66_IC50_prep-out_find_common_sub_5 localhost [Ragnar]
+ 6  4  2 | finished  Ragnar-0-663e8329 O75116_Cluster_66_IC50_prep-out_find_common_sub_6 localhost [Ragnar]
+ 6  5  1 | launched  Ragnar-0-663e832e O75116_Cluster_66_IC50_prep-out_find_common_sub_11 localhost [Ragnar]
+ 6  6  0 | launched  Ragnar-0-663e832f O75116_Cluster_66_IC50_prep-out_find_common_sub_12 localhost [Ragnar]
+ 7  5  0 | finished  Ragnar-0-663e832a O75116_Cluster_66_IC50_prep-out_find_common_sub_7 localhost [Ragnar]
+ 8  4  0 | finished  Ragnar-0-663e832b O75116_Cluster_66_IC50_prep-out_find_common_sub_8 localhost [Ragnar]
+ 9  3  0 | finished  Ragnar-0-663e832c O75116_Cluster_66_IC50_prep-out_find_common_sub_9 localhost [Ragnar]
+10  2  0 | finished  Ragnar-0-663e832d O75116_Cluster_66_IC50_prep-out_find_common_sub_10 localhost [Ragnar]
+11  1  0 | finished  Ragnar-0-663e832e O75116_Cluster_66_IC50_prep-out_find_common_sub_11 localhost [Ragnar]
+12  0  0 | finished  Ragnar-0-663e832f O75116_Cluster_66_IC50_prep-out_find_common_sub_12 localhost [Ragnar]
+
+All jobs have completed.
+
+12 of 12 job(s) succeeded; 0 job(s) failed.
+
+
+Invoking phase_find_common binary to combine subjobs:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -JOBHOST localhost:12 -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -cleanup
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8323
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:30 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-JOBHOST localhost:12
+-cleanup
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0
+
+Combining results of completed subjobs . . .
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_1.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_1
+Current time: Fri May 10 16:27:16 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8324
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_1
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8324
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:17 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_1
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_1_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_1 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 65 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_1:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_13 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_13:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_25 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_25:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_37 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_37:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_49 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 67 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_49:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 36
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 60
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_61 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_61:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 45
+4-point: 25
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 75
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 45
+4-point: 25
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 75
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_1_project
+
+CPU time = 2.36 sec
+Elapsed time = 2.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_1 finished
+Current time: Fri May 10 16:27:19 2024
+Elapsed time = 0:00:02.56
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_1 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_1.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_2.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_2
+Current time: Fri May 10 16:27:17 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8325
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_2
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8325
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:17 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_2
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_2_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_2 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_2:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_14 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_14:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 19
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 31
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_26 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_26:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 29
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_38 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 65 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_38:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_50 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_50:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_62 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_62:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 47
+4-point: 25
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 77
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 47
+4-point: 25
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 77
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_2_project
+
+CPU time = 2.38 sec
+Elapsed time = 3.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_2 finished
+Current time: Fri May 10 16:27:20 2024
+Elapsed time = 0:00:02.57
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_2 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_2.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_3.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_3
+Current time: Fri May 10 16:27:18 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8326
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_3
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8326
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:18 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_3
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_3_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_3 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 66 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_3:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_15 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_15:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_27 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 3-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_27:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 32
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_39 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_39:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 32
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_51 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_51:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 29
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_63 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_63:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_3_project
+
+CPU time = 2.03 sec
+Elapsed time = 2.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_3 finished
+Current time: Fri May 10 16:27:20 2024
+Elapsed time = 0:00:02.22
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_3 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_3.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_4.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_4
+Current time: Fri May 10 16:27:19 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8327
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_4
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8327
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:19 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_4
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_4_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_4 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_4:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_16 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_16:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_28 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_28:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_40 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_40:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_52 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 3-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_52:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 29
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_64 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_64:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_4_project
+
+CPU time = 2.02 sec
+Elapsed time = 2.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_4 finished
+Current time: Fri May 10 16:27:21 2024
+Elapsed time = 0:00:02.21
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_4 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_4.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_5.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_5
+Current time: Fri May 10 16:27:20 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8328
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_5
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8328
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:20 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_5
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_5_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_5 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_5:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_17 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_17:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 19
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 31
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_29 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_29:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 19
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 31
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_41 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 3-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+
+Surviving common pharmacophore counts for reference ligand mol_41:
+3-point: 1
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 1
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 32
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_53 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_53:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 29
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_65 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_65:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 29
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 29
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_5_project
+
+CPU time = 1.56 sec
+Elapsed time = 2.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_5 finished
+Current time: Fri May 10 16:27:22 2024
+Elapsed time = 0:00:01.76
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_5 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_5.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_6.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_6
+Current time: Fri May 10 16:27:21 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8329
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_6
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8329
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:21 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_6
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_6_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_6 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_6:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_18 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 67 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_18:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_30 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_30:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_42 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_42:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 31
+4-point: 16
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 50
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_54 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_54:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 40
+4-point: 21
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 65
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_66 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_66:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 49
+4-point: 26
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 80
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 49
+4-point: 26
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 80
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_6_project
+
+CPU time = 2.58 sec
+Elapsed time = 3.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_6 finished
+Current time: Fri May 10 16:27:24 2024
+Elapsed time = 0:00:02.78
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_6 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_6.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_7.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_7
+Current time: Fri May 10 16:27:22 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832a
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_7
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832a
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:22 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_7
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_7_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_7 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_7:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_19 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_19:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 19
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 31
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_31 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_31:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 28
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 46
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_43 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_43:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 38
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_55 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_55:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 47
+4-point: 25
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 77
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_67 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_67:
+3-point: 10
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 16
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 57
+4-point: 30
+5-point: 6
+6-point: 0
+7-point: 0
+  Total: 93
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 57
+4-point: 30
+5-point: 6
+6-point: 0
+7-point: 0
+  Total: 93
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_7_project
+
+CPU time = 2.92 sec
+Elapsed time = 3.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_7 finished
+Current time: Fri May 10 16:27:25 2024
+Elapsed time = 0:00:03.12
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_7 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_7.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_8.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_8
+Current time: Fri May 10 16:27:23 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832b
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_8
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832b
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:23 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_8
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_8_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_8 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_8:
+3-point: 10
+4-point: 6
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 17
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 6
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 17
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_20 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_20:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 19
+4-point: 11
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 32
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_32 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 65 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_32:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 28
+4-point: 16
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 47
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_44 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_44:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 37
+4-point: 21
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 62
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_56 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_56:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 46
+4-point: 26
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 77
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_68 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_68:
+3-point: 7
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 9
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 53
+4-point: 28
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 86
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 53
+4-point: 28
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 86
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_8_project
+
+CPU time = 2.69 sec
+Elapsed time = 3.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_8 finished
+Current time: Fri May 10 16:27:26 2024
+Elapsed time = 0:00:02.89
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_8 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_8.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_9.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_9
+Current time: Fri May 10 16:27:24 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832c
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_9
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832c
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:24 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_9
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_9_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_9 (1 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_9:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_21 (2 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_21:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_33 (3 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_33:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_45 (4 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_45:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 36
+4-point: 20
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 60
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_57 (5 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 61 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_57:
+3-point: 5
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 6
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 41
+4-point: 21
+5-point: 4
+6-point: 0
+7-point: 0
+  Total: 66
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_69 (6 of 6) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_69:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 50
+4-point: 26
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 81
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 408
+
+Final surviving common pharmacophore counts:
+3-point: 50
+4-point: 26
+5-point: 5
+6-point: 0
+7-point: 0
+  Total: 81
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_9_project
+
+CPU time = 2.54 sec
+Elapsed time = 3.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_9 finished
+Current time: Fri May 10 16:27:27 2024
+Elapsed time = 0:00:02.73
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_9 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_9.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_10.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_10
+Current time: Fri May 10 16:27:25 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832d
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_10
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832d
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:25 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_10
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_10_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_10 (1 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_10:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_22 (2 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 62 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_22:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_34 (3 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_34:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_46 (4 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_46:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_58 (5 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 3-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+
+Surviving common pharmacophore counts for reference ligand mol_58:
+3-point: 1
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 1
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 28
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 46
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 340
+
+Final surviving common pharmacophore counts:
+3-point: 28
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 46
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_10_project
+
+CPU time = 1.54 sec
+Elapsed time = 2.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_10 finished
+Current time: Fri May 10 16:27:27 2024
+Elapsed time = 0:00:01.74
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_10 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_10.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_11.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_11
+Current time: Fri May 10 16:27:26 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832e
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_11
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832e
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:26 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_11
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_11_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_11 (1 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_11:
+3-point: 5
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 6
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 5
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 6
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_23 (2 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 3-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+
+Surviving common pharmacophore counts for reference ligand mol_23:
+3-point: 1
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 1
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 6
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 7
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_35 (3 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_35:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 15
+4-point: 6
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 22
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_47 (4 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 65 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_47:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 19
+4-point: 7
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 27
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_59 (5 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 3-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+
+Surviving common pharmacophore counts for reference ligand mol_59:
+3-point: 1
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 1
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 7
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 28
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 340
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 7
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 28
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_11_project
+
+CPU time = 1.01 sec
+Elapsed time = 1.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_11 finished
+Current time: Fri May 10 16:27:27 2024
+Elapsed time = 0:00:01.21
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_11 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_11.log ***
+
+*** Contents of O75116_Cluster_66_IC50_prep-out_find_common_sub_12.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_12
+Current time: Fri May 10 16:27:27 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832f
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip -JOB O75116_Cluster_66_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_12
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e832f
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:27:27 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_66_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_12
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_12_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_12 (1 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 63 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_12:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_24 (2 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_24:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 18
+4-point: 10
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 30
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_36 (3 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 5-point pharmacophores that matched 64 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_36:
+3-point: 9
+4-point: 5
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 15
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 27
+4-point: 15
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 45
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_48 (4 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 59 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_48:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 31
+4-point: 16
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 50
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_60 (5 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 69 active groups . . .
+Searching for pharmacophores that match at least 68 active groups . . .
+Searching for pharmacophores that match at least 67 active groups . . .
+Searching for pharmacophores that match at least 66 active groups . . .
+Searching for pharmacophores that match at least 65 active groups . . .
+Searching for pharmacophores that match at least 64 active groups . . .
+Searching for pharmacophores that match at least 63 active groups . . .
+Searching for pharmacophores that match at least 62 active groups . . .
+Searching for pharmacophores that match at least 61 active groups . . .
+Searching for pharmacophores that match at least 60 active groups . . .
+Searching for pharmacophores that match at least 59 active groups . . .
+Recovering 4-point pharmacophores that matched 60 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_60:
+3-point: 5
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 6
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 36
+4-point: 17
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 56
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 340
+
+Final surviving common pharmacophore counts:
+3-point: 36
+4-point: 17
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 56
+
+Saving common pharmacophores to directory O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses . . .
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_12_project
+
+CPU time = 1.72 sec
+Elapsed time = 2.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_66_IC50_prep-out_find_common_sub_12 finished
+Current time: Fri May 10 16:27:29 2024
+Elapsed time = 0:00:01.91
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common_sub_12 are complete
+
+*** End of O75116_Cluster_66_IC50_prep-out_find_common_sub_12.log ***
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_cleanup . . .
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_1 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses/template_0.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses/template_12.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses/template_24.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses/template_48.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses/template_60.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_1_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_2 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses/template_1.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses/template_13.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses/template_25.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses/template_37.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses/template_61.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_2_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_3 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses/template_2.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses/template_14.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses/template_26.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses/template_50.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses/template_62.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_3_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_4 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses/template_3.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses/template_27.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses/template_39.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses/template_51.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses/template_63.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_4_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_5 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses/template_4.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses/template_16.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses/template_40.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses/template_52.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_5_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_6 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses/template_5.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses/template_17.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses/template_29.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses/template_41.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses/template_53.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses/template_65.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_6_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_7 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses/template_6.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses/template_18.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses/template_30.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses/template_42.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses/template_54.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses/template_66.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_7_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_8 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses/template_7.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses/template_19.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses/template_31.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses/template_43.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses/template_55.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses/template_67.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_8_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_9 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses/template_8.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses/template_20.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses/template_32.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses/template_44.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses/template_56.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses/template_68.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_9_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_10 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses/template_9.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses/template_21.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses/template_33.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses/template_57.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_10_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_11 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses/template_10.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses/template_22.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses/template_34.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses/template_46.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses/template_58.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_11_hypotheses
+
+Processing O75116_Cluster_66_IC50_prep-out_find_common_sub_12 results . . .
+Unzipping O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses/template_11.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses/template_23.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses/template_35.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses/template_47.pharm . . .
+Importing pharmacophores from O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses/template_59.pharm . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_sub_12_hypotheses
+
+Merging pharmacophores from all subjobs . . .
+
+Final surviving common pharmacophore counts:
+3-point: 10
+4-point: 6
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 17
+
+Preparing short virtual screens to compute PhaseHypoScore for 17 surviving common pharmacophore hypotheses . . .
+
+Creating O75116_Cluster_66_IC50_prep-out_find_common_actives/actives.phprj with default conformers . . .
+/opt/schrodinger2021-2/internal/bin/phase_database
+/opt/schrodinger2021-2/internal/bin/phase_database
+
+Unzipping decoys archive /opt/schrodinger2021-2/internal/data/phase/pharma_decoys.phzip to directory O75116_Cluster_66_IC50_prep-out_find_common_decoys . . .
+Writing hypotheses to O75116_Cluster_66_IC50_prep-out_find_common_bedroc_hypotheses . . .
+Zipping hypotheses to "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out_find_common_bedroc_hypotheses.zip" . . . 
+
+Running short virtual screens for PhaseHypoScore:
+"/opt/schrodinger2021-2/phase_screen" "O75116_Cluster_66_IC50_prep-out_find_common_bedroc_proj.list" "/scr/pvalenzuela/O75116_Cluster_66_IC50_prep-out/O75116_Cluster_66_IC50_prep-out_find_common_bedroc_hypotheses.zip" O75116_Cluster_66_IC50_prep-out_find_common_bedroc_screens -d 2.0 -aw 1 -vw 1 -volw 1 -nosort -HOST "localhost:12" -WAIT . . .
+JobId: Ragnar-0-663e833e
+
+Short virtual screens for PhaseHypoScore completed. Processing hits . . .
+
+Computing BEDROC for PhaseHypoScore . . .
+
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_actives
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_decoys
+
+Elapsed time to perform active/decoy screens = 145.00 sec
+
+Compiling final results and writing to directory O75116_Cluster_66_IC50_prep-out_find_common_find_common . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Zipping O75116_Cluster_66_IC50_prep-out_find_common_find_common to O75116_Cluster_66_IC50_prep-out_find_common_find_common.zip . . .
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_find_common
+Removing directory O75116_Cluster_66_IC50_prep-out_find_common_cleanup
+
+CPU time = 15.46 sec
+Elapsed time = 148.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common job O75116_Cluster_66_IC50_prep-out_find_common finished
+Current time: Fri May 10 16:29:58 2024
+Elapsed time = 0:02:43.27
+phase_find_common results for O75116_Cluster_66_IC50_prep-out_find_common are complete

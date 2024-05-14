@@ -1,0 +1,18 @@
+################################################################################
+#                                                                              #
+# Feature frequency file. Used to set minimum and maximum allowed feature      #
+# frequencies for common pharmacophore perception. You may change these        #
+# limits, but do not make any other modifications to this file.                #
+#                                                                              #
+################################################################################
+A 0 3
+D 0 3
+H 0 3
+N 0 3
+P 0 3
+Q 0 0
+R 0 3
+X 0 3
+Y 0 3
+Z 0 3
+END_OF_FEATURE_DATA

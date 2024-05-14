@@ -1,0 +1,1980 @@
+Driver script for phase_find_common job O75116_Cluster_34_Ki_prep-out_find_common
+Current time: Fri May 10 16:15:10 2024
+Host name: Ragnar
+Number of CPUs requested = 12
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e804d
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to do initial setup:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -JOBHOST localhost:12 -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -setup
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e804d
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:10 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-JOBHOST localhost:12
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-setup
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0
+
+Doing setup for subjobs
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_setup . . .
+
+Number of actives = 22
+Number of active groups = 22
+Maximum allowed misses = 3
+Number of reference ligands = 22
+Number of CPUs requested = 12
+Writing subjob template lists to O75116_Cluster_34_Ki_prep-out_find_common_templates.csv
+
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_setup
+
+CPU time = 0.01 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+Control returned to phase_find_common driver script
+
+Launching phase_find_common subjobs . . .
+
+
+Running subjobs on hosts:
+  localhost (Max: 12)
+Number of jobs:       12
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1 11 | launched  Ragnar-0-663e804f O75116_Cluster_34_Ki_prep-out_find_common_sub_1 localhost [Ragnar]
+ 0  2 10 | launched  Ragnar-1-663e804f O75116_Cluster_34_Ki_prep-out_find_common_sub_2 localhost [Ragnar]
+ 0  3  9 | launched  Ragnar-0-663e8050 O75116_Cluster_34_Ki_prep-out_find_common_sub_3 localhost [Ragnar]
+ 0  4  8 | launched  Ragnar-0-663e8051 O75116_Cluster_34_Ki_prep-out_find_common_sub_4 localhost [Ragnar]
+ 0  5  7 | launched  Ragnar-0-663e8052 O75116_Cluster_34_Ki_prep-out_find_common_sub_5 localhost [Ragnar]
+ 1  4  7 | finished  Ragnar-0-663e804f O75116_Cluster_34_Ki_prep-out_find_common_sub_1 localhost [Ragnar]
+ 2  3  7 | finished  Ragnar-1-663e804f O75116_Cluster_34_Ki_prep-out_find_common_sub_2 localhost [Ragnar]
+ 3  2  7 | finished  Ragnar-0-663e8050 O75116_Cluster_34_Ki_prep-out_find_common_sub_3 localhost [Ragnar]
+ 4  1  7 | finished  Ragnar-0-663e8051 O75116_Cluster_34_Ki_prep-out_find_common_sub_4 localhost [Ragnar]
+ 4  2  6 | launched  Ragnar-0-663e8053 O75116_Cluster_34_Ki_prep-out_find_common_sub_6 localhost [Ragnar]
+ 4  3  5 | launched  Ragnar-0-663e8054 O75116_Cluster_34_Ki_prep-out_find_common_sub_7 localhost [Ragnar]
+ 4  4  4 | launched  Ragnar-0-663e8055 O75116_Cluster_34_Ki_prep-out_find_common_sub_8 localhost [Ragnar]
+ 4  5  3 | launched  Ragnar-0-663e8056 O75116_Cluster_34_Ki_prep-out_find_common_sub_9 localhost [Ragnar]
+ 4  6  2 | launched  Ragnar-0-663e8057 O75116_Cluster_34_Ki_prep-out_find_common_sub_10 localhost [Ragnar]
+ 5  5  2 | finished  Ragnar-0-663e8052 O75116_Cluster_34_Ki_prep-out_find_common_sub_5 localhost [Ragnar]
+ 6  4  2 | finished  Ragnar-0-663e8053 O75116_Cluster_34_Ki_prep-out_find_common_sub_6 localhost [Ragnar]
+ 7  3  2 | finished  Ragnar-0-663e8054 O75116_Cluster_34_Ki_prep-out_find_common_sub_7 localhost [Ragnar]
+ 8  2  2 | finished  Ragnar-0-663e8055 O75116_Cluster_34_Ki_prep-out_find_common_sub_8 localhost [Ragnar]
+ 9  1  2 | finished  Ragnar-0-663e8056 O75116_Cluster_34_Ki_prep-out_find_common_sub_9 localhost [Ragnar]
+ 9  2  1 | launched  Ragnar-0-663e8058 O75116_Cluster_34_Ki_prep-out_find_common_sub_11 localhost [Ragnar]
+ 9  3  0 | launched  Ragnar-0-663e8059 O75116_Cluster_34_Ki_prep-out_find_common_sub_12 localhost [Ragnar]
+10  2  0 | finished  Ragnar-0-663e8057 O75116_Cluster_34_Ki_prep-out_find_common_sub_10 localhost [Ragnar]
+11  1  0 | finished  Ragnar-0-663e8058 O75116_Cluster_34_Ki_prep-out_find_common_sub_11 localhost [Ragnar]
+12  0  0 | finished  Ragnar-0-663e8059 O75116_Cluster_34_Ki_prep-out_find_common_sub_12 localhost [Ragnar]
+
+All jobs have completed.
+
+12 of 12 job(s) succeeded; 0 job(s) failed.
+
+
+Invoking phase_find_common binary to combine subjobs:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -JOBHOST localhost:12 -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -cleanup
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e804d
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:23 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-JOBHOST localhost:12
+-cleanup
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0
+
+Combining results of completed subjobs . . .
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_1.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_1
+Current time: Fri May 10 16:15:11 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e804f
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_1
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e804f
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:11 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_1
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_1_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_1 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_1:
+3-point: 7
+4-point: 3
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 12
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 7
+4-point: 3
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 12
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_13 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 3-point pharmacophores that matched 21 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_13:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 3
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 14
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 9
+4-point: 3
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 14
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_1_project
+
+CPU time = 0.40 sec
+Elapsed time = 1.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_1 finished
+Current time: Fri May 10 16:15:12 2024
+Elapsed time = 0:00:00.59
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_1 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_1.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_2.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_2
+Current time: Fri May 10 16:15:12 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-1-663e804f
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_2
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-1-663e804f
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:12 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_2
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_2_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_2 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 20 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_2:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_14 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_14:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_2_project
+
+CPU time = 0.13 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_2 finished
+Current time: Fri May 10 16:15:12 2024
+Elapsed time = 0:00:00.32
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_2 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_2.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_3.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_3
+Current time: Fri May 10 16:15:13 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8050
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_3
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8050
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:13 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_3
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_3_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_3 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 6-point pharmacophores that matched 20 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_3:
+3-point: 6
+4-point: 2
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 10
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 6
+4-point: 2
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 10
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_15 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_15:
+3-point: 8
+4-point: 3
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 12
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 14
+4-point: 5
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 22
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 14
+4-point: 5
+5-point: 3
+6-point: 0
+7-point: 0
+  Total: 22
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_3_project
+
+CPU time = 0.60 sec
+Elapsed time = 1.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_3 finished
+Current time: Fri May 10 16:15:14 2024
+Elapsed time = 0:00:00.79
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_3 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_3.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_4.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_4
+Current time: Fri May 10 16:15:14 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8051
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_4
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8051
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:14 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_4
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_4_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_4 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 19 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_4:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_16 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 19 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_16:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 8
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 10
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 8
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 10
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_4_project
+
+CPU time = 0.21 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_4 finished
+Current time: Fri May 10 16:15:14 2024
+Elapsed time = 0:00:00.40
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_4 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_4.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_5.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_5
+Current time: Fri May 10 16:15:15 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8052
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_5
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8052
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:15 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_5
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_5_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_5 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 19 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_5:
+3-point: 5
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 6
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 5
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 6
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_17 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 21 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_17:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 9
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 11
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 9
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 11
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_5_project
+
+CPU time = 0.22 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_5 finished
+Current time: Fri May 10 16:15:15 2024
+Elapsed time = 0:00:00.41
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_5 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_5.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_6.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_6
+Current time: Fri May 10 16:15:16 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8053
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_6
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8053
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:16 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_6
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_6_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_6 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 6-point pharmacophores that matched 20 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_6:
+3-point: 6
+4-point: 2
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 10
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 6
+4-point: 2
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 10
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_18 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 3-point pharmacophores that matched 20 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_18:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 8
+4-point: 2
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 12
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 8
+4-point: 2
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 12
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_6_project
+
+CPU time = 0.31 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_6 finished
+Current time: Fri May 10 16:15:16 2024
+Elapsed time = 0:00:00.50
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_6 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_6.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_7.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_7
+Current time: Fri May 10 16:15:17 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8054
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_7
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8054
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:17 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_7
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_7_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_7 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_7:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_19 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 3-point pharmacophores that matched 20 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_19:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_7_project
+
+CPU time = 0.08 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_7 finished
+Current time: Fri May 10 16:15:17 2024
+Elapsed time = 0:00:00.26
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_7 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_7.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_8.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_8
+Current time: Fri May 10 16:15:18 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8055
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_8
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8055
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:18 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_8
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_8_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_8 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_8:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_20 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 3-point pharmacophores that matched 21 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_20:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_8_project
+
+CPU time = 0.08 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_8 finished
+Current time: Fri May 10 16:15:18 2024
+Elapsed time = 0:00:00.27
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_8 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_8.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_9.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_9
+Current time: Fri May 10 16:15:19 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8056
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_9
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8056
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:19 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_9
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_9_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_9 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 22 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_9:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_21 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 19 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_21:
+3-point: 6
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 7
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 12
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 10
+4-point: 2
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 12
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_9_project
+
+CPU time = 0.28 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_9 finished
+Current time: Fri May 10 16:15:19 2024
+Elapsed time = 0:00:00.47
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_9 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_9.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_10.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_10
+Current time: Fri May 10 16:15:20 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8057
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_10
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8057
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:20 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_10
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_10_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_10 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_10:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 0
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 0
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_22 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 4-point pharmacophores that matched 19 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_22:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 42
+
+Final surviving common pharmacophore counts:
+3-point: 4
+4-point: 1
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 5
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_10_project
+
+CPU time = 0.14 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_10 finished
+Current time: Fri May 10 16:15:20 2024
+Elapsed time = 0:00:00.34
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_10 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_10.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_11.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_11
+Current time: Fri May 10 16:15:21 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8058
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_11
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8058
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:21 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_11
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_11_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_11 (1 of 1) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_11:
+3-point: 8
+4-point: 3
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 12
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 8
+4-point: 3
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 12
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 21
+
+Final surviving common pharmacophore counts:
+3-point: 8
+4-point: 3
+5-point: 1
+6-point: 0
+7-point: 0
+  Total: 12
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_11_project
+
+CPU time = 0.37 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_11 finished
+Current time: Fri May 10 16:15:21 2024
+Elapsed time = 0:00:00.57
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_11 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_11.log ***
+
+*** Contents of O75116_Cluster_34_Ki_prep-out_find_common_sub_12.log ***
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_12
+Current time: Fri May 10 16:15:22 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8059
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip -JOB O75116_Cluster_34_Ki_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_12
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8059
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:15:22 2024
+
+Project archive = "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip"
+Options:
+-JOB O75116_Cluster_34_Ki_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_12
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_12_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_12 (1 of 1) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 22 active groups . . .
+Searching for pharmacophores that match at least 21 active groups . . .
+Searching for pharmacophores that match at least 20 active groups . . .
+Searching for pharmacophores that match at least 19 active groups . . .
+Recovering 3-point pharmacophores that matched 21 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+40% complete
+
+Surviving common pharmacophore counts for reference ligand mol_12:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 21
+
+Final surviving common pharmacophore counts:
+3-point: 2
+4-point: 0
+5-point: 0
+6-point: 0
+7-point: 0
+  Total: 2
+
+Saving common pharmacophores to directory O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses . . .
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_12_project
+
+CPU time = 0.08 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob O75116_Cluster_34_Ki_prep-out_find_common_sub_12 finished
+Current time: Fri May 10 16:15:22 2024
+Elapsed time = 0:00:00.27
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common_sub_12 are complete
+
+*** End of O75116_Cluster_34_Ki_prep-out_find_common_sub_12.log ***
+
+Unzipping /scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_cleanup . . .
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_1 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses/template_0.pharm . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses/template_12.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_1_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_2 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses/template_1.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_2_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_3 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses/template_2.pharm . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses/template_14.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_3_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_4 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses/template_3.pharm . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses/template_15.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_4_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_5 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses/template_4.pharm . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses/template_16.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_5_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_6 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses/template_5.pharm . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses/template_17.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_6_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_7 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses/template_18.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_7_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_8 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses/template_19.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_8_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_9 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses/template_8.pharm . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses/template_20.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_9_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_10 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses/template_21.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_10_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_11 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses/template_10.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_11_hypotheses
+
+Processing O75116_Cluster_34_Ki_prep-out_find_common_sub_12 results . . .
+Unzipping O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses.zip . . .
+Importing pharmacophores from O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses/template_11.pharm . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_sub_12_hypotheses
+
+Merging pharmacophores from all subjobs . . .
+
+Final surviving common pharmacophore counts:
+3-point: 10
+4-point: 4
+5-point: 2
+6-point: 0
+7-point: 0
+  Total: 16
+
+Preparing short virtual screens to compute PhaseHypoScore for 16 surviving common pharmacophore hypotheses . . .
+
+Creating O75116_Cluster_34_Ki_prep-out_find_common_actives/actives.phprj with default conformers . . .
+/opt/schrodinger2021-2/internal/bin/phase_database
+/opt/schrodinger2021-2/internal/bin/phase_database
+
+Unzipping decoys archive /opt/schrodinger2021-2/internal/data/phase/pharma_decoys.phzip to directory O75116_Cluster_34_Ki_prep-out_find_common_decoys . . .
+Writing hypotheses to O75116_Cluster_34_Ki_prep-out_find_common_bedroc_hypotheses . . .
+Zipping hypotheses to "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out_find_common_bedroc_hypotheses.zip" . . . 
+
+Running short virtual screens for PhaseHypoScore:
+"/opt/schrodinger2021-2/phase_screen" "O75116_Cluster_34_Ki_prep-out_find_common_bedroc_proj.list" "/scr/pvalenzuela/O75116_Cluster_34_Ki_prep-out/O75116_Cluster_34_Ki_prep-out_find_common_bedroc_hypotheses.zip" O75116_Cluster_34_Ki_prep-out_find_common_bedroc_screens -d 2.0 -aw 1 -vw 1 -volw 1 -nosort -HOST "localhost:12" -WAIT . . .
+JobId: Ragnar-0-663e8063
+
+Short virtual screens for PhaseHypoScore completed. Processing hits . . .
+
+Computing BEDROC for PhaseHypoScore . . .
+
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_actives
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_decoys
+
+Elapsed time to perform active/decoy screens = 136.00 sec
+
+Compiling final results and writing to directory O75116_Cluster_34_Ki_prep-out_find_common_find_common . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Zipping O75116_Cluster_34_Ki_prep-out_find_common_find_common to O75116_Cluster_34_Ki_prep-out_find_common_find_common.zip . . .
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_find_common
+Removing directory O75116_Cluster_34_Ki_prep-out_find_common_cleanup
+
+CPU time = 7.95 sec
+Elapsed time = 137.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common job O75116_Cluster_34_Ki_prep-out_find_common finished
+Current time: Fri May 10 16:17:40 2024
+Elapsed time = 0:02:30.30
+phase_find_common results for O75116_Cluster_34_Ki_prep-out_find_common are complete

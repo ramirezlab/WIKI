@@ -1,0 +1,23 @@
+################################################################################
+#                                                                              #
+# Feature equivalency file. Used to define feature types that should be        #
+# treated as equivalent in common pharmacophore perception. For example, "A"   #
+# indicates that acceptors should match only acceptors, whereas "HR" means     #
+# that hydrophobic and aromatic sites can be matched to each other. No feature #
+# type should appear more than once in a given string, and if any type appears #
+# in multiple strings, those strings must be permutations of the same types.   #
+# For example, "ANX" and "NAX" are OK, but "ANX" and "AN" are not. It is not   #
+# necessary, however, to supply more than one permutation. Note that if a      #
+# particular feature type does not appear in this file, it will be assumed to  #
+# match only itself. Please DO NOT put quotes around the strings.              #
+#                                                                              #
+################################################################################
+A
+D
+H
+N
+P
+R
+X
+Y
+Z

@@ -1,0 +1,16 @@
+-JOB O75116_Cluster_35_Ki_prep-out_find_common
+-JOBHOST localhost:12
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-proj /scr/pvalenzuela/O75116_Cluster_35_Ki_prep-out/O75116_Cluster_35_Ki_prep-out.phzip
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0

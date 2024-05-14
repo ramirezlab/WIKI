@@ -1,0 +1,77 @@
+********************************************************************************
+
+phase_database: Fri May 10 16:06:03 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_231_Ki_prep-out/O75116_Cluster_231_Ki_prep-out.phprj/ligands.phdb
+Task = import
+Job name = O75116_Cluster_231_Ki_prep-out_import
+Options:
+-NOJOBID
+-fd O75116_Cluster_231_Ki_prep-out.def
+-fmt xyz
+-i O75116_Cluster_231_Ki_prep-out.maegz
+-multi
+-new
+-stereo
+-verbose
+
+Adding molecules to database . . .
+
+LIGAND_NAME = block_1/mol_1  # Title = "16050452"  Confs = 1
+LIGAND_NAME = block_1/mol_2  # Title = "49830605"  Confs = 1
+LIGAND_NAME = block_1/mol_3  # Title = "49830614"  Confs = 1
+LIGAND_NAME = block_1/mol_4  # Title = "49830616"  Confs = 1
+LIGAND_NAME = block_1/mol_5  # Title = "49830604"  Confs = 1
+LIGAND_NAME = block_1/mol_6  # Title = "24947488"  Confs = 1
+LIGAND_NAME = block_1/mol_7  # Title = "49830611"  Confs = 1
+LIGAND_NAME = block_1/mol_8  # Title = "49830609"  Confs = 1
+LIGAND_NAME = block_1/mol_9  # Title = "49830615"  Confs = 1
+LIGAND_NAME = block_1/mol_10  # Title = "49830618"  Confs = 1
+LIGAND_NAME = block_1/mol_11  # Title = "15981404"  Confs = 1
+LIGAND_NAME = block_1/mol_12  # Title = "49830607"  Confs = 1
+LIGAND_NAME = block_1/mol_13  # Title = "49830606"  Confs = 1
+LIGAND_NAME = block_1/mol_14  # Title = "16050450"  Confs = 1
+LIGAND_NAME = block_1/mol_15  # Title = "16050449"  Confs = 1
+LIGAND_NAME = block_1/mol_16  # Title = "25016360"  Confs = 1
+LIGAND_NAME = block_1/mol_17  # Title = "49830610"  Confs = 1
+LIGAND_NAME = block_1/mol_18  # Title = "16050453"  Confs = 1
+LIGAND_NAME = block_1/mol_19  # Title = "49830613"  Confs = 1
+LIGAND_NAME = block_1/mol_20  # Title = "49830612"  Confs = 1
+LIGAND_NAME = block_1/mol_21  # Title = "25016361"  Confs = 1
+LIGAND_NAME = block_1/mol_22  # Title = "49830608"  Confs = 1
+LIGAND_NAME = block_1/mol_23  # Title = "49830617"  Confs = 1
+LIGAND_NAME = block_1/mol_24  # Title = "49830619"  Confs = 1
+
+A total of 24 records added
+Total number of records stored = 24
+
+********************************************************************************
+
+phase_database: Fri May 10 16:06:04 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_231_Ki_prep-out/O75116_Cluster_231_Ki_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_231_Ki_prep-out_sites
+Options:
+-NOJOBID
+-role parent
+-setup
+-sites
+
+Setup for parent job complete
+
+********************************************************************************
+
+phase_database: Fri May 10 16:06:05 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_231_Ki_prep-out/O75116_Cluster_231_Ki_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_231_Ki_prep-out_sites
+Options:
+-cleanup
+-role parent
+
+Revision of 24 out of 24 records completed
+Average number of conformers per revised record = 1.00
+Total number of records stored = 24
+

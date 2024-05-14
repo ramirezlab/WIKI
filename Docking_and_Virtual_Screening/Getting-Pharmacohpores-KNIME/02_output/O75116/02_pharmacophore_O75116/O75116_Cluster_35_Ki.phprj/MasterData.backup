@@ -1,0 +1,346 @@
+################################################################################
+#                                                                              #
+# Phase Master Data File - Backup Copy.  DO NOT MODIFY!!!                      #
+#                                                                              #
+################################################################################
+LIGAND_NAME_PROPERTY = s_phase_Ligand_Name
+PHARM_SET_PROPERTY = s_phase_Pharm_Set
+LIGAND_GROUP_PROPERTY = i_phase_Ligand_Group
+MUST_MATCH_PROPERTY = b_phase_Must_Match
+QSAR_SET_PROPERTY = s_phase_QSAR_Set
+ACT_PROPERTY = r_phase_Ligand_Activity
+1D_PROPERTY = r_phase_Ligand_1D_Property
+################################################################################
+LIGAND_NAME = mol_1
+TITLE = "18451197"
+PHARM_SET = active
+LIGAND_GROUP = 1
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_2
+TITLE = "18451149"
+PHARM_SET = active
+LIGAND_GROUP = 2
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_3
+TITLE = "18451199"
+PHARM_SET = active
+LIGAND_GROUP = 3
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_4
+TITLE = "49830358"
+PHARM_SET = active
+LIGAND_GROUP = 4
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_5
+TITLE = "49830372"
+PHARM_SET = active
+LIGAND_GROUP = 5
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_6
+TITLE = "18451073"
+PHARM_SET = active
+LIGAND_GROUP = 6
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_7
+TITLE = "49830353"
+PHARM_SET = active
+LIGAND_GROUP = 7
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_8
+TITLE = "49830359"
+PHARM_SET = active
+LIGAND_GROUP = 8
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_9
+TITLE = "11442914"
+PHARM_SET = active
+LIGAND_GROUP = 9
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_10
+TITLE = "18451223"
+PHARM_SET = active
+LIGAND_GROUP = 10
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_11
+TITLE = "49830362"
+PHARM_SET = active
+LIGAND_GROUP = 11
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_12
+TITLE = "18451366"
+PHARM_SET = active
+LIGAND_GROUP = 12
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_13
+TITLE = "49830363"
+PHARM_SET = active
+LIGAND_GROUP = 13
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_14
+TITLE = "49830344"
+PHARM_SET = active
+LIGAND_GROUP = 14
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_15
+TITLE = "49830371"
+PHARM_SET = active
+LIGAND_GROUP = 15
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_16
+TITLE = "18451141"
+PHARM_SET = active
+LIGAND_GROUP = 16
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_17
+TITLE = "18451176"
+PHARM_SET = active
+LIGAND_GROUP = 17
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_18
+TITLE = "46207586"
+PHARM_SET = active
+LIGAND_GROUP = 18
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_19
+TITLE = "18451208"
+PHARM_SET = active
+LIGAND_GROUP = 19
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_20
+TITLE = "49830351"
+PHARM_SET = active
+LIGAND_GROUP = 20
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_21
+TITLE = "49830356"
+PHARM_SET = active
+LIGAND_GROUP = 21
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_22
+TITLE = "18451135"
+PHARM_SET = active
+LIGAND_GROUP = 22
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_23
+TITLE = "18451363"
+PHARM_SET = active
+LIGAND_GROUP = 23
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_24
+TITLE = "49830350"
+PHARM_SET = active
+LIGAND_GROUP = 24
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_25
+TITLE = "49830352"
+PHARM_SET = active
+LIGAND_GROUP = 25
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_26
+TITLE = "49830367"
+PHARM_SET = active
+LIGAND_GROUP = 26
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_27
+TITLE = "49830360"
+PHARM_SET = active
+LIGAND_GROUP = 27
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_28
+TITLE = "18450918"
+PHARM_SET = active
+LIGAND_GROUP = 28
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_29
+TITLE = "11306240"
+PHARM_SET = active
+LIGAND_GROUP = 29
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_30
+TITLE = "49830348"
+PHARM_SET = active
+LIGAND_GROUP = 30
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_31
+TITLE = "49830365"
+PHARM_SET = active
+LIGAND_GROUP = 31
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_32
+TITLE = "46223479"
+PHARM_SET = active
+LIGAND_GROUP = 32
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_33
+TITLE = "49830364"
+PHARM_SET = active
+LIGAND_GROUP = 33
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_34
+TITLE = "49830357"
+PHARM_SET = active
+LIGAND_GROUP = 34
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_35
+TITLE = "18451372"
+PHARM_SET = active
+LIGAND_GROUP = 35
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_36
+TITLE = "18451374"
+PHARM_SET = active
+LIGAND_GROUP = 36
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################
+LIGAND_NAME = mol_37
+TITLE = "18450541"
+PHARM_SET = active
+LIGAND_GROUP = 37
+MUST_MATCH = false
+QSAR_SET = test
+ACTIVITY = missing
+1D_VALUE = 0.0
+################################################################################

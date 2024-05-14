@@ -1,0 +1,200 @@
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e83d2
+Name           : O75116_Cluster_79_IC50_prep-out
+Program        : 
+Host           : Ragnar
+Dir            : /home/pvalenzuela/Desktop/test/aa/O75116/01_cluster_prep_O75116
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_79_IC50_prep-out
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/utilities/phase_hypothesis O75116_Cluster_79_IC50_prep-out.inp -HOST localhost:12
+StartTime      : 2024-05-10-16:30:10
+--------------------------------------------------------------------------------
+
+Input Settings for phase_hypothesis:
+--------------------------------------
+APPEND_EXCLUDED_VOLUMES = False
+FEATURE_DEFINITION_FILE = O75116_Cluster_79_IC50_prep-out.def
+FEATURE_FREQUENCY_A = [0, 3]
+FEATURE_FREQUENCY_D = [0, 3]
+FEATURE_FREQUENCY_H = [0, 3]
+FEATURE_FREQUENCY_N = [0, 3]
+FEATURE_FREQUENCY_P = [0, 3]
+FEATURE_FREQUENCY_R = [0, 3]
+FEATURE_FREQUENCY_X = [0, 3]
+FEATURE_FREQUENCY_Y = [0, 3]
+FEATURE_FREQUENCY_Z = [0, 3]
+FEATURE_TOLERANCE_A = 2.0
+FEATURE_TOLERANCE_D = 2.0
+FEATURE_TOLERANCE_H = 2.0
+FEATURE_TOLERANCE_N = 2.0
+FEATURE_TOLERANCE_P = 2.0
+FEATURE_TOLERANCE_R = 2.0
+FEATURE_TOLERANCE_X = 2.0
+FEATURE_TOLERANCE_Y = 2.0
+FEATURE_TOLERANCE_Z = 2.0
+GENERATE_CONFORMERS = False
+HYPOTHESES_KEPT_PER_FEATURE_SIZE = 10
+HYPOTHESIS_DIFFERENCE_CRITERIA = 0.5
+INPUT_STRUCTURE_FILE = O75116_Cluster_79_IC50_prep-out.maegz
+LIGAND_PERCEPTION = stereo
+NUMBER_FEATURES_PER_HYPOTHESIS = [3, 7]
+PREFERRED_MIN_SITES = 7
+REQUIRED_MATCH_FRACTION = 0.85
+SCORE_WEIGHT_BEDROC = 1.0
+SCORE_WEIGHT_INACTIVE = 1.0
+SCORE_WEIGHT_LOG_MATCH = 1.0
+SCORE_WEIGHT_SELECTIVITY = 1.0
+SCORE_WEIGHT_SITE = 1.0
+SCORE_WEIGHT_SURVIVAL = 0.06
+SCORE_WEIGHT_VECTOR = 1.0
+SCORE_WEIGHT_VOLUME = 1.0
+USE_FAST_SCORING = False
+USE_LIGAND_GROUPING = True
+USE_PREALIGNED_LIGANDS = False
+USE_STEREO = True
+USE_TITLES = False
+--------------------------------------
+
+Starting up common pharmacophore workflow...
+Jobname: O75116_Cluster_79_IC50_prep-out
+
+
+Creating Phase project: O75116_Cluster_79_IC50_prep-out.phprj
+Importing structure(s) into Phase project...
+Creating new Phase project...
+/opt/schrodinger2021-2/internal/bin/phase_database
+Total ligands = 85
+Assigning active/inactive labels...
+Total actives = 85
+Total inactives = 0
+Applying ligand groupings...
+Phase project ligand summary:
+ ID  | TITLE        | CONFORMERS | PHARM_SET | GROUP | MUST MATCH
+ 1   | 46879763     | 1          | active    | 1     | 0
+ 2   | 44634494     | 1          | active    | 2     | 0
+ 3   | 46879807     | 1          | active    | 3     | 0
+ 4   | 46879865     | 1          | active    | 4     | 0
+ 5   | 46879803     | 1          | active    | 5     | 0
+ 6   | 46879804     | 1          | active    | 6     | 0
+ 7   | 46879805     | 1          | active    | 7     | 0
+ 8   | 46879806     | 1          | active    | 8     | 0
+ 9   | 52935500     | 1          | active    | 9     | 0
+ 10  | 52935712     | 1          | active    | 10    | 0
+ 11  | 52935714     | 1          | active    | 11    | 0
+ 12  | 57399460     | 1          | active    | 12    | 0
+ 13  | 57390719     | 1          | active    | 13    | 0
+ 14  | 52934834     | 1          | active    | 14    | 0
+ 15  | 52933915     | 1          | active    | 15    | 0
+ 16  | 57399461     | 1          | active    | 16    | 0
+ 17  | 54765203     | 1          | active    | 17    | 0
+ 18  | 57397800     | 1          | active    | 18    | 0
+ 19  | 52934380     | 1          | active    | 19    | 0
+ 20  | 57394242     | 1          | active    | 20    | 0
+ 21  | 57401229     | 1          | active    | 21    | 0
+ 22  | 57399462     | 1          | active    | 22    | 0
+ 23  | 57399463     | 1          | active    | 23    | 0
+ 24  | 57397801     | 1          | active    | 24    | 0
+ 25  | 52934381     | 1          | active    | 25    | 0
+ 26  | 57394243     | 1          | active    | 26    | 0
+ 27  | 52934146     | 1          | active    | 27    | 0
+ 28  | 52935059     | 1          | active    | 28    | 0
+ 29  | 57402101     | 1          | active    | 29    | 0
+ 30  | 57400298     | 1          | active    | 30    | 0
+ 31  | 52935717     | 1          | active    | 31    | 0
+ 32  | 57402102     | 1          | active    | 32    | 0
+ 33  | 57395100     | 1          | active    | 33    | 0
+ 34  | 57400299     | 1          | active    | 34    | 0
+ 35  | 57396872     | 1          | active    | 35    | 0
+ 36  | 57402103     | 1          | active    | 36    | 0
+ 37  | 54765021     | 1          | active    | 37    | 0
+ 38  | 54765020     | 1          | active    | 38    | 0
+ 39  | 52933917     | 1          | active    | 39    | 0
+ 40  | 57403855     | 1          | active    | 40    | 0
+ 41  | 57402104     | 1          | active    | 41    | 0
+ 42  | 52935061     | 1          | active    | 42    | 0
+ 43  | 52934832     | 1          | active    | 43    | 0
+ 44  | 57403071     | 1          | active    | 44    | 0
+ 45  | 57394348     | 1          | active    | 45    | 0
+ 46  | 57403072     | 1          | active    | 46    | 0
+ 47  | 57392627     | 1          | active    | 47    | 0
+ 48  | 52936149     | 1          | active    | 48    | 0
+ 49  | 52936150     | 1          | active    | 49    | 0
+ 50  | 52935716     | 1          | active    | 50    | 0
+ 51  | 57402971     | 1          | active    | 51    | 0
+ 52  | 57397803     | 1          | active    | 52    | 0
+ 53  | 52935064     | 1          | active    | 53    | 0
+ 54  | 54765280     | 1          | active    | 54    | 0
+ 55  | 57394246     | 1          | active    | 55    | 0
+ 56  | 57394247     | 1          | active    | 56    | 0
+ 57  | 71655603     | 1          | active    | 57    | 0
+ 58  | 68517775     | 1          | active    | 58    | 0
+ 59  | 68519792     | 1          | active    | 59    | 0
+ 60  | 68564018     | 1          | active    | 60    | 0
+ 61  | 68560854     | 1          | active    | 61    | 0
+ 62  | 68521380     | 1          | active    | 62    | 0
+ 63  | 68563058     | 1          | active    | 63    | 0
+ 64  | 68567556     | 1          | active    | 64    | 0
+ 65  | 68563892     | 1          | active    | 65    | 0
+ 66  | 68561431     | 1          | active    | 66    | 0
+ 67  | 68567893     | 1          | active    | 67    | 0
+ 68  | 68565200     | 1          | active    | 68    | 0
+ 69  | 70896923     | 1          | active    | 69    | 0
+ 70  | 68566340     | 1          | active    | 70    | 0
+ 71  | 68566289     | 1          | active    | 71    | 0
+ 72  | 71654972     | 1          | active    | 72    | 0
+ 73  | 68563012     | 1          | active    | 73    | 0
+ 74  | 71654973     | 1          | active    | 74    | 0
+ 75  | 68568011     | 1          | active    | 75    | 0
+ 76  | 68517263     | 1          | active    | 76    | 0
+ 77  | 68566291     | 1          | active    | 77    | 0
+ 78  | 68560451     | 1          | active    | 78    | 0
+ 79  | 68565470     | 1          | active    | 79    | 0
+ 80  | 68566105     | 1          | active    | 80    | 0
+ 81  | 118729139    | 1          | active    | 81    | 0
+ 82  | 90354190     | 1          | active    | 82    | 0
+ 83  | 118662981    | 1          | active    | 83    | 0
+ 84  | 118662920    | 1          | active    | 84    | 0
+ 85  | 118663075    | 1          | active    | 85    | 0
+
+Loading feature property files...
+Adding pharmacophore sites...
+/opt/schrodinger2021-2/internal/bin/phase_database
+Phase project successfully created.
+
+Launching find common pharmacophore hypothesis job...
+
+Running subjobs on hosts:
+  localhost (Max: 12)
+Number of jobs:       1
+Max retries per job:  0
+Max allowed failures: 0
+Verbosity:            verbose
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Ragnar-0-663e83d8 O75116_Cluster_79_IC50_prep-out_find_common localhost [Ragnar]
+1 0 0 | finished  Ragnar-0-663e83d8 O75116_Cluster_79_IC50_prep-out_find_common localhost [Ragnar]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+phase_find_common job completed.
+2 hypotheses created.
+Common pharmacophore hypothesis job completed.
+
+Current time: Fri May 10 16:31:14 2024
+Elapsed time: 0:01:03.935517
+
+Develop common pharmacophore workflow successful.

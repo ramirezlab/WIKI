@@ -1,0 +1,2349 @@
+Driver script for phase_find_common job P01116_Cluster_3_IC50_prep-out_find_common
+Current time: Fri May 10 16:36:17 2024
+Host name: Ragnar
+Number of CPUs requested = 12
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8540
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to do initial setup:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -JOBHOST localhost:12 -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -setup
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8540
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:17 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-JOBHOST localhost:12
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-setup
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0
+
+Doing setup for subjobs
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_setup . . .
+
+Number of actives = 30
+Number of active groups = 30
+Maximum allowed misses = 5
+Number of reference ligands = 30
+Number of CPUs requested = 12
+Writing subjob template lists to P01116_Cluster_3_IC50_prep-out_find_common_templates.csv
+
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_setup
+
+CPU time = 0.01 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+Control returned to phase_find_common driver script
+
+Launching phase_find_common subjobs . . .
+
+
+Running subjobs on hosts:
+  localhost (Max: 12)
+Number of jobs:       12
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1 11 | launched  Ragnar-0-663e8542 P01116_Cluster_3_IC50_prep-out_find_common_sub_1 localhost [Ragnar]
+ 0  2 10 | launched  Ragnar-1-663e8542 P01116_Cluster_3_IC50_prep-out_find_common_sub_2 localhost [Ragnar]
+ 0  3  9 | launched  Ragnar-0-663e8543 P01116_Cluster_3_IC50_prep-out_find_common_sub_3 localhost [Ragnar]
+ 0  4  8 | launched  Ragnar-0-663e8544 P01116_Cluster_3_IC50_prep-out_find_common_sub_4 localhost [Ragnar]
+ 0  5  7 | launched  Ragnar-0-663e8545 P01116_Cluster_3_IC50_prep-out_find_common_sub_5 localhost [Ragnar]
+ 0  6  6 | launched  Ragnar-0-663e8546 P01116_Cluster_3_IC50_prep-out_find_common_sub_6 localhost [Ragnar]
+ 0  7  5 | launched  Ragnar-0-663e8547 P01116_Cluster_3_IC50_prep-out_find_common_sub_7 localhost [Ragnar]
+ 0  8  4 | launched  Ragnar-0-663e8548 P01116_Cluster_3_IC50_prep-out_find_common_sub_8 localhost [Ragnar]
+ 0  9  3 | launched  Ragnar-0-663e8549 P01116_Cluster_3_IC50_prep-out_find_common_sub_9 localhost [Ragnar]
+ 0 10  2 | launched  Ragnar-0-663e854a P01116_Cluster_3_IC50_prep-out_find_common_sub_10 localhost [Ragnar]
+ 1  9  2 | finished  Ragnar-0-663e8542 P01116_Cluster_3_IC50_prep-out_find_common_sub_1 localhost [Ragnar]
+ 2  8  2 | finished  Ragnar-1-663e8542 P01116_Cluster_3_IC50_prep-out_find_common_sub_2 localhost [Ragnar]
+ 3  7  2 | finished  Ragnar-0-663e8543 P01116_Cluster_3_IC50_prep-out_find_common_sub_3 localhost [Ragnar]
+ 3  8  1 | launched  Ragnar-0-663e854b P01116_Cluster_3_IC50_prep-out_find_common_sub_11 localhost [Ragnar]
+ 3  9  0 | launched  Ragnar-0-663e854c P01116_Cluster_3_IC50_prep-out_find_common_sub_12 localhost [Ragnar]
+ 4  8  0 | finished  Ragnar-0-663e8544 P01116_Cluster_3_IC50_prep-out_find_common_sub_4 localhost [Ragnar]
+ 5  7  0 | finished  Ragnar-0-663e8545 P01116_Cluster_3_IC50_prep-out_find_common_sub_5 localhost [Ragnar]
+ 6  6  0 | finished  Ragnar-0-663e8547 P01116_Cluster_3_IC50_prep-out_find_common_sub_7 localhost [Ragnar]
+ 7  5  0 | finished  Ragnar-0-663e8546 P01116_Cluster_3_IC50_prep-out_find_common_sub_6 localhost [Ragnar]
+ 8  4  0 | finished  Ragnar-0-663e8548 P01116_Cluster_3_IC50_prep-out_find_common_sub_8 localhost [Ragnar]
+ 9  3  0 | finished  Ragnar-0-663e8549 P01116_Cluster_3_IC50_prep-out_find_common_sub_9 localhost [Ragnar]
+10  2  0 | finished  Ragnar-0-663e854a P01116_Cluster_3_IC50_prep-out_find_common_sub_10 localhost [Ragnar]
+11  1  0 | finished  Ragnar-0-663e854b P01116_Cluster_3_IC50_prep-out_find_common_sub_11 localhost [Ragnar]
+12  0  0 | finished  Ragnar-0-663e854c P01116_Cluster_3_IC50_prep-out_find_common_sub_12 localhost [Ragnar]
+
+All jobs have completed.
+
+12 of 12 job(s) succeeded; 0 job(s) failed.
+
+
+Invoking phase_find_common binary to combine subjobs:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -JOBHOST localhost:12 -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -cleanup
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8540
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:34 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-JOBHOST localhost:12
+-cleanup
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-vect 1.0
+-vol 1.0
+
+Combining results of completed subjobs . . .
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_1.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_1
+Current time: Fri May 10 16:36:18 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8542
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_1
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8542
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:18 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_1
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_1_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_1 (1 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_1:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_13 (2 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_13:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_25 (3 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_25:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 87
+
+Final surviving common pharmacophore counts:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_1_project
+
+CPU time = 5.41 sec
+Elapsed time = 6.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_1 finished
+Current time: Fri May 10 16:36:24 2024
+Elapsed time = 0:00:05.60
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_1 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_1.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_2.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_2
+Current time: Fri May 10 16:36:19 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-1-663e8542
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_2
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-1-663e8542
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:19 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_2
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_2_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_2 (1 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_2:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_14 (2 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_14:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_26 (3 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_26:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 87
+
+Final surviving common pharmacophore counts:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_2_project
+
+CPU time = 5.46 sec
+Elapsed time = 6.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_2 finished
+Current time: Fri May 10 16:36:25 2024
+Elapsed time = 0:00:05.65
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_2 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_2.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_3.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_3
+Current time: Fri May 10 16:36:20 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8543
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_3
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8543
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:20 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_3
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_3_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_3 (1 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+Searching for pharmacophores that match at least 29 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_3:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_15 (2 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_15:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_27 (3 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_27:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 87
+
+Final surviving common pharmacophore counts:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_3_project
+
+CPU time = 5.40 sec
+Elapsed time = 5.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_3 finished
+Current time: Fri May 10 16:36:25 2024
+Elapsed time = 0:00:05.59
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_3 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_3.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_4.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_4
+Current time: Fri May 10 16:36:21 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8544
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_4
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8544
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:21 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_4
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_4_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_4 (1 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_4:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_16 (2 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_16:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_28 (3 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_28:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 87
+
+Final surviving common pharmacophore counts:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_4_project
+
+CPU time = 5.70 sec
+Elapsed time = 6.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_4 finished
+Current time: Fri May 10 16:36:27 2024
+Elapsed time = 0:00:05.90
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_4 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_4.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_5.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_5
+Current time: Fri May 10 16:36:22 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8545
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_5
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8545
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:22 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_5
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_5_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_5 (1 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_5:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_17 (2 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_17:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_29 (3 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_29:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 87
+
+Final surviving common pharmacophore counts:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_5_project
+
+CPU time = 5.80 sec
+Elapsed time = 6.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_5 finished
+Current time: Fri May 10 16:36:28 2024
+Elapsed time = 0:00:05.00
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_5 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_5.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_6.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_6
+Current time: Fri May 10 16:36:23 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8546
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_6
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8546
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:23 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_6
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_6_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_6 (1 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_6:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_18 (2 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_18:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_30 (3 of 3) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_30:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 87
+
+Final surviving common pharmacophore counts:
+3-point: 30
+4-point: 30
+5-point: 30
+6-point: 30
+7-point: 3
+  Total: 123
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_6_project
+
+CPU time = 5.63 sec
+Elapsed time = 6.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_6 finished
+Current time: Fri May 10 16:36:29 2024
+Elapsed time = 0:00:05.84
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_6 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_6.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_7.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_7
+Current time: Fri May 10 16:36:24 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8547
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_7
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8547
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:24 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_7
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_7_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_7 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_7:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_19 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_19:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 58
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_7_project
+
+CPU time = 3.83 sec
+Elapsed time = 4.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_7 finished
+Current time: Fri May 10 16:36:28 2024
+Elapsed time = 0:00:04.04
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_7 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_7.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_8.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_8
+Current time: Fri May 10 16:36:25 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8548
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_8
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8548
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:25 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_8
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_8_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_8 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_8:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_20 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_20:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 58
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_8_project
+
+CPU time = 3.64 sec
+Elapsed time = 4.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_8 finished
+Current time: Fri May 10 16:36:29 2024
+Elapsed time = 0:00:03.85
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_8 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_8.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_9.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_9
+Current time: Fri May 10 16:36:26 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8549
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_9
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e8549
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:26 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_9
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_9_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_9 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_9:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_21 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_21:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 58
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_9_project
+
+CPU time = 3.75 sec
+Elapsed time = 4.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_9 finished
+Current time: Fri May 10 16:36:30 2024
+Elapsed time = 0:00:03.95
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_9 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_9.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_10.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_10
+Current time: Fri May 10 16:36:27 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e854a
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_10
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e854a
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:27 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_10
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_10_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_10 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_10:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_22 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_22:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 58
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_10_project
+
+CPU time = 3.77 sec
+Elapsed time = 4.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_10 finished
+Current time: Fri May 10 16:36:31 2024
+Elapsed time = 0:00:03.97
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_10 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_10.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_11.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_11
+Current time: Fri May 10 16:36:28 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e854b
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_11
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e854b
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:28 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_11
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_11_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_11 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_11:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_23 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_23:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 58
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_11_project
+
+CPU time = 3.48 sec
+Elapsed time = 4.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_11 finished
+Current time: Fri May 10 16:36:32 2024
+Elapsed time = 0:00:03.69
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_11 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_11.log ***
+
+*** Contents of P01116_Cluster_3_IC50_prep-out_find_common_sub_12.log ***
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_12
+Current time: Fri May 10 16:36:29 2024
+Host name: Ragnar
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e854c
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+phase_find_common /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip -JOB P01116_Cluster_3_IC50_prep-out_find_common -sites 3:7 -ex -miss 0.15000000000000002 -fraction -prefer 7 -redun 0.5 -keep 10 -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -inactive 1.0 -subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_12
+
+********************************************************************************
+
+Host name: Ragnar
+SCHRODINGER=/opt/schrodinger2021-2
+SCHRODINGER_JOBID=Ragnar-0-663e854c
+MMSHARE_EXEC=/opt/schrodinger2021-2/mmshare-v5.4/bin/Linux-x86_64
+
+********************************************************************************
+
+phase_find_common: Fri May 10 16:36:29 2024
+
+Project archive = "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip"
+Options:
+-JOB P01116_Cluster_3_IC50_prep-out_find_common
+-ex
+-fraction
+-inactive 1.0
+-keep 10
+-logm 1.0
+-miss 0.15000000000000002
+-prefer 7
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 3:7
+-subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_12
+-vect 1.0
+-vol 1.0
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_12_project . . .
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_12 (1 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_12:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+********************************************************************************
+
+Aligning actives to 1 conformer of reference ligand mol_24 (2 of 2) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 30 active groups . . .
+
+Refining matches and alignments . . .
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+
+Surviving common pharmacophore counts for reference ligand mol_24:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Running totals for all reference ligands assigned to this subjob:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 58
+
+Final surviving common pharmacophore counts:
+3-point: 20
+4-point: 20
+5-point: 20
+6-point: 20
+7-point: 2
+  Total: 82
+
+Saving common pharmacophores to directory P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses . . .
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_12_project
+
+CPU time = 3.48 sec
+Elapsed time = 4.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob P01116_Cluster_3_IC50_prep-out_find_common_sub_12 finished
+Current time: Fri May 10 16:36:33 2024
+Elapsed time = 0:00:03.68
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common_sub_12 are complete
+
+*** End of P01116_Cluster_3_IC50_prep-out_find_common_sub_12.log ***
+
+Unzipping /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_cleanup . . .
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_1 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses/template_0.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses/template_12.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses/template_24.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_1_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_2 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses/template_1.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses/template_13.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses/template_25.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_2_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_3 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses/template_2.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses/template_14.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses/template_26.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_3_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_4 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses/template_3.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses/template_15.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses/template_27.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_4_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_5 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses/template_4.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses/template_16.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses/template_28.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_5_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_6 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses/template_5.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses/template_17.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses/template_29.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_6_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_7 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses/template_6.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses/template_18.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_7_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_8 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses/template_7.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses/template_19.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_8_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_9 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses/template_8.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses/template_20.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_9_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_10 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses/template_9.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses/template_21.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_10_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_11 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses/template_10.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses/template_22.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_11_hypotheses
+
+Processing P01116_Cluster_3_IC50_prep-out_find_common_sub_12 results . . .
+Unzipping P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses.zip . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses/template_11.pharm . . .
+Importing pharmacophores from P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses/template_23.pharm . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_sub_12_hypotheses
+
+Merging pharmacophores from all subjobs . . .
+
+Final surviving common pharmacophore counts:
+3-point: 10
+4-point: 10
+5-point: 10
+6-point: 10
+7-point: 1
+  Total: 41
+
+Preparing short virtual screens to compute PhaseHypoScore for 41 surviving common pharmacophore hypotheses . . .
+
+Creating P01116_Cluster_3_IC50_prep-out_find_common_actives/actives.phprj with default conformers . . .
+/opt/schrodinger2021-2/internal/bin/phase_database
+/opt/schrodinger2021-2/internal/bin/phase_database
+
+Unzipping decoys archive /opt/schrodinger2021-2/internal/data/phase/pharma_decoys.phzip to directory P01116_Cluster_3_IC50_prep-out_find_common_decoys . . .
+Writing hypotheses to P01116_Cluster_3_IC50_prep-out_find_common_bedroc_hypotheses . . .
+Zipping hypotheses to "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out_find_common_bedroc_hypotheses.zip" . . . 
+
+Running short virtual screens for PhaseHypoScore:
+"/opt/schrodinger2021-2/phase_screen" "P01116_Cluster_3_IC50_prep-out_find_common_bedroc_proj.list" "/scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out_find_common_bedroc_hypotheses.zip" P01116_Cluster_3_IC50_prep-out_find_common_bedroc_screens -d 2.0 -aw 1 -vw 1 -volw 1 -nosort -HOST "localhost:12" -WAIT . . .
+JobId: Ragnar-0-663e855d
+
+Short virtual screens for PhaseHypoScore completed. Processing hits . . .
+
+Computing BEDROC for PhaseHypoScore . . .
+
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_actives
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_decoys
+
+Elapsed time to perform active/decoy screens = 144.00 sec
+
+Compiling final results and writing to directory P01116_Cluster_3_IC50_prep-out_find_common_find_common . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Zipping P01116_Cluster_3_IC50_prep-out_find_common_find_common to P01116_Cluster_3_IC50_prep-out_find_common_find_common.zip . . .
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_find_common
+Removing directory P01116_Cluster_3_IC50_prep-out_find_common_cleanup
+
+CPU time = 16.91 sec
+Elapsed time = 148.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common job P01116_Cluster_3_IC50_prep-out_find_common finished
+Current time: Fri May 10 16:39:02 2024
+Elapsed time = 0:02:45.33
+phase_find_common results for P01116_Cluster_3_IC50_prep-out_find_common are complete

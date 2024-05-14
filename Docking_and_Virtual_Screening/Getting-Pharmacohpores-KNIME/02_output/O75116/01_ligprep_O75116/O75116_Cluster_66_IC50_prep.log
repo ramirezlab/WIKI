@@ -1,0 +1,251 @@
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e77e8
+Name           : O75116_Cluster_66_IC50_prep
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /home/pvalenzuela/Desktop/test/aa/O75116
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_66_IC50_prep
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -imae O75116_Cluster_66_IC50.mae -omae O75116_Cluster_66_IC50_prep-out.maegz -HOST localhost:10 -NJOBS 1 -TMPLAUNCHDIR
+StartTime      : 2024-05-10-15:39:20
+--------------------------------------------------------------------------------
+LigPrep: preparing subjobs
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Ragnar-1-663e77ea O75116_Cluster_66_IC50_prep-1 localhost [Ragnar]
+1 0 0 | finished  Ragnar-1-663e77ea O75116_Cluster_66_IC50_prep-1 localhost [Ragnar]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+--------------------------------------------------------------------------------
+SUBJOB: O75116_Cluster_66_IC50_prep-1
+
+
+--------------------------------------------------------------------------------
+JobId          : Ragnar-1-663e77ea
+Name           : O75116_Cluster_66_IC50_prep-1
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /scr/pvalenzuela/O75116_Cluster_66_IC50_prep
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_66_IC50_prep-1
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_66_IC50.mae -orig_file_index 1 -imae in_O75116_Cluster_66_IC50_prep-1.mae -omae O75116_Cluster_66_IC50_prep-1.maegz -HOST localhost
+StartTime      : 2024-05-10-15:39:22
+--------------------------------------------------------------------------------
+LigPrep (version 58117). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_66_IC50.mae -orig_file_index 1 -imae in_O75116_Cluster_66_IC50_prep-1.mae -omae O75116_Cluster_66_IC50_prep-1.maegz
+
+Processing steps:
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -m 200 <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -tn 8 -ma 200 -imae <infile.mae> -omae <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   epik    guard  stereo    cgx   filter  title
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56600346'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+       2   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56600344'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+       3   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '88558463'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+       4   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973037'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+       5   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56600748'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+       6   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56600750'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+       7   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973038'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+       8   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56600953'
+       9   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973039'
+      10   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973040'
+      11   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '88553160'
+      12   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '88553159'
+      13   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973041'
+      14   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973042'
+      15   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973043'
+      16   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973044'
+      17   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973045'
+      18   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973046'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      19   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973047'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      20   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56601341'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      21   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973048'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      22   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56601543'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      23   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56601941'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      24   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973049'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      25   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973050'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      26   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973051'
+      27   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973053'
+      28   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973054'
+      29   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973055'
+      30   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973056'
+      31   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973057'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      32   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973058'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      33   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56599751'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 6 which is non-chiral. These chiralities have been ignored.
+
+      34   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56599753'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 6 which is non-chiral. These chiralities have been ignored.
+
+      35   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973059'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      36   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56599755'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      37   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68011389'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      38   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973060'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      39   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68011390'
+      40   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973061'
+      41   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973062'
+      42   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973063'
+      43   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '88558465'
+      44   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973064'
+      45   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973065'
+      46   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973066'
+      47   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973067'
+      48   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973068'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      49   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56600154'
+      50   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973069'
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   epik    guard  stereo    cgx   filter  title
+      51   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973070'
+      52   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973072'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      53   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973073'
+      54   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973074'
+      55   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973075'
+      56   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973076'
+      57   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973077'
+      58   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973078'
+      59   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973079'
+      60   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973080'
+      61   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973081'
+      62   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973082'
+      63   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973083'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      64   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '84973084'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 6 which is non-chiral. These chiralities have been ignored.
+
+      65   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56597186'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 6 which is non-chiral. These chiralities have been ignored.
+
+      66   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56597187'
+      67   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '56598714'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      68   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '118668487'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+      69   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '118668488'
+
+# of processed structures in "O75116_Cluster_66_IC50_prep-1.maegz" : 69
+# of dropped structures in "O75116_Cluster_66_IC50_prep-1-dropped.mae" : 0
+
+backend run time: 0 hours 0 minutes 15.812 seconds
+--------------------------------------------------------------------------------
+
+# of processed structures in "O75116_Cluster_66_IC50_prep-out.maegz" : 69
+# of dropped structures in "O75116_Cluster_66_IC50_prep-dropped.mae" : 0
+
+total run time: 0 hours 0 minutes 22.066 seconds

@@ -1,0 +1,117 @@
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e77d1
+Name           : O75116_Cluster_130_Ki_prep
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /home/pvalenzuela/Desktop/test/aa/O75116
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_130_Ki_prep
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -imae O75116_Cluster_130_Ki.mae -omae O75116_Cluster_130_Ki_prep-out.maegz -HOST localhost:10 -NJOBS 1 -TMPLAUNCHDIR
+StartTime      : 2024-05-10-15:38:57
+--------------------------------------------------------------------------------
+LigPrep: preparing subjobs
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Ragnar-1-663e77d3 O75116_Cluster_130_Ki_prep-1 localhost [Ragnar]
+1 0 0 | finished  Ragnar-1-663e77d3 O75116_Cluster_130_Ki_prep-1 localhost [Ragnar]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+--------------------------------------------------------------------------------
+SUBJOB: O75116_Cluster_130_Ki_prep-1
+
+
+--------------------------------------------------------------------------------
+JobId          : Ragnar-1-663e77d3
+Name           : O75116_Cluster_130_Ki_prep-1
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /scr/pvalenzuela/O75116_Cluster_130_Ki_prep
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_130_Ki_prep-1
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_130_Ki.mae -orig_file_index 1 -imae in_O75116_Cluster_130_Ki_prep-1.mae -omae O75116_Cluster_130_Ki_prep-1.maegz -HOST localhost
+StartTime      : 2024-05-10-15:38:59
+--------------------------------------------------------------------------------
+LigPrep (version 58117). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_130_Ki.mae -orig_file_index 1 -imae in_O75116_Cluster_130_Ki_prep-1.mae -omae O75116_Cluster_130_Ki_prep-1.maegz
+
+Processing steps:
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -m 200 <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -tn 8 -ma 200 -imae <infile.mae> -omae <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   epik    guard  stereo    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830334'
+       2   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830336'
+       3   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830303'
+       4   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830275'
+       5   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830313'
+       6   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830332'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 5 which is non-chiral. These chiralities have been ignored.
+
+       7   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830296'
+       8   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830298'
+       9   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830323'
+      10   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830295'
+      11   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830310'
+      12   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830306'
+      13   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830311'
+      14   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830326'
+      15   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830331'
+      16   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830328'
+      17   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830338'
+      18   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830318'
+      19   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830319'
+      20   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830325'
+      21   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830327'
+      22   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830324'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 7 which is non-chiral. These chiralities have been ignored.
+
+      23   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830299'
+      24   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830337'
+
+# of processed structures in "O75116_Cluster_130_Ki_prep-1.maegz" : 24
+# of dropped structures in "O75116_Cluster_130_Ki_prep-1-dropped.mae" : 0
+
+backend run time: 0 hours 0 minutes 2.820 seconds
+--------------------------------------------------------------------------------
+
+# of processed structures in "O75116_Cluster_130_Ki_prep-out.maegz" : 24
+# of dropped structures in "O75116_Cluster_130_Ki_prep-dropped.mae" : 0
+
+total run time: 0 hours 0 minutes 8.529 seconds

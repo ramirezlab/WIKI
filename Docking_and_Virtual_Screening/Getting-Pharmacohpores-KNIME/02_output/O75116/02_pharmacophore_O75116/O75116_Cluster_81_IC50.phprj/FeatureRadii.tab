@@ -1,0 +1,16 @@
+################################################################################
+#                                                                              #
+# Feature radii for pharmacophore-based QSAR. You may change the radii, but do #
+# not make any other modifications to this file.                               #
+#                                                                              #
+################################################################################
+A 1
+D 1
+H 1.5
+N 0.75
+P 0.75
+R 1.5
+X 1
+Y 1
+Z 1
+END_OF_FEATURE_DATA

@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e77db
+Name           : O75116_Cluster_231_Ki_prep
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /home/pvalenzuela/Desktop/test/aa/O75116
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_231_Ki_prep
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -imae O75116_Cluster_231_Ki.mae -omae O75116_Cluster_231_Ki_prep-out.maegz -HOST localhost:10 -NJOBS 1 -TMPLAUNCHDIR
+StartTime      : 2024-05-10-15:39:07
+--------------------------------------------------------------------------------
+LigPrep: preparing subjobs
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Ragnar-0-663e77de O75116_Cluster_231_Ki_prep-1 localhost [Ragnar]
+1 0 0 | finished  Ragnar-0-663e77de O75116_Cluster_231_Ki_prep-1 localhost [Ragnar]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+--------------------------------------------------------------------------------
+SUBJOB: O75116_Cluster_231_Ki_prep-1
+
+
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e77de
+Name           : O75116_Cluster_231_Ki_prep-1
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /scr/pvalenzuela/O75116_Cluster_231_Ki_prep
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_231_Ki_prep-1
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_231_Ki.mae -orig_file_index 1 -imae in_O75116_Cluster_231_Ki_prep-1.mae -omae O75116_Cluster_231_Ki_prep-1.maegz -HOST localhost
+StartTime      : 2024-05-10-15:39:10
+--------------------------------------------------------------------------------
+LigPrep (version 58117). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_231_Ki.mae -orig_file_index 1 -imae in_O75116_Cluster_231_Ki_prep-1.mae -omae O75116_Cluster_231_Ki_prep-1.maegz
+
+Processing steps:
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -m 200 <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -tn 8 -ma 200 -imae <infile.mae> -omae <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   epik    guard  stereo    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '16050452'
+       2   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830605'
+       3   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830614'
+       4   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830616'
+       5   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830604'
+       6   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '24947488'
+       7   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830611'
+       8   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830609'
+       9   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830615'
+      10   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830618'
+      11   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '15981404'
+      12   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830607'
+      13   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830606'
+      14   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '16050450'
+      15   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '16050449'
+      16   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '25016360'
+      17   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830610'
+      18   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '16050453'
+      19   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830613'
+      20   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830612'
+      21   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '25016361'
+      22   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830608'
+      23   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830617'
+      24   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '49830619'
+
+# of processed structures in "O75116_Cluster_231_Ki_prep-1.maegz" : 24
+# of dropped structures in "O75116_Cluster_231_Ki_prep-1-dropped.mae" : 0
+
+backend run time: 0 hours 0 minutes 3.603 seconds
+--------------------------------------------------------------------------------
+
+# of processed structures in "O75116_Cluster_231_Ki_prep-out.maegz" : 24
+# of dropped structures in "O75116_Cluster_231_Ki_prep-dropped.mae" : 0
+
+total run time: 0 hours 0 minutes 10.148 seconds

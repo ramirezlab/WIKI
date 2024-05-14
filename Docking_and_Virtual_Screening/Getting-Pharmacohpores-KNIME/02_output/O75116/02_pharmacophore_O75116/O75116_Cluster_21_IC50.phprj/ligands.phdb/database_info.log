@@ -1,0 +1,175 @@
+********************************************************************************
+
+phase_database: Fri May 10 16:03:02 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_21_IC50_prep-out/O75116_Cluster_21_IC50_prep-out.phprj/ligands.phdb
+Task = import
+Job name = O75116_Cluster_21_IC50_prep-out_import
+Options:
+-NOJOBID
+-fd O75116_Cluster_21_IC50_prep-out.def
+-fmt xyz
+-i O75116_Cluster_21_IC50_prep-out.maegz
+-multi
+-new
+-stereo
+-verbose
+
+Adding molecules to database . . .
+
+LIGAND_NAME = block_1/mol_1  # Title = "57446059"  Confs = 1
+LIGAND_NAME = block_1/mol_2  # Title = "25009523"  Confs = 1
+LIGAND_NAME = block_1/mol_3  # Title = "25009524"  Confs = 1
+LIGAND_NAME = block_1/mol_4  # Title = "25009891"  Confs = 1
+LIGAND_NAME = block_1/mol_5  # Title = "25009525"  Confs = 1
+LIGAND_NAME = block_1/mol_6  # Title = "25009526"  Confs = 1
+LIGAND_NAME = block_1/mol_7  # Title = "25009896"  Confs = 1
+LIGAND_NAME = block_1/mol_8  # Title = "25009892"  Confs = 1
+LIGAND_NAME = block_1/mol_9  # Title = "25008330"  Confs = 1
+LIGAND_NAME = block_1/mol_10  # Title = "57446028"  Confs = 1
+LIGAND_NAME = block_1/mol_11  # Title = "59799793"  Confs = 1
+LIGAND_NAME = block_1/mol_12  # Title = "57446029"  Confs = 1
+LIGAND_NAME = block_1/mol_13  # Title = "57446030"  Confs = 1
+LIGAND_NAME = block_1/mol_14  # Title = "57446031"  Confs = 1
+LIGAND_NAME = block_1/mol_15  # Title = "57446032"  Confs = 1
+LIGAND_NAME = block_1/mol_16  # Title = "57446033"  Confs = 1
+LIGAND_NAME = block_1/mol_17  # Title = "57446034"  Confs = 1
+LIGAND_NAME = block_1/mol_18  # Title = "25008494"  Confs = 1
+LIGAND_NAME = block_1/mol_19  # Title = "25009893"  Confs = 1
+LIGAND_NAME = block_1/mol_20  # Title = "25009019"  Confs = 1
+LIGAND_NAME = block_1/mol_21  # Title = "44595671"  Confs = 1
+LIGAND_NAME = block_1/mol_22  # Title = "57446035"  Confs = 1
+LIGAND_NAME = block_1/mol_23  # Title = "44595808"  Confs = 1
+LIGAND_NAME = block_1/mol_24  # Title = "57446036"  Confs = 1
+LIGAND_NAME = block_1/mol_25  # Title = "57446037"  Confs = 1
+LIGAND_NAME = block_1/mol_26  # Title = "57446038"  Confs = 1
+LIGAND_NAME = block_1/mol_27  # Title = "25008495"  Confs = 1
+LIGAND_NAME = block_1/mol_28  # Title = "25009018"  Confs = 1
+LIGAND_NAME = block_1/mol_29  # Title = "25009016"  Confs = 1
+LIGAND_NAME = block_1/mol_30  # Title = "44595809"  Confs = 1
+LIGAND_NAME = block_1/mol_31  # Title = "57446040"  Confs = 1
+LIGAND_NAME = block_1/mol_32  # Title = "57446041"  Confs = 1
+LIGAND_NAME = block_1/mol_33  # Title = "57446042"  Confs = 1
+LIGAND_NAME = block_1/mol_34  # Title = "57446043"  Confs = 1
+LIGAND_NAME = block_1/mol_35  # Title = "57446044"  Confs = 1
+LIGAND_NAME = block_1/mol_36  # Title = "57446045"  Confs = 1
+LIGAND_NAME = block_1/mol_37  # Title = "25009703"  Confs = 1
+LIGAND_NAME = block_1/mol_38  # Title = "25009894"  Confs = 1
+LIGAND_NAME = block_1/mol_39  # Title = "57446046"  Confs = 1
+LIGAND_NAME = block_1/mol_40  # Title = "25009015"  Confs = 1
+LIGAND_NAME = block_1/mol_41  # Title = "25009014"  Confs = 1
+LIGAND_NAME = block_1/mol_42  # Title = "25008848"  Confs = 1
+LIGAND_NAME = block_1/mol_43  # Title = "57446047"  Confs = 1
+LIGAND_NAME = block_1/mol_44  # Title = "57446048"  Confs = 1
+LIGAND_NAME = block_1/mol_45  # Title = "57446049"  Confs = 1
+LIGAND_NAME = block_1/mol_46  # Title = "57446050"  Confs = 1
+LIGAND_NAME = block_1/mol_47  # Title = "25009704"  Confs = 1
+LIGAND_NAME = block_1/mol_48  # Title = "57446051"  Confs = 1
+LIGAND_NAME = block_1/mol_49  # Title = "24825745"  Confs = 1
+LIGAND_NAME = block_1/mol_50  # Title = "57446052"  Confs = 1
+LIGAND_NAME = block_1/mol_51  # Title = "44595810"  Confs = 1
+LIGAND_NAME = block_1/mol_52  # Title = "44595811"  Confs = 1
+LIGAND_NAME = block_1/mol_53  # Title = "25009705"  Confs = 1
+LIGAND_NAME = block_1/mol_54  # Title = "25009706"  Confs = 1
+LIGAND_NAME = block_1/mol_55  # Title = "25008847"  Confs = 1
+LIGAND_NAME = block_1/mol_56  # Title = "25009895"  Confs = 1
+LIGAND_NAME = block_1/mol_57  # Title = "57446053"  Confs = 1
+LIGAND_NAME = block_1/mol_58  # Title = "56641701"  Confs = 1
+LIGAND_NAME = block_1/mol_59  # Title = "25008846"  Confs = 1
+LIGAND_NAME = block_1/mol_60  # Title = "57446054"  Confs = 1
+LIGAND_NAME = block_1/mol_61  # Title = "57446055"  Confs = 1
+LIGAND_NAME = block_1/mol_62  # Title = "57446056"  Confs = 1
+LIGAND_NAME = block_1/mol_63  # Title = "57446057"  Confs = 1
+LIGAND_NAME = block_1/mol_64  # Title = "57446058"  Confs = 1
+LIGAND_NAME = block_1/mol_65  # Title = "57446060"  Confs = 1
+LIGAND_NAME = block_1/mol_66  # Title = "57446061"  Confs = 1
+LIGAND_NAME = block_1/mol_67  # Title = "57446062"  Confs = 1
+LIGAND_NAME = block_1/mol_68  # Title = "57446063"  Confs = 1
+LIGAND_NAME = block_1/mol_69  # Title = "59799789"  Confs = 1
+LIGAND_NAME = block_1/mol_70  # Title = "59799781"  Confs = 1
+LIGAND_NAME = block_1/mol_71  # Title = "44594370"  Confs = 1
+LIGAND_NAME = block_1/mol_72  # Title = "44594373"  Confs = 1
+LIGAND_NAME = block_1/mol_73  # Title = "44599394"  Confs = 1
+LIGAND_NAME = block_1/mol_74  # Title = "44599395"  Confs = 1
+LIGAND_NAME = block_1/mol_75  # Title = "59799790"  Confs = 1
+LIGAND_NAME = block_1/mol_76  # Title = "44599069"  Confs = 1
+LIGAND_NAME = block_1/mol_77  # Title = "59799769"  Confs = 1
+LIGAND_NAME = block_1/mol_78  # Title = "44599070"  Confs = 1
+LIGAND_NAME = block_1/mol_79  # Title = "57446064"  Confs = 1
+LIGAND_NAME = block_1/mol_80  # Title = "25009185"  Confs = 1
+LIGAND_NAME = block_1/mol_81  # Title = "25010080"  Confs = 1
+LIGAND_NAME = block_1/mol_82  # Title = "25010077"  Confs = 1
+LIGAND_NAME = block_1/mol_83  # Title = "25010076"  Confs = 1
+LIGAND_NAME = block_1/mol_84  # Title = "25010078"  Confs = 1
+LIGAND_NAME = block_1/mol_85  # Title = "25010079"  Confs = 1
+LIGAND_NAME = block_1/mol_86  # Title = "57446065"  Confs = 1
+LIGAND_NAME = block_1/mol_87  # Title = "25010081"  Confs = 1
+LIGAND_NAME = block_1/mol_88  # Title = "25010082"  Confs = 1
+LIGAND_NAME = block_1/mol_89  # Title = "25010253"  Confs = 1
+LIGAND_NAME = block_1/mol_90  # Title = "44594508"  Confs = 1
+LIGAND_NAME = block_1/mol_91  # Title = "25010254"  Confs = 1
+LIGAND_NAME = block_1/mol_92  # Title = "25010255"  Confs = 1
+LIGAND_NAME = block_1/mol_93  # Title = "25010256"  Confs = 1
+LIGAND_NAME = block_1/mol_94  # Title = "25010257"  Confs = 1
+LIGAND_NAME = block_1/mol_95  # Title = "25010258"  Confs = 1
+LIGAND_NAME = block_1/mol_96  # Title = "25008845"  Confs = 1
+LIGAND_NAME = block_1/mol_97  # Title = "44595812"  Confs = 1
+LIGAND_NAME = block_1/mol_98  # Title = "25008844"  Confs = 1
+LIGAND_NAME = block_1/mol_99  # Title = "25010259"  Confs = 1
+LIGAND_NAME = block_1/mol_100  # Title = "25008674"  Confs = 1
+LIGAND_NAME = block_1/mol_101  # Title = "25008673"  Confs = 1
+LIGAND_NAME = block_1/mol_102  # Title = "25008672"  Confs = 1
+LIGAND_NAME = block_1/mol_103  # Title = "25008671"  Confs = 1
+LIGAND_NAME = block_1/mol_104  # Title = "25008670"  Confs = 1
+LIGAND_NAME = block_1/mol_105  # Title = "25008669"  Confs = 1
+LIGAND_NAME = block_1/mol_106  # Title = "25010427"  Confs = 1
+LIGAND_NAME = block_1/mol_107  # Title = "25008499"  Confs = 1
+LIGAND_NAME = block_1/mol_108  # Title = "25010428"  Confs = 1
+LIGAND_NAME = block_1/mol_109  # Title = "25008498"  Confs = 1
+LIGAND_NAME = block_1/mol_110  # Title = "25010429"  Confs = 1
+LIGAND_NAME = block_1/mol_111  # Title = "25010430"  Confs = 1
+LIGAND_NAME = block_1/mol_112  # Title = "91663787"  Confs = 1
+LIGAND_NAME = block_1/mol_113  # Title = "25010432"  Confs = 1
+LIGAND_NAME = block_1/mol_114  # Title = "25008497"  Confs = 1
+LIGAND_NAME = block_1/mol_115  # Title = "25010599"  Confs = 1
+LIGAND_NAME = block_1/mol_116  # Title = "25010600"  Confs = 1
+LIGAND_NAME = block_1/mol_117  # Title = "25008496"  Confs = 1
+LIGAND_NAME = block_1/mol_118  # Title = "44594372"  Confs = 1
+LIGAND_NAME = block_1/mol_119  # Title = "25010601"  Confs = 1
+LIGAND_NAME = block_1/mol_120  # Title = "25010602"  Confs = 1
+LIGAND_NAME = block_1/mol_121  # Title = "25007984"  Confs = 1
+LIGAND_NAME = block_1/mol_122  # Title = "44421899"  Confs = 1
+
+A total of 122 records added
+Total number of records stored = 122
+
+********************************************************************************
+
+phase_database: Fri May 10 16:03:04 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_21_IC50_prep-out/O75116_Cluster_21_IC50_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_21_IC50_prep-out_sites
+Options:
+-NOJOBID
+-role parent
+-setup
+-sites
+
+Setup for parent job complete
+
+********************************************************************************
+
+phase_database: Fri May 10 16:03:05 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_21_IC50_prep-out/O75116_Cluster_21_IC50_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_21_IC50_prep-out_sites
+Options:
+-cleanup
+-role parent
+
+Revision of 122 out of 122 records completed
+Average number of conformers per revised record = 1.00
+Total number of records stored = 122
+

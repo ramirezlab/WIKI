@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e77ea
+Name           : O75116_Cluster_79_IC50_prep
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /home/pvalenzuela/Desktop/test/aa/O75116
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_79_IC50_prep
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -imae O75116_Cluster_79_IC50.mae -omae O75116_Cluster_79_IC50_prep-out.maegz -HOST localhost:10 -NJOBS 1 -TMPLAUNCHDIR
+StartTime      : 2024-05-10-15:39:22
+--------------------------------------------------------------------------------
+LigPrep: preparing subjobs
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Ragnar-0-663e77ed O75116_Cluster_79_IC50_prep-1 localhost [Ragnar]
+1 0 0 | finished  Ragnar-0-663e77ed O75116_Cluster_79_IC50_prep-1 localhost [Ragnar]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+--------------------------------------------------------------------------------
+SUBJOB: O75116_Cluster_79_IC50_prep-1
+
+
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e77ed
+Name           : O75116_Cluster_79_IC50_prep-1
+Program        : LigPrep
+Host           : Ragnar
+Dir            : /scr/pvalenzuela/O75116_Cluster_79_IC50_prep
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_79_IC50_prep-1
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_79_IC50.mae -orig_file_index 1 -imae in_O75116_Cluster_79_IC50_prep-1.mae -omae O75116_Cluster_79_IC50_prep-1.maegz -HOST localhost
+StartTime      : 2024-05-10-15:39:25
+--------------------------------------------------------------------------------
+LigPrep (version 58117). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -epik -ph 7.4 -pht 0.2 -s 1 -orig_file O75116_Cluster_79_IC50.mae -orig_file_index 1 -imae in_O75116_Cluster_79_IC50_prep-1.mae -omae O75116_Cluster_79_IC50_prep-1.maegz
+
+Processing steps:
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -m 200 <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -tn 8 -ma 200 -imae <infile.mae> -omae <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   epik    guard  stereo    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879763'
+       2   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '44634494'
+       3   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879807'
+       4   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879865'
+       5   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879803'
+       6   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879804'
+       7   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879805'
+       8   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '46879806'
+       9   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935500'
+      10   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935712'
+      11   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935714'
+      12   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57399460'
+      13   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57390719'
+      14   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52934834'
+      15   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52933915'
+      16   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57399461'
+      17   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '54765203'
+      18   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57397800'
+      19   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52934380'
+      20   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57394242'
+      21   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57401229'
+      22   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57399462'
+      23   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57399463'
+      24   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57397801'
+      25   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52934381'
+      26   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57394243'
+      27   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52934146'
+      28   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935059'
+      29   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57402101'
+      30   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57400298'
+      31   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935717'
+      32   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57402102'
+      33   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57395100'
+      34   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57400299'
+      35   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57396872'
+      36   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57402103'
+      37   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '54765021'
+      38   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '54765020'
+      39   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52933917'
+      40   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57403855'
+      41   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57402104'
+      42   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935061'
+      43   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52934832'
+      44   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57403071'
+      45   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57394348'
+      46   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57403072'
+      47   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57392627'
+      48   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52936149'
+      49   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52936150'
+      50   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935716'
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   epik    guard  stereo    cgx   filter  title
+      51   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57402971'
+      52   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57397803'
+      53   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '52935064'
+      54   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '54765280'
+      55   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57394246'
+      56   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '57394247'
+sdstereoexpander:
+sdstereoexpander: WARNING Input structure contains chiralities for atom 4 which is non-chiral. These chiralities have been ignored.
+
+      57   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '71655603'
+      58   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68517775'
+      59   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68519792'
+      60   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68564018'
+      61   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68560854'
+      62   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68521380'
+      63   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68563058'
+      64   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68567556'
+      65   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68563892'
+      66   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68561431'
+      67   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68567893'
+      68   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68565200'
+      69   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '70896923'
+      70   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68566340'
+      71   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68566289'
+      72   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '71654972'
+      73   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68563012'
+      74   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '71654973'
+      75   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68568011'
+      76   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68517263'
+      77   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68566291'
+      78   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68560451'
+      79   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68565470'
+      80   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '68566105'
+      81   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '118729139'
+      82   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '90354190'
+      83   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '118662981'
+      84   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '118662920'
+      85   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '118663075'
+
+# of processed structures in "O75116_Cluster_79_IC50_prep-1.maegz" : 85
+# of dropped structures in "O75116_Cluster_79_IC50_prep-1-dropped.mae" : 0
+
+backend run time: 0 hours 0 minutes 11.516 seconds
+--------------------------------------------------------------------------------
+
+# of processed structures in "O75116_Cluster_79_IC50_prep-out.maegz" : 85
+# of dropped structures in "O75116_Cluster_79_IC50_prep-dropped.mae" : 0
+
+total run time: 0 hours 0 minutes 17.851 seconds

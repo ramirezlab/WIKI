@@ -1,0 +1,155 @@
+#VERSION 67117
+#FEATURE
+#IDENTIFIER A
+#COMMENT (A) Acceptor
+#INCLUDE 
+default_frag_a0                         group(1)   0   1   0   0   1   1.8
+default_frag_a1                         vector(1)   0   1   -10   0   1   1.8
+default_frag_a2                         vector(1)   0   1   -11   0   1   1.8
+default_frag_a3                         vector(1)   0   1   -12   0   1   1.8
+[N;X1]#[#6]                             vector(1)   0   1   -4   0   1   1.8
+[N;X1]#CC                               vector(1)   0   1   -4   0   1   1.8
+[N;X2](=C~[C,c])C                       vector(1)   0   1   -3   0   1   1.8
+[N;X2](O)=N[a]                          vector(1)   0   1   -3   0   1   1.8
+[N;X2](=N-O)[a]                         vector(1)   0   1   -3   0   1   1.8
+[n;X2]1ccccc1                           vector(1)   0   1   -3   0   1   1.8
+[n;X2]([a])([a])                        vector(1)   0   1   -3   0   1   1.8
+[N;X2](=C~[C,c])(~[*])                  vector(1)   0   1   -3   0   1   1.8
+[N;X3](C)(C)[N;X3]C                     vector(1)   0   1   -2   0   1   1.8
+[N;X2](=[C,c])(~[*])                    vector(1)   0   1   -3   0   1   1.8
+[N;X2](~[C,c])=[N;X2]                   vector(1)   0   1   -3   0   1   1.8
+[n;X2]1c[nH]cc1                         vector(1)   0   1   -3   0   1   1.8
+O=[S;X4](=O)([!#8])([!#8])              vector(1)   0   1   -7   0   1   1.8
+[O;X2]C                                 vector(1)   0   1   -5   0   1   1.8
+[O;X2]N                                 vector(1)   0   1   -5   0   1   1.8
+[O;X1]=[C,c]                            vector(1)   0   1   -6   0   1   1.8
+o                                       vector(1)   0   1   -3   0   1   1.8
+[O;X2](C)C                              vector(1)   0   1   -5   0   1   1.8
+[O;X2]c1ncccc1                          vector(1)   0   1   -5   0   1   1.8
+[O;X2]~[a]                              vector(1)   0   1   -5   0   1   1.8
+O=PO([!#1])                             vector(1)   0   1   -7   0   1   1.8
+[O;X2]                                  vector(1)   0   1   -5   0   1   1.8
+[S;X2](C)C                              vector(1)   0   1   -5   0   1   1.8
+[S;X2](=C)N                             vector(1)   0   1   -5   0   1   1.8
+#EXCLUDE
+default_negative_ionic                  group   0   1   0   0   1   1.8
+N(=*)=*                                 point   0   1   0   0   1   1.8
+[nH]([a])[a]                            point   0   1   0   0   1   1.8
+[#7;X3][*]=[O,S]                        point   0   1   0   0   1   1.8
+N(=N=N)[#6]                             point   0   1   0   0   1   1.8
+[NH2](C(=O)[NH2])                       point   0   1   0   0   1   1.8
+[NH](C=O)(C=O)                          point   0   1   0   0   1   1.8
+[NH2](S(=O)(=O)[#6])[#6]                point   0   1   0   0   1   1.8
+[NH](S(=O)(=O)[#6])[#6]                 point   0   1   0   0   1   1.8
+o1nccc1                                 point   0   1   0   1   1   1.8
+o1cncc1                                 point   0   1   0   1   1   1.8
+o1cccc1                                 point   0   1   0   1   1   1.8
+[O;X2]C=O                               point   0   1   0   1   1   1.8
+[O;X2]                                  point   0   1   0   1   1   1.8
+#FEATURE
+#IDENTIFIER D
+#COMMENT (D) Donor
+#INCLUDE 
+default_frag_d0                         group(1)   0   1   0   0   1   1.8
+default_frag_d1                         vector(1)   0   1   -13   0   1   1.8
+[#1][O;X2]                              vector(1)   0   1   -1   0   1   1.8
+[#1]S[#6]                               vector(1)   0   1   -1   0   1   1.8
+[#1][C;X2]#[C;X2]                       vector(1)   0   1   -1   0   1   1.8
+[#1][NX3]C(=[NX2])[#6]                  vector(1)   0   1   -1   0   1   1.8
+[#1][#7]                                vector(1)   0   1   -1   0   1   1.8
+#EXCLUDE
+default_positive_ionic                  group   0   1   0   0   1   1.8
+[#1]OC(=O)                              point(1)   0   1   0   1   1   1.8
+[#1]O[S;X3]=O                           point(1)   0   1   0   0   1   1.8
+[#1]O[S;X4](=O)(=O)                     point(1)   0   1   0   0   1   1.8
+[#1]O[P;X3]=O                           point(1)   0   1   0   0   1   1.8
+[#1]O[P;X4]=O                           point(1)   0   1   0   0   1   1.8
+[#1]n1nnnc1                             point(1)   0   1   0   1   1   1.8
+[#1]N([S;X4](=O)(=O))(C(F)(F)(F))       point(1)   0   1   0   0   1   1.8
+[#1]([NH2;X3,NH3]([#6;X4]))             point(1)   0   1   0   1   1   1.8
+[#1]([NH;X3,NH2]([#6;X4])([#6;X4]))     point(1)   0   1   0   1   1   1.8
+[#1]([NH;X4]([#6;X4])([#6;X4])([#6;X4]))   point(1)   0   1   0   1   1   1.8
+[#1][NX3]C(=[NX2])[NX3]                 point(1)   0   1   0   1   1   1.8
+[#1][NX3]C(=[NX3+])                     point(1)   0   1   0   1   1   1.8
+[#1][NX3+]=C[NH2]                       point(1)   0   1   0   1   1   1.8
+[#1][NX3]C(=[NX2])                      point(1)   0   1   0   1   1   1.8
+[#1][NX3][#6](=[NX2,NX3+])[#6]          point(1)   0   1   0   1   1   1.8
+#FEATURE
+#IDENTIFIER H
+#COMMENT (H) Hydrophobic
+#INCLUDE 
+default_frag_h                          group(1)   0   1   0   0   1   1.8
+[CH3][r,R;#6;+0]                        group(1)   0   1   0   0   1   1.8
+[CH3][NX3,NX2;+0]                       group(1)   0   1   0   0   1   1.8
+[CH3][CX3;+0]=[NX2;+0]                  group(1)   0   1   0   0   1   1.8
+[CH3][CX4;H2][OX2,NX3;+0]               group(1)   0   1   0   1   1   1.8
+[CH3][CX3;+0]([CX4])=[CX3;+0]           group(1)   0   1   0   0   1   1.8
+[a]F                                    group(2)   0   1   0   0   1   1.8
+[a]Cl                                   group(2)   0   1   0   0   1   1.8
+[a]Br                                   group(2)   0   1   0   0   1   1.8
+[a]I                                    group(2)   0   1   0   0   1   1.8
+[a]C(F)(F)(F)                           group(2,3,4,5)   0   1   0   0   1   1.8
+[a][CH2]C(F)(F)(F)                      group(2,3,4,5,6)   0   1   0   0   1   1.8
+[a]O[CH3]                               group(3)   0   1   0   0   1   1.8
+[a]S[CH3]                               group(3)   0   1   0   0   1   1.8
+[a]OC(F)(F)(F)                          group(3,4,5,6)   0   1   0   0   1   1.8
+C(F)(F)(F)                              group   0   1   0   0   1   1.8
+F                                       group   0   1   0   0   1   1.8
+Cl                                      group   0   1   0   0   1   1.8
+Br                                      group   0   1   0   0   1   1.8
+I                                       group   0   1   0   0   1   1.8
+default_aromatic_surface                group   0   1   0   1   1   1.8
+default_aliphatic_surface               group   0   1   0   0   1   1.8
+C[S;X2]C                                group   0   1   0   0   1   1.8
+[S;X2]CC                                group   0   1   0   1   1   1.8
+[S;X2]C                                 group   0   1   0   0   1   1.8
+#EXCLUDE
+[CH3][+,-]                              group(1)   0   1   0   0   1   1.8
+[CH3]*~[+,-]                            group(1)   0   1   0   1   1   1.8
+[CH3]*~*=O                              group(1)   0   1   0   1   1   1.8
+#FEATURE
+#IDENTIFIER N
+#COMMENT (N) Negative Ionic
+#INCLUDE 
+default_frag_n                          group(1)   0   1   0   0   1   1.8
+default_negative_ionic                  group   0   1   0   0   1   1.8
+#EXCLUDE
+#FEATURE
+#IDENTIFIER P
+#COMMENT (P) Positive Ionic
+#INCLUDE 
+default_frag_p                          group(1)   0   1   0   0   1   1.8
+default_positive_ionic                  group   0   1   0   0   1   1.8
+#EXCLUDE
+#FEATURE
+#IDENTIFIER R
+#COMMENT (R) Aromatic Ring
+#INCLUDE 
+default_frag_r2                         vector(1)   0   1   -14   0   1   1.8
+default_aromatic_vector                 group   0   1   -8   0   1   1.8
+default_aromatic_surface                group   0   1   0   1   1   1.8
+#EXCLUDE
+#FEATURE
+#IDENTIFIER X
+#COMMENT Custom
+#INCLUDE 
+default_aromatic_vector                 group   0   1   -8   1   0   0
+default_aromatic_surface                group   0   1   0   1   0   0
+default_aliphatic_surface               group   0   1   0   1   0   0
+#EXCLUDE
+#FEATURE
+#IDENTIFIER Y
+#COMMENT Custom
+#INCLUDE 
+default_aromatic_vector                 group   0   1   -8   1   0   0
+default_aromatic_surface                group   0   1   0   1   0   0
+default_aliphatic_surface               group   0   1   0   1   0   0
+#EXCLUDE
+#FEATURE
+#IDENTIFIER Z
+#COMMENT Custom
+#INCLUDE 
+default_aromatic_vector                 group   0   1   -8   1   0   0
+default_aromatic_surface                group   0   1   0   1   0   0
+default_aliphatic_surface               group   0   1   0   1   0   0
+#EXCLUDE

@@ -1,0 +1,8 @@
+Fri May 10 16:36:14 2024
+phase_database /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phprj/ligands.phdb import P01116_Cluster_3_IC50_prep-out_import -NOJOBID -fd P01116_Cluster_3_IC50_prep-out.def -fmt xyz -i P01116_Cluster_3_IC50_prep-out.maegz -multi -new -stereo -verbose
+
+Fri May 10 16:36:15 2024
+phase_database /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phprj/ligands.phdb revise P01116_Cluster_3_IC50_prep-out_sites -NOJOBID -role parent -setup -sites
+
+Fri May 10 16:36:16 2024
+phase_database /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phprj/ligands.phdb revise P01116_Cluster_3_IC50_prep-out_sites -cleanup -role parent

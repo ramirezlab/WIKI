@@ -1,0 +1,83 @@
+********************************************************************************
+
+phase_database: Fri May 10 16:36:13 2024
+
+Database = /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phprj/ligands.phdb
+Task = import
+Job name = P01116_Cluster_3_IC50_prep-out_import
+Options:
+-NOJOBID
+-fd P01116_Cluster_3_IC50_prep-out.def
+-fmt xyz
+-i P01116_Cluster_3_IC50_prep-out.maegz
+-multi
+-new
+-stereo
+-verbose
+
+Adding molecules to database . . .
+
+LIGAND_NAME = block_1/mol_1  # Title = "146254417"  Confs = 1
+LIGAND_NAME = block_1/mol_2  # Title = "137288869"  Confs = 1
+LIGAND_NAME = block_1/mol_3  # Title = "146234885"  Confs = 1
+LIGAND_NAME = block_1/mol_4  # Title = "137297911"  Confs = 1
+LIGAND_NAME = block_1/mol_5  # Title = "146236007"  Confs = 1
+LIGAND_NAME = block_1/mol_6  # Title = "140956861"  Confs = 1
+LIGAND_NAME = block_1/mol_7  # Title = "137297915"  Confs = 1
+LIGAND_NAME = block_1/mol_8  # Title = "137278717"  Confs = 1
+LIGAND_NAME = block_1/mol_9  # Title = "146235420"  Confs = 1
+LIGAND_NAME = block_1/mol_10  # Title = "135148885"  Confs = 1
+LIGAND_NAME = block_1/mol_11  # Title = "135148667"  Confs = 1
+LIGAND_NAME = block_1/mol_12  # Title = "146235452"  Confs = 1
+LIGAND_NAME = block_1/mol_13  # Title = "146235857"  Confs = 1
+LIGAND_NAME = block_1/mol_14  # Title = "146234893"  Confs = 1
+LIGAND_NAME = block_1/mol_15  # Title = "146235304"  Confs = 1
+LIGAND_NAME = block_1/mol_16  # Title = "137278705"  Confs = 1
+LIGAND_NAME = block_1/mol_17  # Title = "146235944"  Confs = 1
+LIGAND_NAME = block_1/mol_18  # Title = "146235053"  Confs = 1
+LIGAND_NAME = block_1/mol_19  # Title = "146235429"  Confs = 1
+LIGAND_NAME = block_1/mol_20  # Title = "137297882"  Confs = 1
+LIGAND_NAME = block_1/mol_21  # Title = "146235843"  Confs = 1
+LIGAND_NAME = block_1/mol_22  # Title = "146235592"  Confs = 1
+LIGAND_NAME = block_1/mol_23  # Title = "137278711"  Confs = 1
+LIGAND_NAME = block_1/mol_24  # Title = "140956840"  Confs = 1
+LIGAND_NAME = block_1/mol_25  # Title = "146254335"  Confs = 1
+LIGAND_NAME = block_1/mol_26  # Title = "137288870"  Confs = 1
+LIGAND_NAME = block_1/mol_27  # Title = "137278713"  Confs = 1
+LIGAND_NAME = block_1/mol_28  # Title = "146235786"  Confs = 1
+LIGAND_NAME = block_1/mol_29  # Title = "146235508"  Confs = 1
+LIGAND_NAME = block_1/mol_30  # Title = "146236012"  Confs = 1
+
+A total of 30 records added
+Total number of records stored = 30
+
+********************************************************************************
+
+phase_database: Fri May 10 16:36:14 2024
+
+Database = /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = P01116_Cluster_3_IC50_prep-out_sites
+Options:
+-NOJOBID
+-role parent
+-setup
+-sites
+
+Setup for parent job complete
+
+********************************************************************************
+
+phase_database: Fri May 10 16:36:15 2024
+
+Database = /scr/pvalenzuela/P01116_Cluster_3_IC50_prep-out/P01116_Cluster_3_IC50_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = P01116_Cluster_3_IC50_prep-out_sites
+Options:
+-cleanup
+-role parent
+
+Revision of 30 out of 30 records completed
+Average number of conformers per revised record = 1.00
+Total number of records stored = 30
+

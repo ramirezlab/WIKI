@@ -1,0 +1,20 @@
+###############################################################################################
+#                                                                                             #
+#            Ligand Records File.  All text following a pound sign "#" is ignored.            #
+#                                                                                             #
+###############################################################################################
+LIGAND_DIR = ligands    #  PHARM_SET  LIGAND_GROUP  MUST_MATCH  QSAR_SET  ACTIVITY  1D_VALUE  #
+###############################################################################################
+LIGAND_NAME = mol_1     #  active     1             false       test      missing   0.0       #
+LIGAND_NAME = mol_2     #  active     2             false       test      missing   0.0       #
+LIGAND_NAME = mol_3     #  active     3             false       test      missing   0.0       #
+LIGAND_NAME = mol_4     #  active     4             false       test      missing   0.0       #
+LIGAND_NAME = mol_5     #  active     5             false       test      missing   0.0       #
+LIGAND_NAME = mol_6     #  active     6             false       test      missing   0.0       #
+LIGAND_NAME = mol_7     #  active     7             false       test      missing   0.0       #
+LIGAND_NAME = mol_8     #  active     8             false       test      missing   0.0       #
+LIGAND_NAME = mol_9     #  active     9             false       test      missing   0.0       #
+LIGAND_NAME = mol_10    #  active     10            false       test      missing   0.0       #
+LIGAND_NAME = mol_11    #  active     11            false       test      missing   0.0       #
+LIGAND_NAME = mol_12    #  active     12            false       test      missing   0.0       #
+LIGAND_NAME = mol_13    #  active     13            false       test      missing   0.0       #

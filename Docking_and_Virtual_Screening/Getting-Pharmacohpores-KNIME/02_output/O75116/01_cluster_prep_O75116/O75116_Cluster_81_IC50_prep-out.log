@@ -1,0 +1,346 @@
+--------------------------------------------------------------------------------
+JobId          : Ragnar-0-663e8487
+Name           : O75116_Cluster_81_IC50_prep-out
+Program        : 
+Host           : Ragnar
+Dir            : /home/pvalenzuela/Desktop/test/aa/O75116/01_cluster_prep_O75116
+HostEntry      : localhost
+JobHost        : Ragnar
+JobDir         : /scr/pvalenzuela/O75116_Cluster_81_IC50_prep-out
+JobSchrodinger : /opt/schrodinger2021-2
+Commandline    : /opt/schrodinger2021-2/utilities/phase_hypothesis O75116_Cluster_81_IC50_prep-out.inp -HOST localhost:12
+StartTime      : 2024-05-10-16:33:11
+--------------------------------------------------------------------------------
+
+Input Settings for phase_hypothesis:
+--------------------------------------
+APPEND_EXCLUDED_VOLUMES = False
+FEATURE_DEFINITION_FILE = O75116_Cluster_81_IC50_prep-out.def
+FEATURE_FREQUENCY_A = [0, 3]
+FEATURE_FREQUENCY_D = [0, 3]
+FEATURE_FREQUENCY_H = [0, 3]
+FEATURE_FREQUENCY_N = [0, 3]
+FEATURE_FREQUENCY_P = [0, 3]
+FEATURE_FREQUENCY_R = [0, 3]
+FEATURE_FREQUENCY_X = [0, 3]
+FEATURE_FREQUENCY_Y = [0, 3]
+FEATURE_FREQUENCY_Z = [0, 3]
+FEATURE_TOLERANCE_A = 2.0
+FEATURE_TOLERANCE_D = 2.0
+FEATURE_TOLERANCE_H = 2.0
+FEATURE_TOLERANCE_N = 2.0
+FEATURE_TOLERANCE_P = 2.0
+FEATURE_TOLERANCE_R = 2.0
+FEATURE_TOLERANCE_X = 2.0
+FEATURE_TOLERANCE_Y = 2.0
+FEATURE_TOLERANCE_Z = 2.0
+GENERATE_CONFORMERS = False
+HYPOTHESES_KEPT_PER_FEATURE_SIZE = 10
+HYPOTHESIS_DIFFERENCE_CRITERIA = 0.5
+INPUT_STRUCTURE_FILE = O75116_Cluster_81_IC50_prep-out.maegz
+LIGAND_PERCEPTION = stereo
+NUMBER_FEATURES_PER_HYPOTHESIS = [3, 7]
+PREFERRED_MIN_SITES = 7
+REQUIRED_MATCH_FRACTION = 0.85
+SCORE_WEIGHT_BEDROC = 1.0
+SCORE_WEIGHT_INACTIVE = 1.0
+SCORE_WEIGHT_LOG_MATCH = 1.0
+SCORE_WEIGHT_SELECTIVITY = 1.0
+SCORE_WEIGHT_SITE = 1.0
+SCORE_WEIGHT_SURVIVAL = 0.06
+SCORE_WEIGHT_VECTOR = 1.0
+SCORE_WEIGHT_VOLUME = 1.0
+USE_FAST_SCORING = False
+USE_LIGAND_GROUPING = True
+USE_PREALIGNED_LIGANDS = False
+USE_STEREO = True
+USE_TITLES = False
+--------------------------------------
+
+Starting up common pharmacophore workflow...
+Jobname: O75116_Cluster_81_IC50_prep-out
+
+
+Creating Phase project: O75116_Cluster_81_IC50_prep-out.phprj
+Importing structure(s) into Phase project...
+Creating new Phase project...
+/opt/schrodinger2021-2/internal/bin/phase_database
+Total ligands = 231
+Assigning active/inactive labels...
+Total actives = 231
+Total inactives = 0
+Applying ligand groupings...
+Phase project ligand summary:
+ ID  | TITLE        | CONFORMERS | PHARM_SET | GROUP | MUST MATCH
+ 1   | 118662899    | 1          | active    | 1     | 0
+ 2   | 90354222     | 1          | active    | 2     | 0
+ 3   | 118668476    | 1          | active    | 3     | 0
+ 4   | 90354118     | 1          | active    | 4     | 0
+ 5   | 90354061     | 1          | active    | 5     | 0
+ 6   | 90354175     | 1          | active    | 6     | 0
+ 7   | 118668480    | 1          | active    | 7     | 0
+ 8   | 118662983    | 1          | active    | 8     | 0
+ 9   | 118663030    | 1          | active    | 9     | 0
+ 10  | 85470576     | 1          | active    | 10    | 0
+ 11  | 118662938    | 1          | active    | 11    | 0
+ 12  | 118662908    | 1          | active    | 12    | 0
+ 13  | 118663064    | 1          | active    | 13    | 0
+ 14  | 118662967    | 1          | active    | 14    | 0
+ 15  | 90376380     | 1          | active    | 15    | 0
+ 16  | 90353989     | 1          | active    | 16    | 0
+ 17  | 90353946     | 1          | active    | 17    | 0
+ 18  | 118663034    | 1          | active    | 18    | 0
+ 19  | 85469694     | 1          | active    | 19    | 0
+ 20  | 90354062     | 1          | active    | 20    | 0
+ 21  | 118668473    | 1          | active    | 21    | 0
+ 22  | 90385108     | 1          | active    | 22    | 0
+ 23  | 118662986    | 1          | active    | 23    | 0
+ 24  | 118662915    | 1          | active    | 24    | 0
+ 25  | 90354191     | 1          | active    | 25    | 0
+ 26  | 118662956    | 1          | active    | 26    | 0
+ 27  | 90354569     | 1          | active    | 27    | 0
+ 28  | 90353912     | 1          | active    | 28    | 0
+ 29  | 90354088     | 1          | active    | 29    | 0
+ 30  | 118668474    | 1          | active    | 30    | 0
+ 31  | 85470577     | 1          | active    | 31    | 0
+ 32  | 118662888    | 1          | active    | 32    | 0
+ 33  | 90354066     | 1          | active    | 33    | 0
+ 34  | 85470508     | 1          | active    | 34    | 0
+ 35  | 90354181     | 1          | active    | 35    | 0
+ 36  | 118662922    | 1          | active    | 36    | 0
+ 37  | 134142625    | 1          | active    | 37    | 0
+ 38  | 118662954    | 1          | active    | 38    | 0
+ 39  | 118663024    | 1          | active    | 39    | 0
+ 40  | 90354083     | 1          | active    | 40    | 0
+ 41  | 90354121     | 1          | active    | 41    | 0
+ 42  | 118663027    | 1          | active    | 42    | 0
+ 43  | 85469693     | 1          | active    | 43    | 0
+ 44  | 90354228     | 1          | active    | 44    | 0
+ 45  | 118662883    | 1          | active    | 45    | 0
+ 46  | 118662943    | 1          | active    | 46    | 0
+ 47  | 118662949    | 1          | active    | 47    | 0
+ 48  | 90355357     | 1          | active    | 48    | 0
+ 49  | 85470575     | 1          | active    | 49    | 0
+ 50  | 118663061    | 1          | active    | 50    | 0
+ 51  | 90353978     | 1          | active    | 51    | 0
+ 52  | 118662991    | 1          | active    | 52    | 0
+ 53  | 90354167     | 1          | active    | 53    | 0
+ 54  | 90354148     | 1          | active    | 54    | 0
+ 55  | 85470578     | 1          | active    | 55    | 0
+ 56  | 118663010    | 1          | active    | 56    | 0
+ 57  | 85470503     | 1          | active    | 57    | 0
+ 58  | 118662955    | 1          | active    | 58    | 0
+ 59  | 131635881    | 1          | active    | 59    | 0
+ 60  | 118662994    | 1          | active    | 60    | 0
+ 61  | 90354261     | 1          | active    | 61    | 0
+ 62  | 90354077     | 1          | active    | 62    | 0
+ 63  | 118663037    | 1          | active    | 63    | 0
+ 64  | 118663081    | 1          | active    | 64    | 0
+ 65  | 118662957    | 1          | active    | 65    | 0
+ 66  | 118662944    | 1          | active    | 66    | 0
+ 67  | 90354029     | 1          | active    | 67    | 0
+ 68  | 85470504     | 1          | active    | 68    | 0
+ 69  | 90354094     | 1          | active    | 69    | 0
+ 70  | 85470579     | 1          | active    | 70    | 0
+ 71  | 118668481    | 1          | active    | 71    | 0
+ 72  | 134138244    | 1          | active    | 72    | 0
+ 73  | 118663094    | 1          | active    | 73    | 0
+ 74  | 118663089    | 1          | active    | 74    | 0
+ 75  | 90354232     | 1          | active    | 75    | 0
+ 76  | 118668475    | 1          | active    | 76    | 0
+ 77  | 90353965     | 1          | active    | 77    | 0
+ 78  | 90354012     | 1          | active    | 78    | 0
+ 79  | 118663022    | 1          | active    | 79    | 0
+ 80  | 85469695     | 1          | active    | 80    | 0
+ 81  | 118662969    | 1          | active    | 81    | 0
+ 82  | 85470505     | 1          | active    | 82    | 0
+ 83  | 118662928    | 1          | active    | 83    | 0
+ 84  | 118663019    | 1          | active    | 84    | 0
+ 85  | 118663079    | 1          | active    | 85    | 0
+ 86  | 118668482    | 1          | active    | 86    | 0
+ 87  | 90354280     | 1          | active    | 87    | 0
+ 88  | 90354138     | 1          | active    | 88    | 0
+ 89  | 85470507     | 1          | active    | 89    | 0
+ 90  | 118662891    | 1          | active    | 90    | 0
+ 91  | 118662998    | 1          | active    | 91    | 0
+ 92  | 118663038    | 1          | active    | 92    | 0
+ 93  | 118663028    | 1          | active    | 93    | 0
+ 94  | 118662907    | 1          | active    | 94    | 0
+ 95  | 118663046    | 1          | active    | 95    | 0
+ 96  | 118663032    | 1          | active    | 96    | 0
+ 97  | 90354032     | 1          | active    | 97    | 0
+ 98  | 118662960    | 1          | active    | 98    | 0
+ 99  | 85470574     | 1          | active    | 99    | 0
+ 100 | 85470447     | 1          | active    | 100   | 0
+ 101 | 90354129     | 1          | active    | 101   | 0
+ 102 | 90353980     | 1          | active    | 102   | 0
+ 103 | 90353913     | 1          | active    | 103   | 0
+ 104 | 85470573     | 1          | active    | 104   | 0
+ 105 | 118663015    | 1          | active    | 105   | 0
+ 106 | 90354015     | 1          | active    | 106   | 0
+ 107 | 85469696     | 1          | active    | 107   | 0
+ 108 | 118662971    | 1          | active    | 108   | 0
+ 109 | 90353896     | 1          | active    | 109   | 0
+ 110 | 90354131     | 1          | active    | 110   | 0
+ 111 | 118662886    | 1          | active    | 111   | 0
+ 112 | 118662900    | 1          | active    | 112   | 0
+ 113 | 118668486    | 1          | active    | 113   | 0
+ 114 | 90354097     | 1          | active    | 114   | 0
+ 115 | 118662993    | 1          | active    | 115   | 0
+ 116 | 76070677     | 1          | active    | 116   | 0
+ 117 | 118662965    | 1          | active    | 117   | 0
+ 118 | 118663069    | 1          | active    | 118   | 0
+ 119 | 118663051    | 1          | active    | 119   | 0
+ 120 | 90178103     | 1          | active    | 120   | 0
+ 121 | 118662898    | 1          | active    | 121   | 0
+ 122 | 118663088    | 1          | active    | 122   | 0
+ 123 | 118662976    | 1          | active    | 123   | 0
+ 124 | 118662974    | 1          | active    | 124   | 0
+ 125 | 90354019     | 1          | active    | 125   | 0
+ 126 | 118663039    | 1          | active    | 126   | 0
+ 127 | 90354227     | 1          | active    | 127   | 0
+ 128 | 118662901    | 1          | active    | 128   | 0
+ 129 | 118662996    | 1          | active    | 129   | 0
+ 130 | 118663050    | 1          | active    | 130   | 0
+ 131 | 118662882    | 1          | active    | 131   | 0
+ 132 | 90353958     | 1          | active    | 132   | 0
+ 133 | 90354004     | 1          | active    | 133   | 0
+ 134 | 90354052     | 1          | active    | 134   | 0
+ 135 | 118663012    | 1          | active    | 135   | 0
+ 136 | 118662988    | 1          | active    | 136   | 0
+ 137 | 85470509     | 1          | active    | 137   | 0
+ 138 | 90354045     | 1          | active    | 138   | 0
+ 139 | 118668479    | 1          | active    | 139   | 0
+ 140 | 90354154     | 1          | active    | 140   | 0
+ 141 | 118662894    | 1          | active    | 141   | 0
+ 142 | 118662980    | 1          | active    | 142   | 0
+ 143 | 118663093    | 1          | active    | 143   | 0
+ 144 | 118662972    | 1          | active    | 144   | 0
+ 145 | 118662961    | 1          | active    | 145   | 0
+ 146 | 90353911     | 1          | active    | 146   | 0
+ 147 | 118663076    | 1          | active    | 147   | 0
+ 148 | 118663023    | 1          | active    | 148   | 0
+ 149 | 90354245     | 1          | active    | 149   | 0
+ 150 | 90354005     | 1          | active    | 150   | 0
+ 151 | 118663055    | 1          | active    | 151   | 0
+ 152 | 90354017     | 1          | active    | 152   | 0
+ 153 | 118662964    | 1          | active    | 153   | 0
+ 154 | 118663096    | 1          | active    | 154   | 0
+ 155 | 90376270     | 1          | active    | 155   | 0
+ 156 | 90353967     | 1          | active    | 156   | 0
+ 157 | 118663059    | 1          | active    | 157   | 0
+ 158 | 118663054    | 1          | active    | 158   | 0
+ 159 | 118662946    | 1          | active    | 159   | 0
+ 160 | 118662997    | 1          | active    | 160   | 0
+ 161 | 118662975    | 1          | active    | 161   | 0
+ 162 | 90354103     | 1          | active    | 162   | 0
+ 163 | 77108486     | 1          | active    | 163   | 0
+ 164 | 90354177     | 1          | active    | 164   | 0
+ 165 | 90354036     | 1          | active    | 165   | 0
+ 166 | 118663068    | 1          | active    | 166   | 0
+ 167 | 118663049    | 1          | active    | 167   | 0
+ 168 | 118663001    | 1          | active    | 168   | 0
+ 169 | 118663092    | 1          | active    | 169   | 0
+ 170 | 118662931    | 1          | active    | 170   | 0
+ 171 | 118663067    | 1          | active    | 171   | 0
+ 172 | 118662895    | 1          | active    | 172   | 0
+ 173 | 118663084    | 1          | active    | 173   | 0
+ 174 | 131636096    | 1          | active    | 174   | 0
+ 175 | 118662889    | 1          | active    | 175   | 0
+ 176 | 118662910    | 1          | active    | 176   | 0
+ 177 | 90385104     | 1          | active    | 177   | 0
+ 178 | 118662977    | 1          | active    | 178   | 0
+ 179 | 90385122     | 1          | active    | 179   | 0
+ 180 | 90385111     | 1          | active    | 180   | 0
+ 181 | 118663005    | 1          | active    | 181   | 0
+ 182 | 118662930    | 1          | active    | 182   | 0
+ 183 | 118662887    | 1          | active    | 183   | 0
+ 184 | 118662995    | 1          | active    | 184   | 0
+ 185 | 118662903    | 1          | active    | 185   | 0
+ 186 | 90385125     | 1          | active    | 186   | 0
+ 187 | 90385103     | 1          | active    | 187   | 0
+ 188 | 118663060    | 1          | active    | 188   | 0
+ 189 | 118663040    | 1          | active    | 189   | 0
+ 190 | 118662892    | 1          | active    | 190   | 0
+ 191 | 90385121     | 1          | active    | 191   | 0
+ 192 | 118663008    | 1          | active    | 192   | 0
+ 193 | 118663111    | 1          | active    | 193   | 0
+ 194 | 118663006    | 1          | active    | 194   | 0
+ 195 | 90385131     | 1          | active    | 195   | 0
+ 196 | 90385102     | 1          | active    | 196   | 0
+ 197 | 118663063    | 1          | active    | 197   | 0
+ 198 | 118663056    | 1          | active    | 198   | 0
+ 199 | 118662925    | 1          | active    | 199   | 0
+ 200 | 118662978    | 1          | active    | 200   | 0
+ 201 | 90385127     | 1          | active    | 201   | 0
+ 202 | 90385109     | 1          | active    | 202   | 0
+ 203 | 137658352    | 1          | active    | 203   | 0
+ 204 | 118663071    | 1          | active    | 204   | 0
+ 205 | 131636097    | 1          | active    | 205   | 0
+ 206 | 90375298     | 1          | active    | 206   | 0
+ 207 | 90385120     | 1          | active    | 207   | 0
+ 208 | 118662945    | 1          | active    | 208   | 0
+ 209 | 118662953    | 1          | active    | 209   | 0
+ 210 | 90376322     | 1          | active    | 210   | 0
+ 211 | 118663020    | 1          | active    | 211   | 0
+ 212 | 118662937    | 1          | active    | 212   | 0
+ 213 | 118662924    | 1          | active    | 213   | 0
+ 214 | 118663066    | 1          | active    | 214   | 0
+ 215 | 118662948    | 1          | active    | 215   | 0
+ 216 | 90385133     | 1          | active    | 216   | 0
+ 217 | 90385100     | 1          | active    | 217   | 0
+ 218 | 90385101     | 1          | active    | 218   | 0
+ 219 | 118663033    | 1          | active    | 219   | 0
+ 220 | 118662926    | 1          | active    | 220   | 0
+ 221 | 118662942    | 1          | active    | 221   | 0
+ 222 | 118663000    | 1          | active    | 222   | 0
+ 223 | 90376025     | 1          | active    | 223   | 0
+ 224 | 118662918    | 1          | active    | 224   | 0
+ 225 | 90385099     | 1          | active    | 225   | 0
+ 226 | 118662890    | 1          | active    | 226   | 0
+ 227 | 90385166     | 1          | active    | 227   | 0
+ 228 | 162648579    | 1          | active    | 228   | 0
+ 229 | 162653727    | 1          | active    | 229   | 0
+ 230 | 162656129    | 1          | active    | 230   | 0
+ 231 | 118662941    | 1          | active    | 231   | 0
+
+Loading feature property files...
+Adding pharmacophore sites...
+/opt/schrodinger2021-2/internal/bin/phase_database
+Phase project successfully created.
+
+Launching find common pharmacophore hypothesis job...
+
+Running subjobs on hosts:
+  localhost (Max: 12)
+Number of jobs:       1
+Max retries per job:  0
+Max allowed failures: 0
+Verbosity:            verbose
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Ragnar-0-663e8490 O75116_Cluster_81_IC50_prep-out_find_common localhost [Ragnar]
+1 0 0 | finished  Ragnar-0-663e8490 O75116_Cluster_81_IC50_prep-out_find_common localhost [Ragnar]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+phase_find_common job completed.
+9 hypotheses created.
+Common pharmacophore hypothesis job completed.
+
+Current time: Fri May 10 16:35:14 2024
+Elapsed time: 0:02:02.369599
+
+Develop common pharmacophore workflow successful.

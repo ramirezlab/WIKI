@@ -1,0 +1,8 @@
+Fri May 10 15:57:00 2024
+phase_database /scr/pvalenzuela/O75116_Cluster_162_Ki_prep-out/O75116_Cluster_162_Ki_prep-out.phprj/ligands.phdb import O75116_Cluster_162_Ki_prep-out_import -NOJOBID -fd O75116_Cluster_162_Ki_prep-out.def -fmt xyz -i O75116_Cluster_162_Ki_prep-out.maegz -multi -new -stereo -verbose
+
+Fri May 10 15:57:01 2024
+phase_database /scr/pvalenzuela/O75116_Cluster_162_Ki_prep-out/O75116_Cluster_162_Ki_prep-out.phprj/ligands.phdb revise O75116_Cluster_162_Ki_prep-out_sites -NOJOBID -role parent -setup -sites
+
+Fri May 10 15:57:02 2024
+phase_database /scr/pvalenzuela/O75116_Cluster_162_Ki_prep-out/O75116_Cluster_162_Ki_prep-out.phprj/ligands.phdb revise O75116_Cluster_162_Ki_prep-out_sites -cleanup -role parent

@@ -1,0 +1,71 @@
+********************************************************************************
+
+phase_database: Fri May 10 16:09:04 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_23_Ki_prep-out/O75116_Cluster_23_Ki_prep-out.phprj/ligands.phdb
+Task = import
+Job name = O75116_Cluster_23_Ki_prep-out_import
+Options:
+-NOJOBID
+-fd O75116_Cluster_23_Ki_prep-out.def
+-fmt xyz
+-i O75116_Cluster_23_Ki_prep-out.maegz
+-multi
+-new
+-stereo
+-verbose
+
+Adding molecules to database . . .
+
+LIGAND_NAME = block_1/mol_1  # Title = "49830685"  Confs = 1
+LIGAND_NAME = block_1/mol_2  # Title = "49830693"  Confs = 1
+LIGAND_NAME = block_1/mol_3  # Title = "24859161"  Confs = 1
+LIGAND_NAME = block_1/mol_4  # Title = "49830700"  Confs = 1
+LIGAND_NAME = block_1/mol_5  # Title = "24859296"  Confs = 1
+LIGAND_NAME = block_1/mol_6  # Title = "24858859"  Confs = 1
+LIGAND_NAME = block_1/mol_7  # Title = "49830698"  Confs = 1
+LIGAND_NAME = block_1/mol_8  # Title = "49830703"  Confs = 1
+LIGAND_NAME = block_1/mol_9  # Title = "49830701"  Confs = 1
+LIGAND_NAME = block_1/mol_10  # Title = "24772168"  Confs = 1
+LIGAND_NAME = block_1/mol_11  # Title = "49830684"  Confs = 1
+LIGAND_NAME = block_1/mol_12  # Title = "49830695"  Confs = 1
+LIGAND_NAME = block_1/mol_13  # Title = "24859013"  Confs = 1
+LIGAND_NAME = block_1/mol_14  # Title = "49830699"  Confs = 1
+LIGAND_NAME = block_1/mol_15  # Title = "49830688"  Confs = 1
+LIGAND_NAME = block_1/mol_16  # Title = "24858860"  Confs = 1
+LIGAND_NAME = block_1/mol_17  # Title = "49830694"  Confs = 1
+LIGAND_NAME = block_1/mol_18  # Title = "49830686"  Confs = 1
+
+A total of 18 records added
+Total number of records stored = 18
+
+********************************************************************************
+
+phase_database: Fri May 10 16:09:05 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_23_Ki_prep-out/O75116_Cluster_23_Ki_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_23_Ki_prep-out_sites
+Options:
+-NOJOBID
+-role parent
+-setup
+-sites
+
+Setup for parent job complete
+
+********************************************************************************
+
+phase_database: Fri May 10 16:09:06 2024
+
+Database = /scr/pvalenzuela/O75116_Cluster_23_Ki_prep-out/O75116_Cluster_23_Ki_prep-out.phprj/ligands.phdb
+Task = revise
+Job name = O75116_Cluster_23_Ki_prep-out_sites
+Options:
+-cleanup
+-role parent
+
+Revision of 18 out of 18 records completed
+Average number of conformers per revised record = 1.00
+Total number of records stored = 18
+
